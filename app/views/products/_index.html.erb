@@ -1,0 +1,13 @@
+<% for product in products %>
+	<div class="span-6 product_panel<% if ((@products.index product) % width) == (width - 1) %> last<% end %>">
+		<div class="halfpadbox">
+			<% if product.product_images.any? %>
+				<%= link_to image_tag(product.product_images.first.image(:thumb_216)), product_url(product), :class => 'product' %>
+				<h4><%= product.name %></h4>
+			<% else %>
+				<h4><%= product.seller.name %></h4>
+				<h6><%= product.category.name %></h6>
+			<% end %>
+		</div>
+	</div>
+<% end %>

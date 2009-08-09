@@ -1,0 +1,63 @@
+<div class="container profile_wrapper">
+	<div class="span-18">
+	
+		<%= render :partial => 'sellers/profile_header' %>
+		
+		<div class="span-18 last">
+			<div class="span-18 last panel">
+				<h3>Products <%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :products) %></h3>
+				</h3>
+				<% for product in @seller.products.active.most_recent_6 %>
+					<div class="span-6 product_panel">
+						<div class="halfpadbox">
+							<% if product.product_images.any? and product.product_images.first.image.exists? %>
+								<%= image_tag product.product_images.first.image.url(:thumb_216) %>
+							<% else %>
+								<h3><%= product.name %></h3>
+							<% end %>
+							<% for tag in product.tags %>
+							<h6><%= tag.name %></h6>
+							<% end %>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</div>
+		
+		<div class="span-24 last">
+			<div class="span-12 panel">
+				<div class="panel_header">
+					<h3>Notes
+					<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => 'notes') %></h3>
+				</div>
+				<% for note in @seller.notes.featured.published.enabled %>
+					<%= render :partial => 'sellers/note', :object => note %>
+				<% end %>
+				<p><%= link_to 'Add a note', seller_url(:id => @seller.id, :profile_section => 'notes') %>
+			</div>
+			<div class="span-12 last panel">
+				<h3>Blog
+					<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :blog) %></h3>
+				</h3>
+		
+				
+				<!-- post [begin]-->
+				<% for blog_post in @seller.blog_posts.seller.published.most_recent_3 %>
+				<div class="span-12 last post">
+					<div class="span-12 last">
+							<h3><%= link_to blog_post.title, seller_url(:id => @seller.id, :profile_section => :blog, :blog_post_id => blog_post.id) %></h3>
+							<p class="post_date">Feb 27, 2009<%= blog_post.created_at.strftime('%b %d, %Y') %><br/>
+							(<%= blog_post.comments.published.enabled.count %>)</p><!--number is the count of the number of responses-->
+					</div><!--post_header [end]-->
+				</div>
+				<% end %>
+				<!--post [end]-->
+		
+		
+			</div>
+		</div>
+		
+	</div>
+	<%= render :partial => 'sellers/sidebar' %>
+</div>
+
