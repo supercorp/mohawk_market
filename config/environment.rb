@@ -42,7 +42,7 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
   config.load_paths += %W(#{RAILS_ROOT}/config/branded/)
   config.load_paths += %W( #{ File.join( RAILS_ROOT, 'app', 'models', 'behaviors' ) } )
-  config.load_paths += %W( #{ File.join( RAILS_ROOT, 'app', 'models', 'branded_files' ) } )
+  config.load_paths += %W( #{ File.join( RAILS_ROOT, 'app', 'models', 'market_files' ) } )
 
 
   # Force all environments to use the same logger level
