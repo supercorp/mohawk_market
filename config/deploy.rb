@@ -1,5 +1,5 @@
 before "deploy:cold", "config_files:create"
-after "deploy:update_code", "deploy:pull_core_repo"
+after "deploy", "deploy:pull_core_repo"
 after "deploy:update_code", "config_files:symlink"
 after "deploy:update", "deploy:cleanup"
 
@@ -17,12 +17,11 @@ ssh_options[:paranoid] = false
 set :repository,  "git@github.com:supercorp/mohawk_market.git"
 set :core_repository, "git@github.com:supercorp/curated_commerce.git"
 set :scm, :git
-set :git_shallow_clone, 1
 set :ssh_options, { :forward_agent => true }
 
 set :keep_releases, 2
 
-set (:deploy_to) { "/var/www/curatedcommerce/make/#{stage}" }
+set (:deploy_to) { "/var/www/curatedcommerce/mohawk/#{stage}" }
 
 desc "Modified deploy task for Phusion Passenger"
 namespace :deploy do
@@ -33,8 +32,8 @@ namespace :deploy do
   task :start, :roles => :app do
     # start task unnecessary for Passenger deployment
   end
-  task :pull_core_repo
-    run "cd #{current_path} && git remote add core #{core_repository} && git pull core master"
+  task :pull_core_repo, :roles => :app do
+    run "cd #{current_path} && git remote add curated_commerce #{core_repository} && git pull curated_commerce master"
   end
 end
 
@@ -46,6 +45,7 @@ namespace :config_files do
     make_directories
     database_yml
     mailer_config
+    local_config
     # pictures
   end
 
@@ -62,6 +62,7 @@ namespace :config_files do
   task :symlink do
     symlink_database_yml
     symlink_mailer_config
+    symlink_local_config
     # symlink_pictures
   end
 
@@ -83,11 +84,19 @@ namespace :config_files do
     put result, "#{shared_path}/config/mailer_config.rb", :via => :scp
   end
   
-  desc "Make symlink for database.yml" 
+  desc "Make symlink for mailer_config.rb" 
   task :symlink_mailer_config do
     run "ln -nfs #{shared_path}/config/mailer_config.rb #{release_path}/config/mailer_config.rb" 
   end
 
+  task :local_config do
+    run "touch #{shared_path}/config/local_config.rb"
+  end
+
+  desc "Make symlink for local_config.rb" 
+  task :symlink_local_config do
+    run "ln -nfs #{shared_path}/config/local_config.rb #{release_path}/config/local_config.rb" 
+  end
   # desc "Create picture directories in shared path" 
   # task :pictures do
   #   run "mkdir -p #{shared_path}/public/pictures" 
