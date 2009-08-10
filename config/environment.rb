@@ -97,4 +97,3 @@ VIDDLER << "http://*.viddler.com/*"
 FLICKR = OEmbed::Provider.new("http://www.flickr.com/services/oembed/",:xml)
 FLICKR << "http://*.flickr.com/*"     
 OEmbed::Providers.register(VIMEO,VIDDLER,FLICKR)
-ROLES = ['Curator','Seller','Shopper']
