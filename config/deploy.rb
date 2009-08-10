@@ -9,7 +9,7 @@ set :default_stage, "dev"
 require 'capistrano/ext/multistage'
 require 'erb'
 
-set :application, "cc-make"
+set :application, "cc_mohawk"
 set :user, "nobody"
 set :runner, "nobody"
 ssh_options[:paranoid] = false
