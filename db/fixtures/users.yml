@@ -1,0 +1,165 @@
+users_008: 
+  avatar_updated_at: 
+  name: Ryan
+  salt: f6867b6fb6ee370c6f17c5800f0c5622b82ddb9a
+  activated_at: 2009-02-02 21:36:27.957863 Z
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-02-18 21:50:24.948037 Z
+  account_active: true
+  crypted_password: 83923754635511ef53bb94c0bb368ae44cb26dd7
+  store_name: 
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: 
+  remember_token_expires_at: 
+  subdomain: 
+  type: Curator
+  application_status: 
+  banner_file_name: 
+  id: 7
+  avatar_content_type: 
+  seller_active: true
+  seller_welcome: true
+  curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: ryan
+  banner_file_size: 
+  created_at: 2009-02-02 21:25:03.624965 Z
+  email: ryandeussing@gmail.com
+  location: Brooklyn, NY
+users_010: 
+  avatar_updated_at: 
+  name: Eric Draut
+  salt: 9b0744bfe3fc1a4e103d5201281f43318262da7c
+  activated_at: 2009-01-28 17:25:43.234413 Z
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-01-30 00:12:03.287457 Z
+  account_active: true
+  crypted_password: 3987d4ffd8365e1d44fcb1744b8761459fd1f760
+  store_name: Eric's Widgets
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: 
+  remember_token_expires_at: 
+  subdomain: edraut
+  type: Curator
+  application_status: 
+  banner_file_name: 
+  id: 1
+  avatar_content_type: 
+  seller_active: true
+  seller_welcome: true
+  curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: edraut
+  banner_file_size: 
+  created_at: 2009-01-28 17:25:13.796698 Z
+  email: edraut@gmail.com
+  location: Portland, ME
+users_009: 
+  avatar_updated_at: 
+  name: Store Application
+  salt: 
+  activated_at: 
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-04-06 16:18:01.428756 Z
+  account_active: false
+  crypted_password: 
+  store_name: 
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: dc203f87f32deed589690b78a4054f2fc14e2390
+  remember_token_expires_at: 
+  subdomain: 
+  type: 
+  application_status: 
+  banner_file_name: 
+  id: 11
+  avatar_content_type: 
+  seller_active: false
+  seller_welcome: true
+  curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: applications
+  banner_file_size: 
+  created_at: 2009-04-06 16:18:01.428756 Z
+  email: do-not-reply@wearesupercorp.com
+  location: ""
+users_001: 
+  avatar_updated_at: 
+  name: Randy Hunt
+  salt: 97cd5c97034b51f40416ee487490fe22eeff1902
+  activated_at: 2009-01-28 17:48:44.361278 Z
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-06-25 20:05:11.391960 Z
+  account_active: true
+  crypted_password: 472e4b78791cf11f2840c90372bfd8ddbcb37f13
+  store_name: Randy's Store
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: 
+  remember_token_expires_at: 
+  subdomain: randy
+  type: Curator
+  application_status: 
+  banner_file_name: 
+  id: 2
+  avatar_content_type: 
+  seller_active: true
+  seller_welcome: true
+  curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: superrandy
+  banner_file_size: 
+  created_at: 2009-01-28 17:47:56.925944 Z
+  email: randy@wearesupercorp.com
+  location: ""
+users_002: 
+  avatar_updated_at: 
+  name: Example User
+  salt: c68ad1fde9be979783fc8e28b63873fece7acd27
+  activated_at: 2009-01-30 21:10:11.154604 Z
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-02-02 20:47:34.481264 Z
+  account_active: true
+  crypted_password: 2003fc48f422295400cec4b72eabba49687a0838
+  store_name: 
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: 
+  remember_token_expires_at: 
+  subdomain: 
+  type: Shopper
+  application_status: 
+  banner_file_name: 
+  id: 3
+  avatar_content_type: 
+  seller_active: 
+  seller_welcome: true
+  curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: superguest
+  banner_file_size: 
+  created_at: 2009-01-30 21:05:09.177308 Z
+  email: guest@wearesupercorp.com
+  location: ""
