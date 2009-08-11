@@ -1,6 +1,8 @@
+#files to ignore
 log/*.log
 config/database.yml
 config/mailer_config.rb
+config/local_config.rb
 tmp/**/*
 test
 *.DS_Store
