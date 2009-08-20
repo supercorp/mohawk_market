@@ -5,60 +5,37 @@ p, ul {
 }
 
 .header {
-	margin-top:18px;
+	margin-top:9px;
 }
 
-ul.market_nav, ul.market_nav li {
+.market_main_nav ul, .market_main_nav ul li, .market_subcab_nav ul, .market_subcab_nav ul li {
 	display:inline-block;
 	list-style-type:none;
 	margin:0;
 }
 
-ul.market_nav {
-	font-size:30px;
-	height:54px;
-	margin-top:5px;
-	margin-bottom:11px;
-}
-
-ul.market_nav li {
-	margin-right:10px;
-}
-
-ul.market_nav a {
+.market_main_nav ul a {
 	text-decoration:none;
-	color:#00acff;
-	padding:5px;
-	border:solid 5px #00acff;
+	border-left:solid 1px #ccc;
+	border-top:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+	width:91px;
+	display:block;
+	float:left;
+	text-align:center;
+	color:#666;
+	font-family:georgia;
+	font-size:16px;
+	padding:12px;
 }
 
-ul.market_nav a:hover {
+.market_main_nav ul a:hover {
 	text-decoration:none;
 	color:#fff;
 	background-color:#ff1f00;
 	border-color:#ff1f00;
 }
-ul.category_nav, ul.category_nav li {
-	display:inline-block;
-	list-style-type:none;
-	margin:0;
-}
 
-ul.category_nav {
-	font-size:20px;
-	font-weight:bold;
-	margin-bottom:0px;
-}
-
-ul.category_nav a {
-	color:#999;
-	padding:2px;
-	text-decoration:none;
-}
-
-ul.category_nav a:hover {
-	color:#000;
-}
 
 ul.sub_category_nav, ul.sub_category_nav li {
 	display:inline-block;

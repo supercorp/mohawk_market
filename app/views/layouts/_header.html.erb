@@ -1,27 +1,41 @@
-<div class="header_bar">
-	<div class="container">
-		<div class="prepend-18 span-6 last text_right">
-			<%= link_to (image_tag('cart.png')), cart_url %> <%= link_to "cart (#{@cart.order_items.length})", cart_url %>
-			<% if logged_in? %>
-				<%= link_to 'my dashboard', dashboard_url %> &nbsp; <a href="/logout">Logout</a>
-			<% else %>
-				<a href="/login">Login</a>
-				or <a href="/signup">sign up for free</a>.
-			<% end %>
-		</div>
-	</div>
-</div>
 <div class="container">
 	
 	<div class="header">
-		<div class="span-7">
-		<%= link_to (image_tag 'market/logo_temp.png'), '/' %>
-		</div>
-		<div class="span-17 last">
-		<ul class="market_nav">
-			<li><%= link_to 'products', '/products', :class => (@nav_tab == 'products') ? 'selected' : '' %></li>
-			<li><%= link_to 'makers', '/sellers', :class => (@nav_tab == 'sellers') ? 'selected' : '' %></li>
-			<li><%= link_to 'blog', '/blog_posts', :class => (@nav_tab == 'blog_posts') ? 'selected' : '' %></li>
-		</ul>
-		</div>
-	</div>
+		<div class="market_main_nav">
+			<ul>
+				<% for category in Category.top_level %>
+					<li<% if @category and @category == category %> class="selected"<% end %>><a href="<%= home_url(:category_id => category.id) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a></li>
+				<% end %>
+			</ul>
+				<li><%= link_to (image_tag('cart.png')), cart_url %> <%= link_to "cart (#{@cart.order_items.length})", cart_url %></li>
+				<li>
+					<input type="text" value="search" />
+					<% if logged_in? %>
+						<%= link_to 'my dashboard', dashboard_url %> &nbsp; <a href="/logout">Logout</a>
+					<% else %>
+						<a href="/login">Login</a>
+						or <a href="/signup">sign up for free</a>.
+					<% end %>
+				</li>
+			</ul>
+		</div><!-- end .market_main_nav -->
+
+		<div class="market_subcab_nav">
+			<ul>
+				<li>all</li>
+				<li>posters</li>
+				<li>prints</li>
+				<li>decor</li>
+				<li>tabletop</li>
+				<li>custom</li>
+				<li>diy</li>
+			</ul>
+		</div><!-- end .market_subcab_nav -->
+		
+		<div class="span-24">
+			<%= link_to (image_tag 'market/logo_temp.png'), '/' %>
+		</div><!--end .span-24 -->
+		
+	</div><!-- end .header -->
+	
+</div><!-- end .container -->
