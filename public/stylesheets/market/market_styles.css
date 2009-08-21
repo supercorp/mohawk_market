@@ -59,6 +59,7 @@ h3 {
 .market_main_nav ul.main_nav_not_cat {
 	float:left;
 	background-color:green;
+	width:240px;
 }
 
 ul.sub_category_nav, ul.sub_category_nav li {
