@@ -8,6 +8,7 @@ users_008:
   banner_content_type: 
   store_description: 
   updated_at: 2009-02-18 21:50:24.948037 Z
+  billing_date: 2009-01-30 00:12:03.287457 Z
   account_active: true
   crypted_password: 83923754635511ef53bb94c0bb368ae44cb26dd7
   store_name: 
@@ -41,6 +42,7 @@ users_010:
   banner_content_type: 
   store_description: 
   updated_at: 2009-01-30 00:12:03.287457 Z
+  billing_date: 2009-01-30 00:12:03.287457 Z
   account_active: true
   crypted_password: 3987d4ffd8365e1d44fcb1744b8761459fd1f760
   store_name: Eric's Widgets
@@ -107,6 +109,7 @@ users_001:
   banner_content_type: 
   store_description: 
   updated_at: 2009-06-25 20:05:11.391960 Z
+  billing_date: 2009-01-30 00:12:03.287457 Z
   account_active: true
   crypted_password: 472e4b78791cf11f2840c90372bfd8ddbcb37f13
   store_name: Randy's Store
