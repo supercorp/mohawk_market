@@ -2,16 +2,17 @@
 	
 	<div class="header">
 		<div class="market_main_nav">
-			<ul>
+			<ul class="categories">
 				<% for category in Category.top_level %>
 					<li<% if @category and @category == category %> class="selected"<% end %>><a href="<%= home_url(:category_id => category.id) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a></li>
 				<% end %>
 			</ul>
+			<ul class="main_nav_not_cat">
 				<li><%= link_to (image_tag('cart.png')), cart_url %> <%= link_to "cart (#{@cart.order_items.length})", cart_url %></li>
 				<li>
 					<input type="text" value="search" />
 					<% if logged_in? %>
-						<%= link_to 'my dashboard', dashboard_url %> &nbsp; <a href="/logout">Logout</a>
+						<%= link_to 'my dashboard', dashboard_url %> <br/> <a href="/logout">Logout</a>
 					<% else %>
 						<a href="/login">Login</a>
 						or <a href="/signup">sign up for free</a>.
@@ -20,7 +21,7 @@
 			</ul>
 		</div><!-- end .market_main_nav -->
 
-		<div class="market_subcab_nav">
+		<div class="span-24 market_subcab_nav">
 			<ul>
 				<li>all</li>
 				<li>posters</li>
@@ -33,7 +34,7 @@
 		</div><!-- end .market_subcab_nav -->
 		
 		<div class="span-24">
-			<%= link_to (image_tag 'market/logo_temp.png'), '/' %>
+			<%= link_to (image_tag 'market/felt_and_wire_masthead.png'), '/' %>
 		</div><!--end .span-24 -->
 		
 	</div><!-- end .header -->

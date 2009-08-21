@@ -23,17 +23,22 @@ h3 {
 	margin-top:9px;
 }
 
-.market_main_nav ul, .market_main_nav ul li, .market_subcab_nav ul, .market_subcab_nav ul li {
+.market_main_nav ul, .market_main_nav ul li, .market_subcab_nav ul li, .market_subcab_nav ul li {
 	display:inline-block;
 	list-style-type:none;
 	margin:0;
 }
 
-.market_main_nav ul a {
+.market_main_nav ul.categories {
+	float:left;
+}
+
+.market_main_nav ul.categories a {
 	text-decoration:none;
 	border-left:solid 1px #ccc;
 	border-top:solid 1px #ccc;
 	border-bottom:solid 1px #ccc;
+	border-right:solid 1px #ccc;
 	width:91px;
 	display:block;
 	float:left;
@@ -51,6 +56,10 @@ h3 {
 	border-color:#ff1f00;
 }
 
+.market_main_nav ul.main_nav_not_cat {
+	float:left;
+	background-color:green;
+}
 
 ul.sub_category_nav, ul.sub_category_nav li {
 	display:inline-block;
