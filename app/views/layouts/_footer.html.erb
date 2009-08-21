@@ -1,9 +1,34 @@
 <!-- public layout footer -->
 
-<div class="span-24 last">
-	<ul class="market_nav">
-		<li><%= link_to 'products', '/products', :class => (@nav_tab == 'products') ? 'selected' : '' %></li>
-		<li><%= link_to 'sellers', '/sellers', :class => (@nav_tab == 'sellers') ? 'selected' : '' %></li>
-		<li><%= link_to 'blog', '/blog_posts', :class => (@nav_tab == 'blog_posts') ? 'selected' : '' %></li>
-	</ul>
-</div>
+<div class="container footer">
+	<div class="span-12">
+		<h2>Our Designers</h2>
+		<p><%= link_to 'See a list of all featured designers.', '/sellers' %><br/>
+			<%= link_to 'Stay up to date with our designer-authored news blog.', '/blog_posts' %>
+		</p>
+		<h2>About Felt &amp; Wire Shop</h2>
+		<p><%= link_to 'Learn more about Felt &amp; Wire Shop and how to become a seller.', "#" %></p>
+	</div>
+	<div class="span-6">
+		<h3>More Felt &amp; Wire</h3>
+		<p><%= link_to 'Felt &amp; Wire Blog', "http://www.feltandwire.com/" %><br/>
+		<%= link_to 'Felt &amp; Wire Press', "#{}" %></p>
+		<h3>Contact</h3>
+		<p><%= link_to 'email press and general inquiries', "#" %><br/>
+		<%= link_to 'email support', "#" %></p>
+	</div>
+	<div class="span-6 last">
+		<h3>Updates</h3>
+		<p>Our newsletter is awesome.<br/>
+			Subscribe and get the latest news.<br/>
+			<input type="text" value="YOUR EMAIL ADDRESS" class="subscribe_input"/><input type="submit" value="subscribe"/>
+		</p>
+	</div>
+	<div class="span-24 footer_lastline">
+		<p><%= image_tag 'market/mohawk_logo_footer.png' %> 465 Saratoga Street | Cohos, NY 12047 | 1 800 the mill <%= image_tag 'market/mohawk_rss_icon.png' %> RSS Feed | Privacy Policy | Contact Mohawk Fine Papers</p>
+	</div>
+</div><!-- end container -->
+
+<%#= link_to 'products', '/products', :class => (@nav_tab == 'products') ? 'selected' : '' %>
+<%#= link_to 'sellers', '/sellers', :class => (@nav_tab == 'sellers') ? 'selected' : '' %>
+<%#= link_to 'blog', '/blog_posts', :class => (@nav_tab == 'blog_posts') ? 'selected' : '' %>
