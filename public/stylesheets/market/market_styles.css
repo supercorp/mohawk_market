@@ -239,15 +239,18 @@ h3.store_name {
 .footer p {
 	font-family:verdana;
 	font-size:11px;
+	line-height:12px;
 	color:#666158;
 }
 
 .footer h2 {
 	margin-bottom:0px;
+	margin-top:0;
+	line-height:30px;
 }
 
 .footer h3 {
-	margin-bottom:6px;
+	margin-bottom:3px;
 }
 
 .footer a {
