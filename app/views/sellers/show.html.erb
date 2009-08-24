@@ -1,3 +1,59 @@
+<div class="container">
+	<% @banner = 2 %>
+	<% if @banner == 1 %>
+	<!-- begin store banner when they have uploaded banner image -->
+	<div class="span-24 store_header">
+		<div class="ampersand_logo">
+			<%= link_to (image_tag 'market/ampersand.png'), "/" %>
+		</div>
+		<div class="store_banner_image">
+			<%= image_tag 'market/sample_store_banner.png' %>
+		</div>
+	</div>
+	<!-- end store banner when they have uploaded banner image -->
+	<% else %>
+	<!-- begin store banner when they don't have uploaded banner image -->
+	<div class="span-24 store_header">
+		<div class="ampersand_logo">
+			<%= link_to (image_tag 'market/ampersand.png'), "/" %>
+		</div>
+		<div class="store_banner_text">
+			<h2>My Store Name</h2>
+		</div>
+	</div>
+	<!-- end store banner when they don't have uploaded banner image -->
+	<% end %>
+</div>
+
+<div class="container">
+	<div class="span-12">
+		<p>If you have used our favors at your event we would LOVE for you to share your pictures so we could post them on our blog! Just email them to me at <a href="mailto:adernick@gmail.com">adernick@gmail.com</a></p>
+		<p>Proud member of Etsy Wedding Team!! http://etsyweddingteam.blogspot.com for all of your wedding resources!</p>
+		<p>Welcome to our shop. We hope you find something that you like! Little Birdie Boutique is a mother-daughter team dedicated to offering unique and stylish event favors and gifts. If you are interested in large quantity orders please allow us time to lovingly make them. All favors come completely assembled unless specified otherwise so you dont have to worry about doing any work!</p>
+		<p>Enjoy!</p>
+		<p>Ashley and Patty</p>
+	</div>
+	<div class="span-12 last">
+		<div class="seller_info_wrapper">
+			<div><p>Artist: <a href="#">Little Birdie Boutique</a>
+			Profile | Contact | News | About | Blog</p></div>
+			<div>
+			<p>Products: 114
+			Joined: 05/13/2007
+			Location: Grants Pass, OR
+			Items: Posters, Prints, Stationery > See all 
+			Featured on: apartment therapykaboodlelondon telegraphstyle hive</p>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	PRODUCT GRID
+</div>
+
+
 <div class="container profile_wrapper">
 	<div class="span-18">
 	

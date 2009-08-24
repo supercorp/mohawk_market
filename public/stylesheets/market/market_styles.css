@@ -6,6 +6,19 @@ p, ul {
 	color:#333;
 }
 
+p {
+	font-size:16px;
+}
+
+a {
+	color:#00c4c3;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight:normal;
 	color:#666158;
@@ -39,7 +52,7 @@ h3 {
 	border-top:solid 1px #ccc;
 	border-bottom:solid 1px #ccc;
 	border-right:solid 1px #ccc;
-	width:91px;
+	width:70px;
 	display:block;
 	float:left;
 	text-align:center;
@@ -51,15 +64,37 @@ h3 {
 
 .market_main_nav ul a:hover {
 	text-decoration:none;
-	color:#fff;
-	background-color:#ff1f00;
-	border-color:#ff1f00;
+	background:url(../../images/market/stripes.gif) repeat;
+	border-color:#ccc;
+}
+
+.market_main_nav ul a.selected {
+	text-decoration:none;
+	background:url(../../images/market/stripes.gif) repeat;
+	border-color:#ccc;
 }
 
 .market_main_nav ul.main_nav_not_cat {
 	float:left;
-	background-color:green;
 	width:240px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	height:50px;
+}
+
+.main_nav_not_cat .search_input {
+	width:50px;
+}
+
+.sub_category_bar {
+	background-color:#00c4c3;
+	float:left;
+	height:24px;
+}
+
+.sub_category_bar ul.sub_category_nav {
+	margin-top:4px;
 }
 
 ul.sub_category_nav, ul.sub_category_nav li {
@@ -68,24 +103,22 @@ ul.sub_category_nav, ul.sub_category_nav li {
 	margin:0;
 }
 
-ul.sub_category_nav {
-	font-size:14px;
-	font-weight:bold;
-	margin-bottom:18px;
-}
-
 ul.sub_category_nav a {
-	color:#999;
+	color:#fff;
 	padding:2px;
 	text-decoration:none;
+	font-family:verdana;
+	font-weight:normal;
+	font-size:11px;
+	text-transform:uppercase;
 }
 
 ul.sub_category_nav a:hover {
-	color:#000;
+	color:#ccc;
 }
 
 ul.sub_category_nav a.selected {
-	color:#fff;
+	color:#ccc;
 	background-color:#666;
 }
 
@@ -115,6 +148,50 @@ ul.category_nav a.selected {
 }
 
 /* @end */
+
+/* @group store */
+
+.span-24.store_header {
+	margin-bottom:18px;
+}
+
+.ampersand_logo {
+	width:100px;
+	height:100px;
+	margin-right:10px;
+	background-color:gray;
+	float:left;
+}
+
+.store_banner_image {
+	width:842px;
+	float:left;
+}
+
+.store_banner_text {
+	width:840px;
+	height:98px;
+	float:left;
+	border:1px solid #ccc;
+	background:url(../../images/market/stripes.gif) repeat;
+}
+
+.store_banner_text h2 {
+	width:100%;
+	text-align:center;
+	margin-top:24px;
+}
+
+.seller_info_wrapper {
+	width:100%;
+	height:40px;
+	border:1px solid #ccc;
+}
+
+/* @end */
+
+
+
 h1.product_name {
 	color:#333;
 	margin-bottom:6px;

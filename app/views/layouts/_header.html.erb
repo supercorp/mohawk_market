@@ -10,7 +10,7 @@
 			<ul class="main_nav_not_cat">
 				<li><%= link_to (image_tag('cart.png')), cart_url %> <%= link_to "cart (#{@cart.order_items.length})", cart_url %></li>
 				<li>
-					<input type="text" value="search" />
+					<input type="text" value="search" class="search_input"/>
 					<% if logged_in? %>
 						<%= link_to 'my dashboard', dashboard_url %> <br/> <a href="/logout">Logout</a>
 					<% else %>
@@ -21,17 +21,19 @@
 			</ul>
 		</div><!-- end .market_main_nav -->
 
-		<div class="span-24 market_subcab_nav">
-			<ul>
-				<li>all</li>
-				<li>posters</li>
-				<li>prints</li>
-				<li>decor</li>
-				<li>tabletop</li>
-				<li>custom</li>
-				<li>diy</li>
+
+		<div class="span-24 sub_category_bar">&nbsp;
+		<% if @category %>
+			<ul class="sub_category_nav">
+				<% for sub_category in @category.children %>
+					<li<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><a href="<%= home_url(:category_id => sub_category.id) %>"<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><%= sub_category.name %></a></li>
+				<% end %>
 			</ul>
-		</div><!-- end .market_subcab_nav -->
+		<% end %>
+		</div>
+		
+
+
 		
 		<div class="span-24">
 			<%= link_to (image_tag 'market/felt_and_wire_masthead.png'), '/' %>
