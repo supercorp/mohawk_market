@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Curated Commerce: Felt and Wire: <%= @page_title %></title>
+	<link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print" /> 
+	<link rel="stylesheet" href="/stylesheets/cc-master.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/stylesheets/market/market_styles.css" type="text/css" media="screen" />
+  <!--[if IE]><link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<%= javascript_include_tag 'jquery-1.3.2.min' %>
+	<%= javascript_include_tag 'application.js' %>
+	<%= javascript_include_tag 'ajax_bindings.js' %>
+	<%= javascript_include_tag 'ui_bindings.js' %>
+	<%= javascript_include_tag 'jquery.corner.js' %>
+</head>
+<body>
+	<!-- public sellers layout -->
+
+		<% unless flash[:notice].blank? %>
+		<div id="flash_notice" class="flash_notice flash_positive">
+			<%= flash[:notice] %>
+		</div>
+		<% end %>
+
+		<%= render :partial => 'layouts/header' %>
+				
+		<% if action_name != 'index' %>
+		<div class="container">
+			<% if @seller.banner.exists? %>
+			<div class="span-24 store_header">
+				<div class="ampersand_logo">
+					<%= link_to (image_tag 'market/ampersand.png'), "/" %>
+				</div>
+				<div class="store_banner_image">
+					<%= image_tag @seller.banner.url(:full_width) %><%#= image_tag 'market/sample_store_banner.png' %>
+				</div>
+			</div>
+			<% else %>
+			<div class="span-24 store_header">
+				<div class="ampersand_logo">
+					<%= link_to (image_tag 'market/ampersand.png'), "/" %>
+				</div>
+				<div class="store_banner_text">
+					<h2><%= @seller.store_name %></h2>
+				</div>
+			</div>
+			<% end %>
+		</div>
+		<% end %>
+		<% if action_name == 'show' %>
+		<div class="container">
+		<% end %>
+			<%= yield %>
+		<% if action_name == 'show' %>
+			<div class="span-12 last">
+				<div class="seller_info_wrapper">
+					<div class="seller_info_icon">
+						<%= image_tag @seller.avatar.url(:thumb_65), :class => 'avatar' %>
+					</div>
+					<div><p>Artist: <%= link_to @seller.store_name, seller_url(:id => @seller.id) %><br/>
+						<%= link_to "Home", seller_url(:id => @seller.id), :class => (@profile_section ? nil : 'selected') %> | 
+						<%= link_to "Products (#{@seller.products.active.count})", seller_url(:id => @seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %> | 
+						<%= link_to "Blog", seller_url(:id => @seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %> | 
+						<%= link_to "Notes", seller_url(:id => @seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %> | 
+						<a href="#">About</a>
+					</p>
+					<p>Products: <%= @seller.products.active.count %><br/>
+					Joined: 05/13/2007<br/>
+					Location: <%= @seller.location %><br/>
+					Items: <% for collection in @seller.collections.active %>
+						<%= link_to collection.name, seller_url(:id => @seller.id, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %>, 
+					<% end %>
+					<%= link_to 'See All', seller_url(:id => @seller.id, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %>
+					<br/>
+					Featured on: <a href="#">apartment therapy</a>, <a href="#">kaboodle</a>, <a href="#">london telegraph</a>, <a href="#">style hive</a><br/>
+					<%= @seller.store_url if @seller.subdomain%></p>
+				</div>
+			</div>
+		</div>
+
+		<% if params[:profile_section].blank? %>
+		<div class="span-24">
+			<h3>Products <%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :products) %></h3>
+			<% for product in @seller.products.active.most_recent_6 %>
+				<div class="span-6 product_panel">
+					<div class="halfpadbox">
+						<% if product.product_images.any? and product.product_images.first.image.exists? %>
+							<%= image_tag product.product_images.first.image.url(:thumb_216) %>
+						<% else %>
+							<h3><%= product.name %></h3>
+						<% end %>
+						<% for tag in product.tags %>
+						<h6><%= tag.name %></h6>
+						<% end %>
+					</div>
+				</div>
+			<% end %>
+			<hr/>
+		</div>
+
+		<div class="span-24">
+			<div class="span-12">
+				<div class="panel_header">
+					<h3>Notes
+					<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => 'notes') %></h3>
+				</div>
+				<% for note in @seller.notes.featured.published.enabled %>
+					<%= render :partial => 'sellers/note', :object => note %>
+				<% end %>
+				<p><%= link_to 'Add a note', seller_url(:id => @seller.id, :profile_section => 'notes') %>
+			</div>
+			<div class="span-12 last">
+				<h3>Blog
+					<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :blog) %></h3>
+				</h3>
+				<!-- post [begin]-->
+				<% for blog_post in @seller.blog_posts.seller.published.most_recent_3 %>
+				<div class="span-12 last post">
+					<div class="span-12 last">
+							<h3><%= link_to blog_post.title, seller_url(:id => @seller.id, :profile_section => :blog, :blog_post_id => blog_post.id) %></h3>
+							<p class="post_date">Feb 27, 2009<%= blog_post.created_at.strftime('%b %d, %Y') %><br/>
+							(<%= blog_post.comments.published.enabled.count %>)</p><!--number is the count of the number of responses-->
+					</div><!--post_header [end]-->
+				</div>
+				<% end %>
+				<!--post [end]-->
+			</div>
+		</div>
+		<% end %>
+		<% end %>
+		<%= render :partial => 'layouts/footer' %>
+		
+<% javascript_tag do %>
+	$(document).ready(function(){
+		setTimeout("$('#flash_notice').fadeOut('slow');",2000);
+	});
+<% end %>
+
+</body>
+</html>
