@@ -2,27 +2,31 @@
 	
 	<div class="header">
 		<div class="market_main_nav">
-			<ul class="categories">
-				<% for category in Category.top_level %>
-					<li<% if @category and @category == category %> class="selected"<% end %>><a href="<%= home_url(:category_id => category.id) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a></li>
-				<% end %>
-			</ul>
-			<ul class="main_nav_not_cat">
-				<li><%= link_to (image_tag('cart.png')), cart_url %> <%= link_to "cart (#{@cart.order_items.length})", cart_url %></li>
-				<li>
-					<input type="text" value="search" class="search_input"/>
-					<% if logged_in? %>
-						<%= link_to 'my dashboard', dashboard_url %> <br/> <a href="/logout">Logout</a>
-					<% else %>
-						<a href="/login">Login</a>
-						or <a href="/signup">sign up for free</a>.
-					<% end %>
-				</li>
-			</ul>
+			
+			<% for category in Category.top_level %>
+				<div class="main_category <% if @category and @category == category %> selected<% end %>"><a href="<%= home_url(:category_id => category.id) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a></div>
+			<% end %>
+			
+				<div class="main_cart">
+					<%= link_to (image_tag('cart.png')), cart_url %> <%= link_to "Cart (#{@cart.order_items.length})", cart_url %>
+				</div>
+				<div class="main_search_account_wrapper">
+					<div class="main_search">
+						<input type="text" value="SEARCH" class="search_input"/>
+					</div>
+					<div class="main_account">
+						<% if logged_in? %>
+							<%= link_to 'My Dashboard', dashboard_url %> <br/> <a href="/logout">Logout</a>
+						<% else %>
+							<a href="/login">Login</a>
+							or <a href="/signup">sign up for free</a>.
+						<% end %>
+					</div>
+				</div><!-- end .main_search_account_wrapper -->
 		</div><!-- end .market_main_nav -->
 
 
-		<div class="span-24 sub_category_bar">&nbsp;
+		<div class="sub_category_bar">
 		<% if @category %>
 			<ul class="sub_category_nav">
 				<% for sub_category in @category.children %>
@@ -36,7 +40,7 @@
 
 		
 		<div class="span-24">
-			<%= link_to (image_tag 'market/felt_and_wire_masthead.png'), '/' %>
+			<%#= link_to (image_tag 'market/felt_and_wire_masthead.png'), '/' %>
 		</div><!--end .span-24 -->
 		
 	</div><!-- end .header -->
