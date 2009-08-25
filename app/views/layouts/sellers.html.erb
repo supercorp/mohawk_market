@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- eric's comment -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
@@ -28,6 +27,7 @@
 		<% end %>
 
 		<%= render :partial => 'layouts/header' %>
+		
 		<% if action_name != 'index' %>
 		<div class="container">
 			<div class="profile_header">
@@ -41,7 +41,9 @@
 			
 			<div class="container">
 		<% end %>
-				<%= yield %>
+		
+		<%= yield %>
+		
 		<% if action_name != 'index' %>
 				<div class="span-12 last">
 					<div class="seller_info_wrapper">
