@@ -28,9 +28,9 @@
 
 		<%= render :partial => 'layouts/header' %>
 		
-		<% if action_name != 'index' %>
-		<div class="container">
-			
+		<div class="container profile_wrapper">
+		
+		<% if action_name != 'index' %>	
 			<% if @seller.banner.exists? %>
 			   <div class="span-24 store_header">
 			     <div class="ampersand_logo">
@@ -39,52 +39,55 @@
 			     <div class="store_banner_image">
 					<%= image_tag @seller.banner.url(:full_width) %><%#= image_tag 'market/sample_store_banner.png' %>
 			     </div>
-			   </div>
+			   </div><!-- end .store_header -->
 			<% else %>
 			   <div class="span-24 store_header">
 			     <div class="ampersand_logo">
 			       <%= link_to (image_tag 'market/ampersand.png'), "/" %>
-				 </div>
-				 <div class="store_banner_text">
+					 </div>
+					 <div class="store_banner_text">
 			       <h2><%= @seller.store_name %></h2>
 			     </div>
-			   </div>
-			<% end %>
-			
-			
-			<div class="container">
+			   </div><!-- end .store_header -->
+			<% end %>	
 		<% end %>
 		
+		<div class="span-18">
 		<%= yield %>
+		</div>
 		
 		<% if action_name != 'index' %>
-				<div class="span-12 last">
+				<div class="span-6 last">
 					<div class="seller_info_wrapper">
 						<div class="seller_info_icon">
 							<%= image_tag @seller.avatar.url(:thumb_65), :class => 'avatar' %>
 						</div>
-						<div><p>Artist: <%= link_to @seller.store_name, seller_url(:id => @seller.id) %><br/>
+						<div>
+							<p>Artist: <%= link_to @seller.store_name, seller_url(:id => @seller.id) %><br/>
 							<%= link_to "Home", seller_url(:id => @seller.id), :class => (@profile_section ? nil : 'selected') %> | 
 							<%= link_to "Products (#{@seller.products.active.count})", seller_url(:id => @seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %> | 
 							<%= link_to "Blog", seller_url(:id => @seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %> | 
 							<%= link_to "Notes", seller_url(:id => @seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %> | 
 							<%= link_to "About", seller_url(:id => @seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %>
-						</p>
-						<p>Products: <%= @seller.products.active.count %><br/>
+							</p>
+							<p>Products: <%= @seller.products.active.count %><br/>
 						Joined: 05/13/2007<br/>
 						Location: <%= @seller.location %><br/>
 						Items: <% for collection in @seller.collections.active %>
 							<%= link_to collection.name, seller_url(:id => @seller.id, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %>, 
 						<% end %>
 						<%= link_to 'See All', seller_url(:id => @seller.id, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %>
-						<br/>
+							<br/>
 						Featured on: <a href="#">apartment therapy</a>, <a href="#">kaboodle</a>, <a href="#">london telegraph</a>, <a href="#">style hive</a><br/>
-						<%= @seller.store_url if @seller.subdomain%></p>
-					</div>
-				</div>
-			</div>
+						<%#= @seller.store_url if @seller.subdomain%>
+							</p>
+						</div>
+					</div><!-- end .seller_info_wrapper -->
+				</div><!-- end .span-6 -->
+		<% end %>
+		
 		</div><!-- end .container -->
-			<% end %>
+		
 		<%= render :partial => 'layouts/footer' %>
 		
 <% javascript_tag do %>
