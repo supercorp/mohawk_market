@@ -1,8 +1,0 @@
-	<div class="profile_header">
-		<% if @seller.banner.exists? %>
-			<%= image_tag @seller.banner.url(:full_width) %>
-		<% else %>
-			<h1><%= @seller.store_name %></h1>
-		<% end %>
-		<p><%= @seller.store_url if @seller.subdomain%></p>
-	</div>
