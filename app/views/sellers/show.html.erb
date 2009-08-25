@@ -1,4 +1,26 @@
 <div class="container">
+	<% if @seller.banner.exists? %>
+	<div class="span-24 store_header">
+		<div class="ampersand_logo">
+			<%= link_to (image_tag 'market/ampersand.png'), "/" %>
+		</div>
+		<div class="store_banner_image">
+			<%= image_tag @seller.banner.url(:full_width) %><%#= image_tag 'market/sample_store_banner.png' %>
+		</div>
+	</div>
+	<% else %>
+	<div class="span-24 store_header">
+		<div class="ampersand_logo">
+			<%= link_to (image_tag 'market/ampersand.png'), "/" %>
+		</div>
+		<div class="store_banner_text">
+			<h2><%= @seller.store_name %></h2>
+		</div>
+	</div>
+	<% end %>
+</div>
+
+<div class="container">
 	<div class="span-12">
 		<p>If you have used our favors at your event we would LOVE for you to share your pictures so we could post them on our blog! Just email them to me at <a href="mailto:adernick@gmail.com">adernick@gmail.com</a>.</p>
 		<p>Proud member of Etsy Wedding Team!! http://etsyweddingteam.blogspot.com for all of your wedding resources!</p>
