@@ -30,14 +30,27 @@
 		
 		<% if action_name != 'index' %>
 		<div class="container">
-			<div class="profile_header">
-				<% if @seller.banner.exists? %>
-					<%= image_tag @seller.banner.url(:full_width) %>
-				<% else %>
-					<h1><%= @seller.store_name %></h1>
-				<% end %>
-				<p><%= @seller.store_url if @seller.subdomain%></p>
-			</div>
+			
+			<% if @seller.banner.exists? %>
+			   <div class="span-24 store_header">
+			     <div class="ampersand_logo">
+			       <%= link_to (image_tag 'market/ampersand.png'), "/" %>
+			     </div>
+			     <div class="store_banner_image">
+					<%= image_tag @seller.banner.url(:full_width) %><%#= image_tag 'market/sample_store_banner.png' %>
+			     </div>
+			   </div>
+			<% else %>
+			   <div class="span-24 store_header">
+			     <div class="ampersand_logo">
+			       <%= link_to (image_tag 'market/ampersand.png'), "/" %>
+				 </div>
+				 <div class="store_banner_text">
+			       <h2><%= @seller.store_name %></h2>
+			     </div>
+			   </div>
+			<% end %>
+			
 			
 			<div class="container">
 		<% end %>
