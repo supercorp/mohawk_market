@@ -55,7 +55,7 @@
 							<%= link_to "Products (#{@seller.products.active.count})", seller_url(:id => @seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %> | 
 							<%= link_to "Blog", seller_url(:id => @seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %> | 
 							<%= link_to "Notes", seller_url(:id => @seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %> | 
-							<a href="#">About</a>
+							<%= link_to "About", seller_url(:id => @seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %>
 						</p>
 						<p>Products: <%= @seller.products.active.count %><br/>
 						Joined: 05/13/2007<br/>
@@ -70,57 +70,8 @@
 					</div>
 				</div>
 			</div>
-			<% end %>
-			<% if action_name != 'index' and params[:profile_section].blank? ### This will only display if we are on the seller 'home' (aka show) view. %>
-			<div class="span-24">
-				<h3>Products <%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :products) %></h3>
-				<% for product in @seller.products.active.most_recent_6 %>
-					<div class="span-6 product_panel">
-						<div class="halfpadbox">
-							<% if product.product_images.any? and product.product_images.first.image.exists? %>
-								<%= image_tag product.product_images.first.image.url(:thumb_216) %>
-							<% else %>
-								<h3><%= product.name %></h3>
-							<% end %>
-							<% for tag in product.tags %>
-							<h6><%= tag.name %></h6>
-							<% end %>
-						</div>
-					</div>
-				<% end %>
-				<hr/>
-			</div>
-
-			<div class="span-24">
-				<div class="span-12">
-					<div class="panel_header">
-						<h3>Notes
-						<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => 'notes') %></h3>
-					</div>
-					<% for note in @seller.notes.featured.published.enabled %>
-						<%= render :partial => 'sellers/note', :object => note %>
-					<% end %>
-					<p><%= link_to 'Add a note', seller_url(:id => @seller.id, :profile_section => 'notes') %>
-				</div>
-				<div class="span-12 last">
-					<h3>Blog
-						<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :blog) %></h3>
-					</h3>
-					<!-- post [begin]-->
-					<% for blog_post in @seller.blog_posts.seller.published.most_recent_3 %>
-					<div class="span-12 last post">
-						<div class="span-12 last">
-								<h3><%= link_to blog_post.title, seller_url(:id => @seller.id, :profile_section => :blog, :blog_post_id => blog_post.id) %></h3>
-								<p class="post_date">Feb 27, 2009<%= blog_post.created_at.strftime('%b %d, %Y') %><br/>
-								(<%= blog_post.comments.published.enabled.count %>)</p><!--number is the count of the number of responses-->
-						</div><!--post_header [end]-->
-					</div>
-					<% end %>
-					<!--post [end]-->
-				</div>
-			</div>
 		</div><!-- end .container -->
-		<% end %>
+			<% end %>
 		<%= render :partial => 'layouts/footer' %>
 		
 <% javascript_tag do %>
