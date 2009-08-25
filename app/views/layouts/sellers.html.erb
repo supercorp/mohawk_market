@@ -21,13 +21,13 @@
 <body>
 	<!-- public sellers layout -->
 
-		<% unless flash[:notice].blank? %>
-		<div id="flash_notice" class="flash_notice flash_positive">
-			<%= flash[:notice] %>
-		</div>
-		<% end %>
+	<% unless flash[:notice].blank? %>
+	<div id="flash_notice" class="flash_notice flash_positive">
+		<%= flash[:notice] %>
+	</div>
+	<% end %>
 
-		<%= render :partial => 'layouts/header' %>
+	<%= render :partial => 'layouts/header' %>
 				
 		<% if action_name != 'index' %>
 		<div class="container">
@@ -52,6 +52,7 @@
 			<% end %>
 		</div>
 		<% end %>
+		
 		<% if action_name == 'show' %>
 		<div class="container">
 		<% end %>
@@ -123,7 +124,7 @@
 				<div class="span-12 last post">
 					<div class="span-12 last">
 							<h3><%= link_to blog_post.title, seller_url(:id => @seller.id, :profile_section => :blog, :blog_post_id => blog_post.id) %></h3>
-							<p class="post_date">Feb 27, 2009<%= blog_post.created_at.strftime('%b %d, %Y') %><br/>
+							<p class="post_date"><%= blog_post.created_at.strftime('%b %d, %Y') %><br/>
 							(<%= blog_post.comments.published.enabled.count %>)</p><!--number is the count of the number of responses-->
 					</div><!--post_header [end]-->
 				</div>
@@ -133,7 +134,8 @@
 		</div>
 		<% end %>
 		<% end %>
-		<%= render :partial => 'layouts/footer' %>
+		
+	<%= render :partial => 'layouts/footer' %>
 		
 <% javascript_tag do %>
 	$(document).ready(function(){
