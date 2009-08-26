@@ -293,7 +293,9 @@ ul.sub_category_nav a.selected {
 	margin-top:6px;
 }
 
-
+.product_panel h4.product_panel_product_name a {
+	color:#666;
+}
 
 /* @end */
 /* @group sidebar */
