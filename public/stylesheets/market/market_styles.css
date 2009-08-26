@@ -44,7 +44,7 @@ h3 {
 	border-left:solid 1px #ccc;
 	border-top:solid 1px #ccc;
 	border-bottom:solid 1px #ccc;
-	width:70px;
+	width:74px;
 	display:block;
 	float:left;
 	text-align:center;
@@ -110,7 +110,7 @@ h3 {
 }
 
 .main_account {
-	width:114px;
+	width:90px;
 	text-align:left;
 	color:#666;
 	font-family:verdana;
