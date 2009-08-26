@@ -31,7 +31,7 @@
 		<div class="sub_category_bar">
 		<% if @category %>
 			<ul class="sub_category_nav">
-				<li><a href="<%= home_url(:category_id => @category.id ) %>"<% if @category %> class="selected"<% end %>>all</a></li>
+				<li><a href="<%= home_url(:category_id => @category.id ) %>"<% unless @sub_category %> class="selected"<% end %>>all</a></li>
 				<% for sub_category in @category.children %>
 					<li<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><a href="<%= home_url(:category_id => sub_category.id) %>"<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><%= sub_category.name %></a></li>
 				<% end %>
