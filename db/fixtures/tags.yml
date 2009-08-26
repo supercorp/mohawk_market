@@ -1,0 +1,16 @@
+tags_001: 
+  name: card
+  id: 1
+  vectors: 
+tags_002: 
+  name: cut
+  id: 2
+  vectors: 
+tags_003: 
+  name: strathmore
+  id: 3
+  vectors: 
+tags_004: 
+  name: birds
+  id: 4
+  vectors: "'bird':1A"

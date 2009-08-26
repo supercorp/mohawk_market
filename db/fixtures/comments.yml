@@ -1,0 +1,32 @@
+comments_001: 
+  commentable_type: BlogPost
+  image_file_size: 
+  updated_at: 2009-08-26 21:39:42.153035 Z
+  body: Thanks so much for all of the wonderful feedback!
+  published: true
+  image_content_type: 
+  video_url: 
+  commentable_id: 1
+  id: 1
+  commentable_target_type: 
+  disabled: false
+  user_id: 2
+  image_updated_at: 
+  created_at: 2009-08-26 21:39:39.703871 Z
+  image_file_name: 
+comments_002: 
+  commentable_type: BlogPost
+  image_file_size: 36757
+  updated_at: 2009-08-26 21:40:34.809574 Z
+  body: Here's a detail of the two waves card.
+  published: true
+  image_content_type: image/jpeg
+  video_url: 
+  commentable_id: 1
+  id: 2
+  commentable_target_type: 
+  disabled: false
+  user_id: 2
+  image_updated_at: 2009-08-26 21:40:31.999420 Z
+  created_at: 2009-08-26 21:40:32.288024 Z
+  image_file_name: twowavesdetail.jpg

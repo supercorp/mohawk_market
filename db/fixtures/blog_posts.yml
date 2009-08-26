@@ -1,0 +1,20 @@
+blog_posts_001: 
+  updated_at: 2009-08-26 21:42:18.527186 Z
+  title: Welcome to Felt & Wire Shop
+  published: true
+  id: 2
+  vectors: "'re':61B 've':7B 'new':56B 'busi':12B 'card':89B 'come':21B 'deni':83B 'even':75B 'felt':3A,64B 'good':36B 'know':23B 'list':43B 'make':46B 'shop':5A,58B 'sure':47B 'wait':93B 'wire':4A,65B 'year':19B 'addit':53B 'check':49B 'crazi':25B 'curat':57B 'excus':81B 'paper':11B,35B 'peopl':27B 'press':66B 'print':71B 'updat':40B 'beauti':86B 'demand':70B 'expand':73B 'experi':59B 'person':87B 'servic':72B 'talent':26B 'welcom':1A 'favorit':34B 'grandma':84B 'possibl':74B 'present':30B 'product':42B 'regular':51B 'birthday':88B 'constant':44B 'introduc':63B 'simultan':62B 'on-demand':68B"
+  user_type: Curator
+  user_id: 2
+  blog_category_id: 1
+  created_at: 2009-08-26 21:41:56.522840 Z
+blog_posts_002: 
+  updated_at: 2009-08-26 21:46:00.198193 Z
+  title: Lots of New Journals
+  published: true
+  id: 3
+  vectors: "'lot':1A 'new':3A 'use':10B 'look':5B 'paula':8B 'scher':9B 'journal':4A 'notebook':12B"
+  user_type: Curator
+  user_id: 2
+  blog_category_id: 1
+  created_at: 2009-08-26 21:44:38.820629 Z
