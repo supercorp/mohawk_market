@@ -291,10 +291,19 @@ ul.sub_category_nav a.selected {
 .product_panel h4.product_panel_product_name {
 	font-size:16px;
 	margin-top:6px;
+	margin-bottom:0;
+	margin-left:12px;
 }
 
 .product_panel h4.product_panel_product_name a {
 	color:#666;
+}
+
+.product_panel h6.product_panel_seller_name {
+	font-size:16px;
+	font-style:italic;
+	margin-left:12px;
+	color:#52cbba;
 }
 
 /* @end */
