@@ -1,38 +1,4 @@
-users_008: 
-  avatar_updated_at: 
-  name: Ryan
-  salt: f6867b6fb6ee370c6f17c5800f0c5622b82ddb9a
-  activated_at: 2009-02-02 21:36:27.957863 Z
-  avatar_file_name: 
-  avatar_file_size: 
-  banner_content_type: 
-  store_description: 
-  updated_at: 2009-02-18 21:50:24.948037 Z
-  billing_date: 2009-01-30 00:12:03.287457 Z
-  account_active: true
-  crypted_password: 83923754635511ef53bb94c0bb368ae44cb26dd7
-  store_name: 
-  banner_updated_at: 
-  shopper_welcome: true
-  activation_code: 
-  remember_token_expires_at: 
-  subdomain: 
-  type: Curator
-  application_status: 
-  banner_file_name: 
-  id: 7
-  avatar_content_type: 
-  seller_active: true
-  seller_welcome: true
-  curator_welcome: true
-  remember_token: 
-  application_requested: 
-  login: ryan
-  banner_file_size: 
-  created_at: 2009-02-02 21:25:03.624965 Z
-  email: ryandeussing@gmail.com
-  location: Brooklyn, NY
-users_010: 
+users_004: 
   avatar_updated_at: 
   name: Eric Draut
   salt: 9b0744bfe3fc1a4e103d5201281f43318262da7c
@@ -42,7 +8,6 @@ users_010:
   banner_content_type: 
   store_description: 
   updated_at: 2009-01-30 00:12:03.287457 Z
-  billing_date: 2009-01-30 00:12:03.287457 Z
   account_active: true
   crypted_password: 3987d4ffd8365e1d44fcb1744b8761459fd1f760
   store_name: Eric's Widgets
@@ -55,85 +20,59 @@ users_010:
   application_status: 
   banner_file_name: 
   id: 1
+  vectors: 
   avatar_content_type: 
   seller_active: true
   seller_welcome: true
+  billing_date: 2009-01-30 00:12:03.287457 Z
   curator_welcome: true
+  guest_curator_welcome: true
   remember_token: 
   application_requested: 
   login: edraut
+  paypal_email: 
   banner_file_size: 
   created_at: 2009-01-28 17:25:13.796698 Z
   email: edraut@gmail.com
   location: Portland, ME
-users_009: 
-  avatar_updated_at: 
-  name: Store Application
-  salt: 
-  activated_at: 
-  avatar_file_name: 
-  avatar_file_size: 
-  banner_content_type: 
-  store_description: 
-  updated_at: 2009-04-06 16:18:01.428756 Z
-  account_active: false
-  crypted_password: 
-  store_name: 
-  banner_updated_at: 
-  shopper_welcome: true
-  activation_code: dc203f87f32deed589690b78a4054f2fc14e2390
-  remember_token_expires_at: 
-  subdomain: 
-  type: 
-  application_status: 
-  banner_file_name: 
-  id: 11
-  avatar_content_type: 
-  seller_active: false
-  seller_welcome: true
-  curator_welcome: true
-  remember_token: 
-  application_requested: 
-  login: applications
-  banner_file_size: 
-  created_at: 2009-04-06 16:18:01.428756 Z
-  email: do-not-reply@wearesupercorp.com
-  location: ""
-users_001: 
-  avatar_updated_at: 
-  name: Randy Hunt
+users_005: 
+  avatar_updated_at: 2009-08-26 21:13:26.078374 Z
+  name: Randy's Display Name
   salt: 97cd5c97034b51f40416ee487490fe22eeff1902
   activated_at: 2009-01-28 17:48:44.361278 Z
-  avatar_file_name: 
-  avatar_file_size: 
-  banner_content_type: 
-  store_description: 
-  updated_at: 2009-06-25 20:05:11.391960 Z
-  billing_date: 2009-01-30 00:12:03.287457 Z
+  avatar_file_name: Picture_1.png
+  avatar_file_size: 20399
+  banner_content_type: image/png
+  store_description: If you have used our favors at your event we would LOVE for you to share your pictures so we could post them on our blog! Just email them to me at adernick@gmail.com Proud member of Etsy Wedding Team!! http://etsyweddingteam.blogspot.com for all of your wedding resources! Welcome to our shop. We hope you find something that you like! Little Birdie Boutique is a mother-daughter team dedicated to offering unique and stylish event favors and gifts. If you are interested in large quantity orders please allow us time to lovingly make them. All favors come completely assembled unless specified otherwise so you dont have to worry about doing any work! Enjoy! Ashley and Patty
+  updated_at: 2009-08-26 22:02:07.260600 Z
   account_active: true
   crypted_password: 472e4b78791cf11f2840c90372bfd8ddbcb37f13
-  store_name: Randy's Store
-  banner_updated_at: 
+  store_name: Randy's Store Name
+  banner_updated_at: 2009-08-26 19:43:28.365907 Z
   shopper_welcome: true
   activation_code: 
   remember_token_expires_at: 
   subdomain: randy
   type: Curator
   application_status: 
-  banner_file_name: 
+  banner_file_name: sample_store_banner_new.png
   id: 2
-  avatar_content_type: 
+  vectors: "'us':92A 'use':8A 'wed':42A,49A 'blog':30A 'come':100A 'dont':108A 'etsi':41A 'find':58A 'gift':81A 'hope':56A 'larg':87A 'like':62A 'love':16A,95A 'make':96A 'name':4A 'post':26A 'shop':54A 'team':43A,71A 'time':93A 'work':115A 'allow':91A 'birdi':64A 'could':25A 'dedic':72A 'email':32A 'enjoy':116A 'event':13A,78A 'favor':10A,79A,99A 'littl':63A 'offer':74A 'order':89A 'patti':119A 'pleas':90A 'proud':38A 'randi':1A 'share':20A 'store':3A 'uniqu':75A 'worri':111A 'would':15A 'ashley':117A 'member':39A 'mother':69A 'pictur':22A 'someth':59A 'unless':103A 'welcom':51A 'assembl':102A 'boutiqu':65A 'complet':101A 'resourc':50A 'specifi':104A 'stylish':77A 'daughter':70A 'interest':85A 'otherwis':105A 'quantiti':88A 'mother-daught':68A 'adernick@gmail.com':37A 'etsyweddingteam.blogspot.com':44A"
+  avatar_content_type: image/png
   seller_active: true
   seller_welcome: true
+  billing_date: 2009-01-30 00:12:03.287457 Z
   curator_welcome: true
+  guest_curator_welcome: true
   remember_token: 
-  application_requested: 
+  application_requested: false
   login: superrandy
-  banner_file_size: 
+  paypal_email: sales@citizenscholar.com
+  banner_file_size: 34084
   created_at: 2009-01-28 17:47:56.925944 Z
   email: randy@wearesupercorp.com
-  location: ""
-users_002: 
+  location: Brooklyn, NY
+users_001: 
   avatar_updated_at: 
   name: Example User
   salt: c68ad1fde9be979783fc8e28b63873fece7acd27
@@ -155,14 +94,92 @@ users_002:
   application_status: 
   banner_file_name: 
   id: 3
+  vectors: 
   avatar_content_type: 
   seller_active: 
   seller_welcome: true
+  billing_date: 
   curator_welcome: true
+  guest_curator_welcome: true
   remember_token: 
   application_requested: 
   login: superguest
+  paypal_email: 
   banner_file_size: 
   created_at: 2009-01-30 21:05:09.177308 Z
   email: guest@wearesupercorp.com
+  location: ""
+users_002: 
+  avatar_updated_at: 
+  name: Ryan
+  salt: f6867b6fb6ee370c6f17c5800f0c5622b82ddb9a
+  activated_at: 2009-02-02 21:36:27.957863 Z
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-02-18 21:50:24.948037 Z
+  account_active: true
+  crypted_password: 83923754635511ef53bb94c0bb368ae44cb26dd7
+  store_name: 
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: 
+  remember_token_expires_at: 
+  subdomain: 
+  type: Curator
+  application_status: 
+  banner_file_name: 
+  id: 7
+  vectors: 
+  avatar_content_type: 
+  seller_active: true
+  seller_welcome: true
+  billing_date: 2009-01-30 00:12:03.287457 Z
+  curator_welcome: true
+  guest_curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: ryan
+  paypal_email: 
+  banner_file_size: 
+  created_at: 2009-02-02 21:25:03.624965 Z
+  email: ryandeussing@gmail.com
+  location: Brooklyn, NY
+users_003: 
+  avatar_updated_at: 
+  name: Store Application
+  salt: 
+  activated_at: 
+  avatar_file_name: 
+  avatar_file_size: 
+  banner_content_type: 
+  store_description: 
+  updated_at: 2009-04-06 16:18:01.428756 Z
+  account_active: false
+  crypted_password: 
+  store_name: 
+  banner_updated_at: 
+  shopper_welcome: true
+  activation_code: dc203f87f32deed589690b78a4054f2fc14e2390
+  remember_token_expires_at: 
+  subdomain: 
+  type: 
+  application_status: 
+  banner_file_name: 
+  id: 11
+  vectors: 
+  avatar_content_type: 
+  seller_active: false
+  seller_welcome: true
+  billing_date: 
+  curator_welcome: true
+  guest_curator_welcome: true
+  remember_token: 
+  application_requested: 
+  login: applications
+  paypal_email: 
+  banner_file_size: 
+  created_at: 2009-04-06 16:18:01.428756 Z
+  email: do-not-reply@wearesupercorp.com
   location: ""

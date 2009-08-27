@@ -1,0 +1,19 @@
+messages_001: 
+  order_id: 
+  updated_at: 2009-08-26 21:03:16.007673 Z
+  body: 
+  sent: false
+  unread: true
+  id: 1
+  parent_uuid: 
+  recipient_id: 11
+  subject: 
+  uuid: 
+  archived: false
+  boxholder_id: 2
+  replied: false
+  store_application: false
+  author_id: 
+  parent_id: 
+  sender_id: 2
+  created_at: 2009-08-26 21:03:16.007673 Z
