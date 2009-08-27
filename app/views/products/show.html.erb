@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container product_wrapper">
 
 	<div class="span-12">
 		<% if @product.product_images.any? %>
@@ -23,14 +23,16 @@
 	</div><!-- end .span-12 -->
 	<div class="span-12 last">
 		<h1 class="product_name"><%= @product.name %></h1>
-		<!-- CURATOR SPECIED TAGS TO GO HERE -->
+		<!-- CURATOR SPECIFIED TAGS or COLLECTION BANNERS TO GO HERE -->
 		
 		<div class="product_about"><%= RedCloth.new(@product.description).to_html %></div>
 		
 		<div class="span-12 last product_commerce">
 				<% if @product.product_options.length > 1 %>
-					<%= select_tag 'product_option_id', options_for_select(@product.product_options.map{|po| [po.name,po.id]},@product.product_options.first.id) %><br/>
-					<span id="price_display" class="price"></span>
+					<%= select_tag 'product_option_id', options_for_select(@product.product_options.map{|po| [po.name,po.id]},@product.product_options.first.id), :class => 'product_option_select' %><br/>
+					<div class="span-6">
+						<span id="price_display" class="price"></span>
+					</div><!-- end .span-6 -->
 					<% javascript_tag do %>
 						$(document).ready(function(){
 							<% for option in @product.product_options %>
@@ -44,102 +46,94 @@
 						});
 					<% end %>
 				<% else %>
-					<span id="price_display" class="price"><%= @product.product_options.first.price.format %></span>
+					<div class="span-6">
+						<span id="price_display" class="price"><%= @product.product_options.first.price.format %></span>
+					</div><!-- end .span-6 -->
 				<% end %>
-				
-				 <br/>
+				<div class="span-6 last">
+
 				<% form_tag update_cart_url, :method => :put do -%>
 					<%= hidden_field_tag 'product_option_id', @product.product_options.first.id, :id => 'product_option_id_field' %>
-					<%= image_submit_tag 'addToCartN.png' %>
+					<%#= image_submit_tag 'market/add_to_cart.png' %>
+					<%= image_submit_tag("market/add_to_cart.png", :'data-binding' => "image_state_normal", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_hover.png", :'data-binding' => "image_state_hover", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_active.png", :'data-binding' => "image_state_active", :'data-group' => "add_to_cart") %>
+				</div><!-- end .span-6 -->
+					
 				<% end %>
 		</div><!-- end .product_commerce -->
 		
+		<div class="span-12 last product_shipping_destinations">
+			<h6>Ships To:</h6>
+			<p>
+				list of shipping destinations
+			</p>
+		</div><!-- end .product_shipping_destinations -->
+		
+		<% unless @product.shipping_note.blank? %>
+		<div class="span-12 last product_shipping_note">
+		<h6>Shipping Note:</h6>
+			<p>
+				<%= @product.shipping_note %>
+			</p>
+		</div><!-- end .product_shipping_note -->
+		<% end %>
+		
+		<div class="span-12 last">
+			<div class="seller_info_wrapper">
+				<div class="seller_info_icon">
+					<%= image_tag @product.seller.avatar.url(:thumb_65), :class => 'avatar' %>
+				</div>
+				<div>
+					<p>Artist: <%= link_to @product.seller.store_name, seller_url(:id => @product.seller.id) %><br/>
+					<%= link_to "Home", seller_url(:id => @product.seller.id), :class => (@profile_section ? nil : 'selected') %> | 
+					<%= link_to "Products (#{@product.seller.products.active.count})", seller_url(:id => @product.seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %> | 
+					<%= link_to "Blog", seller_url(:id => @product.seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %> | 
+					<%= link_to "Notes", seller_url(:id => @product.seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %> | 
+					<%= link_to "About", seller_url(:id => @product.seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %>
+					</p>
+					<p>Products: <%= @product.seller.products.active.count %><br/>
+				Joined: 05/13/2007<br/>
+				Location: <%= @product.seller.location %><br/>
+				Items: <% for collection in @product.seller.collections.active %>
+					<%= link_to collection.name, seller_url(:id => @product.seller.id, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %>, 
+				<% end %>
+				<%= link_to 'See All', seller_url(:id => @product.seller.id, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %>
+					</p>
+					<div class="product_tags">
+						<h3>Tags</h3>
+						<p><%= @product.tags.map{|tag| tag.name}.join(' ') if @product.tags.any?%></p>
+					</div>
+				</div>
+			</div><!-- end .seller_info_wrapper -->
+		</div><!-- end .span-12 -->
+		
+		<div class="span-12 last">
+			<p class="bottom"><%= link_to "Ask", new_manage_message_url(:message => {:recipient_id => @product.seller.id}) %> <%= @product.seller.store_name%> a question.</p>
+		</div>
 		
 	</div><!-- end .span-12 -->
 	
-	<hr/>
-	
-	<!-- begin older reference MU -->
-	<div class="span-18">
-		
-		<div class="span-18 last panel_group">
-			<div class="span-6 last">
-
-				<div class="span-6 last shiping_note">
-					<h6>Ships To</h6>
-					<p>
-						list of shipping destinations
-					</p>
-					<% unless @product.shipping_note.blank? %>
-					<h6>Shipping Note</h6>
-						<p>
-							<%= @product.shipping_note %>
-						</p>
+	<div class="container product_comments">
+		<div class="span-18">
+			<div class="span-18 last panel_group">
+				<div class="span-15 last panel">
+					<h3>Comments</h3>
+				</div>
+				<div id="comment_list" class="span-15 last">
+					<% for comment in @product.comments.published.enabled %>
+						<%= render :partial => 'manage/comments/show', :object => comment %>
 					<% end %>
 				</div>
-			</div>
-		</div>
-		<div class="span-18 last panel_group">
-			<div class="span-12 panel">
-				<h3>About</h3>
-				<%= RedCloth.new(@product.description).to_html %>
-			</div>
-		
-			<div class="span-6 last panel">
-				<h3>Tags</h3>
-				<%= @product.tags.map{|tag| tag.name}.join(' ') if @product.tags.any?%>
-			</div>
-		</div>
-		<div class="span-18 last panel_group">
-			<div class="span-15 last panel">
-				<h3>Comments</h3>
-			</div>
-			<div id="comment_list" class="span-15 last">
-				<% for comment in @product.comments.published.enabled %>
-					<%= render :partial => 'manage/comments/show', :object => comment %>
+				<% if logged_in? %>
+					<div id="comment_new" class="span-15 last comments_wrapper">
+						<%= render :partial => "manage/comments/new", :object => Comment.new(:commentable_id => @product.id, :commentable_type => 'Product') %>
+					</div>
+				<% else %>
+					<div class="span-15 last">
+						<%= render :partial => 'comments/new', :locals => {:commentable => @product} %>
+					</div>
 				<% end %>
 			</div>
-			<% if logged_in? %>
-				<div id="comment_new" class="span-15 last comments_wrapper">
-					<%= render :partial => "manage/comments/new", :object => Comment.new(:commentable_id => @product.id, :commentable_type => 'Product') %>
-				</div>
-			<% else %>
-				<div class="span-15 last">
-					<%= render :partial => 'comments/new', :locals => {:commentable => @product} %>
-				</div>
-			<% end %>
 		</div>
-	</div>
-
-	<div class="span-6 last sidebar">
-		<div class="halfpadbox">
-			<div class="sidebar_panel">
-				<h4>Seller info</h4>
-				<ul>
-				  <li>products (<%= @product.seller.products.count %>)</li>
-				  <li><%= link_to 'profile', seller_url(:id => @product.user_id) %></li>
-				  <li>blog</li>
-				</ul>
-				<p><%= @product.seller.subdomain %>.makersmarket.com</p>
-				<h4><%= @product.seller.store_name %></h4><!-- store name -->
-				<h6><%= @product.seller.name %></h6><!-- personal name-->
-				<p class="bottom"><%= @product.seller.location %></p><!-- location -->
-			</div>
-			<div class="sidebar_panel">
-				<h4>Browse by collection</h4>
-				<ul class="bottom">
-					<% for collection in @product.seller.collections %>
-						<li>
-							<%= link_to collection.name, products_url(:collection_id => collection.id) %>
-						</li>
-					<% end %>
-				</ul>
-			</div>
-			<div class="sidebar_panel bottom">
-				<h4>Have a question?</h4>
-				<p class="bottom"><%= link_to "Send #{@product.seller.store_name} a message", new_manage_message_url(:message => {:recipient_id => @product.seller.id}) %></p>
-			</div>
-		</div>
-	</div>
+	</div><!--end .span-24 -->
 
 </div><!-- end .container -->
