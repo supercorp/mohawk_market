@@ -4,7 +4,8 @@
 		<div class="span-6 product_panel">
 			<div class="halfpadbox">
 				<% if product.product_images.any? and product.product_images.first.image.exists? %>
-					<%= image_tag product.product_images.first.image.url(:thumb_216) %>
+					<%= link_to image_tag(product.product_images.first.image.url(:thumb_216)), product_url(product), :class => 'product' %>						
+					<h4 class="product_panel_product_name"><%= link_to product.name, product_url(product) %></h4>
 				<% else %>
 					<h3><%= product.name %></h3>
 				<% end %>
