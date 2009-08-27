@@ -256,6 +256,11 @@ ul.sub_category_nav a.selected {
 /* @end */
 
 /* @group product */
+.product_wrapper {
+	margin-top:18px;
+	margin-bottom:24px;
+}
+
 h1.product_name {
 	font-size:28px;
 	color:#52cbba;
@@ -264,10 +269,39 @@ h1.product_name {
 
 .product_commerce {
 	border-top:1px solid #ccc;
+	padding-top:24px;
 }
 
 .product_commerce .price {
 	font-size:28px;
+}
+
+.product_shipping_destinations h6, .product_shipping_note h6, .product_tags h3 {
+	font-size:16px;
+	display:inline;
+}
+
+.product_shipping_destinations p, .product_shipping_note p, .product_tags p {
+	display:inline;
+	margin-bottom:0;
+}
+
+.product_wrapper .seller_info_wrapper {
+	width:468px;
+	border:1px solid #ccc;
+	float:left;
+	padding:6px;
+}
+
+.product_comments {
+	margin-top:36px;
+	float:left;
+}
+
+.product_option_select {
+	width:468px;
+	padding:6px;
+	font-size:16px;
 }
 
 /* @end */
@@ -429,7 +463,7 @@ h1.product_name {
 }
 
 .public_form_explanation a, .public_form_items a {
-	color:#00acff;
+	color:#52cbba;
 }
 
 .public_form_explanation a:hover, .public_form_items a:hover {
@@ -439,7 +473,7 @@ h1.product_name {
 .public_form_explanation h1 {
 	font-weight:normal;
 	font-size:48px;
-	color:#00acff;
+	color:#52cbba;
 }
 
 .public_help {
@@ -458,7 +492,7 @@ h1.product_name {
 /* @group avatars */
 
 a img.thumb {border:2px solid #fff;}
-a:hover img.thumb {border-color:#999;}
+a:hover img.thumb {border-color:#52cbba;}
 
 /* @end */
 /* @group blog */
@@ -543,7 +577,7 @@ a:hover img.thumb {border-color:#999;}
 }
 
 .post a, .comment a, .comment_login a {
-	color:#00acff;
+	color:#52cbba;
 }
 
 .post a:hover, .comment a:hover, .comment_login a:hover {
@@ -737,7 +771,7 @@ ul.store_sub_nav a.selected {
 }
 .widget_header {
 	width:100%;
-	background-color:#00acff;
+	background-color:#52cbba;
 	height:30px;
 }
 .widget_header h4 {
