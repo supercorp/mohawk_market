@@ -481,13 +481,60 @@ h1.product_name {
 }
 
 /* @end */
-/* @group dashboard welcome */
-
+/* @group dashboard */
+body.dashboard {
+	background-color:#f0f2e5;
+}
+body.dashboard a {
+	text-decoration:underline;
+}
+div.dashboard_nav ul li a {
+	text-decoration:none;
+	font-family:verdana;
+	font-size:14px;
+	color:#666;
+}
+div.dashboard_nav ul li ul li a {
+	font-size:12px;
+	font-weight:normal;
+	padding-left:20px;
+}
+div.dashboard_nav ul li a:hover {
+	text-decoration:underline;
+	color:inherit;
+}
+div.dashboard_nav ul li a.selected {
+	color:#52cbba;
+}
+div.dashboard_nav ul li ul li a.selected {
+	font-weight:bold;
+	color:#666;
+}
+.list_header {
+	background-color:#f0f2e5;
+	color:#666;
+	font-family:verdana;
+	font-size:10px;
+	font-weight:bold;
+}
+.list_item_new {
+	background-color:#52cbba;
+}
+.list_item_new h3 {
+	color:#fff;
+}
+.list_item_new label {
+	font-family:verdana;
+	font-size:10px;
+	color:#333;
+}
 .welcome_message {
-	background-color:#eee;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 }
 
 /* @end */
+
 /* @group avatars */
 
 a img.thumb {border:2px solid #fff;}
