@@ -1,5 +1,5 @@
 before "deploy:cold", "config_files:create"
-after "deploy", "deploy:pull_core_repo"
+after "deploy:update_code", "deploy:pull_core_repo"
 after "deploy:update_code", "config_files:symlink"
 after "deploy:update", "deploy:cleanup"
 
@@ -33,7 +33,7 @@ namespace :deploy do
     # start task unnecessary for Passenger deployment
   end
   task :pull_core_repo, :roles => :app do
-    run "cd #{current_path} && git remote add curated_commerce #{core_repository} && git pull curated_commerce master"
+    run "cd #{release_path} && git remote add curated_commerce #{core_repository} && git pull curated_commerce master"
   end
 end
 
