@@ -747,6 +747,10 @@ ul.store_sub_nav a.selected {
 	margin-bottom:24px;
 	padding-bottom:9px;
 }
+.cart_header a:hover {
+	text-decoration:underline;
+	color:#52cbba;
+}
 .cart_header_headline {
 	float:left;
 	color:#52cbba;
@@ -784,12 +788,35 @@ ul.store_sub_nav a.selected {
 
 .cart_seller_wrapper .list_header {
 	border-top:1px solid #ccc;
-	background-color:#ddd;
+	border-bottom:1px solid #ccc;
+	background-color:#fff;
 	font-size:12px;
 	color:#666;
 }
+.cart_seller_wrapper .cart_seller_name {
+	font-size:16px;
+}
+.cart_column_label, .cart_column_content {
+	font-family:verdana;
+	font-size:11px;
+}
+.cart_subtotal_label, .cart_shipping_total_label, .cart_total_label, .cart_subtotal_content, .cart_shipping_total_content, .cart_total_content {
+	font-family:verdana;
+	font-size:11px;
+}
+.cart_total_label, .cart_total_content {
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-bottom:6px;
+}
+.cart_shipping_address_label {
+	font-family:verdana;
+	font-size:11px;
+	font-weight:bold;	
+}
+
 .cart_seller_wrapper .list_item {
-	background-color:#f1f1f1;
+	background-color:#fff;
 	font-weight:bold;
 	color:#333;
 }
@@ -805,7 +832,7 @@ ul.store_sub_nav a.selected {
 }
 .cart_seller_wrapper .editing .list_item {
 	color: #514721;
-	background-color: #FFF6BF;	
+	background-color: #FFF6BF;
 }
 .cart_checkout_bar {
 	background-color:#fff;

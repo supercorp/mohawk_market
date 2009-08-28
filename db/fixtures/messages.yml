@@ -1,10 +1,10 @@
 messages_001: 
   order_id: 
-  updated_at: 2009-08-26 21:03:16.007673 Z
+  updated_at: 2009-08-27 14:17:14.503625 Z
   body: 
   sent: false
   unread: true
-  id: 1
+  id: 4
   parent_uuid: 
   recipient_id: 11
   subject: 
@@ -16,4 +16,4 @@ messages_001:
   author_id: 
   parent_id: 
   sender_id: 2
-  created_at: 2009-08-26 21:03:16.007673 Z
+  created_at: 2009-08-27 14:17:14.503625 Z
