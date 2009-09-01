@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-	text-decoration:underline;
+	color:#666;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,7 +55,7 @@ h3 {
 }
 
 .market_main_nav .main_category a:hover {
-	text-decoration:underline;
+	color:#52cbba;
 	border-color:#ccc;
 }
 
@@ -83,6 +83,11 @@ h3 {
 
 .main_cart a {
 	color:#666;
+}
+
+.main_cart a:hover {
+	text-decoration:none;
+	color:#52cbba;	
 }
 
 .main_search_account_wrapper {
@@ -337,6 +342,10 @@ h1.product_name {
 	color:#666;
 }
 
+.product_panel h4.product_panel_product_name a:hover {
+	color:#52cbba;
+}
+
 .product_panel h6.product_panel_seller_name {
 	font-size:16px;
 	font-style:italic;
@@ -429,12 +438,12 @@ h1.product_name {
 }
 
 .footer a {
-	color:#46b9ae;
+	color:#52cbba;
 	text-decoration:none;
 }
 
 .footer a:hover {
-	text-decoration:underline;
+	color:#666;
 }
 
 .footer input.subscribe_input {
