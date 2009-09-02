@@ -33,7 +33,7 @@ namespace :deploy do
     # start task unnecessary for Passenger deployment
   end
   task :pull_core_repo, :roles => :app do
-    run "cd #{release_path} && git remote add curated_commerce #{core_repository} && git pull curated_commerce master"
+    run "cd #{release_path} && git remote add curated_commerce #{core_repository} && git pull curated_commerce #{branch}"
   end
 end
 
