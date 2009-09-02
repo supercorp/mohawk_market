@@ -1,5 +1,5 @@
 module UserMailerBrand
-  ######## MakersMarket #########
+  ######## Felt and Wire #########
 
   #COMMON#
   SETUP_EMAIL_SUBJECT = ""
