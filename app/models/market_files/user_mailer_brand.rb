@@ -30,6 +30,9 @@ module UserMailerBrand
   def failed_echeck_subject(order)
     "failed eCheck (order No. #{order.id})"
   end
+  def option_restock_subject(product_option)
+    "product option restock notice (#{product_option.product.name})"
+  end
   
   #buyer_order_notification
   
