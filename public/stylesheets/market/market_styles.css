@@ -499,7 +499,7 @@ body.dashboard a {
 }
 div.dashboard_nav ul li a {
 	text-decoration:none;
-	font-family:verdana;
+	font-family:georgia;
 	font-size:14px;
 	color:#666;
 }
@@ -509,7 +509,6 @@ div.dashboard_nav ul li ul li a {
 	padding-left:20px;
 }
 div.dashboard_nav ul li a:hover {
-	text-decoration:underline;
 	color:inherit;
 }
 div.dashboard_nav ul li a.selected {
@@ -540,6 +539,18 @@ div.dashboard_nav ul li ul li a.selected {
 .welcome_message {
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
+}
+
+.help_hover {
+	background-color:#333;
+	color:#fff;
+	border:1px solid #999;
+	padding:9px;
+	position:absolute;
+	width:240px;
+	
+	z-index:1000;
+	clear:both;
 }
 
 /* @end */
