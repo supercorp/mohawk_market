@@ -540,18 +540,29 @@ div.dashboard_nav ul li ul li a.selected {
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
 }
-
-.help_hover {
+/* @group help hover */
+.help_hover_content {
+	padding:9px;
 	background-color:#333;
 	color:#fff;
-	border:1px solid #999;
-	padding:9px;
-	position:absolute;
-	width:240px;
-	
-	z-index:1000;
-	clear:both;
 }
+.help_hover_content h6 {
+	color:#52cbba;
+	font-weight:bold;
+}
+/* @end */
+/* @group help slider */
+.help_content {
+	color:#fff;
+	background:#333 url(../images/market/help_slider_shadow.gif) repeat-x 0 bottom;
+}
+.help_content h1, .help_content h2, .help_content h3, .help_content h4, .help_content h5, .help_content h6 {
+	color:#fff;	
+}
+.help_content a {
+	color:#52cbba;
+}
+/* @end */
 
 /* @end */
 
