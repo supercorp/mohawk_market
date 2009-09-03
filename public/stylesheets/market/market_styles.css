@@ -562,6 +562,12 @@ div.dashboard_nav ul li ul li a.selected {
 .help_content a {
 	color:#52cbba;
 }
+.help_content a:hover {
+	color:#fff;
+}
+.help_form_input {
+	margin-left:18px;
+}
 /* @end */
 
 /* @end */
