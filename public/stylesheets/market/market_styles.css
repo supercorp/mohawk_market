@@ -531,7 +531,7 @@ div.dashboard_nav ul li ul li a.selected {
 .list_item_new h3 {
 	color:#fff;
 }
-.list_item_new label {
+.list_item_new label, .editing label {
 	font-family:verdana;
 	font-size:10px;
 	color:#333;
