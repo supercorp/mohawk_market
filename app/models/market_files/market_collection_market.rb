@@ -1,5 +1,6 @@
 module MarketCollectionMarket
-  BANNER_THUMBNAIL_SIZES = { :full_width => "866x100>"}
+  BANNER_THUMBNAIL_SIZES = { :full_width => "866x100>",
+                             :preview => "752x87>"}
   ICON_THUMBNAIL_SIZES = { :thumb_65 => "65x65#",
                            :thumb_69 => "69x69#",
                            :thumb_110 => "110x110#",
