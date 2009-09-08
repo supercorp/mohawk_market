@@ -1211,3 +1211,47 @@ ul.store_sub_nav a.selected {
 }
 
 /* @end */
+
+/* @group market collections */
+.market_collections_header_wrapper {
+	background-color:#52cbba;
+	width: 100%;
+	padding: 3px 0;
+	color:#666;
+	margin-bottom:18px;
+}
+.market_collections_header_wrapper a {
+	color:#fff;
+	padding:2px;
+	text-decoration:none;
+	font-family:verdana;
+}
+.market_collections_header_wrapper a:hover {
+	color:#666;
+	text-decoration:none;
+}
+.market_collection_intro_wrapper {
+	margin-bottom:9px;
+	float:left;
+	height:280px;
+}
+.market_collection_title {
+	width:100%;
+	text-align:center;
+	background-color:#52cbba;
+	height:280px;
+}
+.market_collection_title h1 {
+	padding-top:110px;
+	color:#fff;
+}
+.market_collection_banner {
+	float:left;
+	margin-right:9px;
+	width:483px;
+}
+.market_collection_descripton {
+	width:483px;
+	float:left;
+}
+/* @end */
