@@ -102,6 +102,14 @@
 						<h3>Tags</h3>
 						<p><%= @product.tags.map{|tag| tag.name}.join(' ') if @product.tags.any?%></p>
 					</div>
+					<% if @product.market_collections.published.show_icon.any? %>
+						<h3>Collections</h3>
+						<% for market_collection in @product.market_collections.published.show_icon %>
+							<% if market_collection.icon.exists? %>
+								<%= link_to image_tag(market_collection.icon.url(:full_width)), market_collection_url(market_collection) %>
+							<% end %>
+						<% end %>
+					<% end %>
 				</div>
 			</div><!-- end .seller_info_wrapper -->
 		</div><!-- end .span-12 -->
