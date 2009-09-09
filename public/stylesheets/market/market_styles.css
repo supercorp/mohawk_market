@@ -564,6 +564,9 @@ body.dashboard .dashboard_page_tabs a.selected {
 .dashboard_tabbed_contents {
 	background-color:#f0f2e5;
 }
+.dashboard_tabbed_contents .panel_show {
+	background-color:#fff;
+}
 /* @end */
 
 
