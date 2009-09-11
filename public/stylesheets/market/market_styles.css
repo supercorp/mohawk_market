@@ -245,13 +245,18 @@ ul.sub_category_nav a.selected {
 	float:left;
 	clear:left;
 }
+.seller_info_nav a.selected, .seller_info_sets a.selected {
+	color:#666;
+}
 .seller_info_sets {
 	width:100px;
 	float:left;
+	clear:left;
 }
 .seller_info_send_message {
-	width:200;
+	width:200px;
 	float:left;
+	clear:left;
 }
 .profile_wrapper {
 	margin-bottom:24px;
