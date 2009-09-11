@@ -227,6 +227,10 @@ ul.sub_category_nav a.selected {
 	border:1px solid #ccc;
 	float:left;
 	padding:6px;
+	font-family:verdana;
+}
+.seller_info_wrapper p {
+	font-size:12px;
 }
 
 .seller_info_icon {
@@ -235,6 +239,19 @@ ul.sub_category_nav a.selected {
 	height:65px;
 	background-color:gray;
 	margin-right:9px;
+}
+.seller_info_nav {
+	width:100px;
+	float:left;
+	clear:left;
+}
+.seller_info_sets {
+	width:100px;
+	float:left;
+}
+.seller_info_send_message {
+	width:200;
+	float:left;
 }
 .profile_wrapper {
 	margin-bottom:24px;
@@ -270,17 +287,43 @@ h1.product_name {
 	color:#52cbba;
 }
 
+.product_image_caption {
+	font-size:10px;
+	font-family:verdana;
+	padding:6px;
+}
 
 .product_commerce {
-	border-top:1px solid #ccc;
-	padding-top:24px;
+	/*border-top:1px solid #ccc;*/
+	/*background-color:#f0f2e5;*/
+	background:url(../../images/market/stripes.gif) repeat;
+	text-align:center;
 }
 
 .product_commerce .price {
 	font-size:28px;
+	border:1px solid #999;
+	width:216px;
+	display:block;
+	float:left;
+	margin-top:18px;
+	margin-left:9px;
+	color:#666;
 }
 
-.product_shipping_destinations h6, .product_shipping_note h6, .product_tags h3 {
+.product_commerce .product_commerce_add {
+	width:218px;
+	background-color:#fff;
+	padding-top:6px;
+	padding-bottom:6px;
+	display:block;
+	float:left;
+	margin-top:18px;
+	margin-bottom:18px;
+	margin-left:9px;
+}
+
+.product_shipping_destinations h6, .product_shipping_note h6, .product_tags h6 {
 	font-size:16px;
 	display:inline;
 }
@@ -290,22 +333,16 @@ h1.product_name {
 	margin-bottom:0;
 }
 
-.product_wrapper .seller_info_wrapper {
-	width:468px;
-	border:1px solid #ccc;
-	float:left;
-	padding:6px;
-}
-
 .product_comments {
 	margin-top:36px;
 	float:left;
 }
 
 .product_option_select {
-	width:468px;
+	width:220px;
 	padding:6px;
 	font-size:16px;
+	margin-top:18px;
 }
 
 /* @end */

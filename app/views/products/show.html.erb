@@ -6,18 +6,16 @@
 				<%= link_to image_tag(@product.product_images.first.image.url(:large)), product_url(@product) %>
 			</div>
 			<% unless @product.product_images.first.caption.blank? %>
-				<div class="span-12 last image_caption">
+				<div class="span-12 last product_image_caption">
 					<%= @product.product_images.first.caption %>
 				</div>
 			<% end %>
 		<% end %>
 		<% if @product.product_images.length > 1 %>
-			<div class="span-6 last product_thumbs">
-				<p>
+			<div class="span-12 last product_thumbs">
 					<% for product_image in (@product.product_images - [@product.product_images.first]) %>
 						<%= image_tag(product_image.image.url(:thumb_65)) %>
 					<% end %>
-				</p>
 			</div>
 		<% end %>
 	</div><!-- end .span-12 -->
@@ -27,7 +25,17 @@
 		
 		<div class="product_about"><%= RedCloth.new(@product.description).to_html %></div>
 		
-		<div class="span-12 last product_commerce">
+		<div class="product_shipping_destinations">
+			<h6>Ships To</h6>
+			<p>list of shipping destinations</p>
+		</div><!-- end .product_shipping_destinations -->
+		
+		<div class="product_tags">
+			<h6>Tags</h6>
+			<p><%= @product.tags.map{|tag| tag.name}.join(' ') if @product.tags.any?%></p>
+		</div><!-- end .product_tags -->
+		
+		<div class="span-6 product_commerce">
 				<% if @product.product_options.length > 1 %>
 					<%= select_tag 'product_option_id', options_for_select(@product.product_options.map{|po| [po.name,po.id]},@product.product_options.first.id), :class => 'product_option_select' %><br/>
 					<div class="span-6">
@@ -50,65 +58,60 @@
 						<span id="price_display" class="price"><%= @product.product_options.first.price.format %></span>
 					</div><!-- end .span-6 -->
 				<% end %>
-				<div class="span-6 last">
-
+			<div class="product_commerce_add">
 				<% form_tag update_cart_url, :method => :put do -%>
 					<%= hidden_field_tag 'product_option_id', @product.product_options.first.id, :id => 'product_option_id_field' %>
-					<%#= image_submit_tag 'market/add_to_cart.png' %>
-					<%= image_submit_tag("market/add_to_cart.png", :'data-binding' => "image_state_normal", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_hover.png", :'data-binding' => "image_state_hover", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_active.png", :'data-binding' => "image_state_active", :'data-group' => "add_to_cart") %>
-				</div><!-- end .span-6 -->
-					
+					<%= image_submit_tag("market/add_to_cart.png", :'data-binding' => "image_state_normal", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_hover.png", :'data-binding' => "image_state_hover", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_active.png", :'data-binding' => "image_state_active", :'data-group' => "add_to_cart") %>					
 				<% end %>
+			</div><!-- end .product_commerce_add -->
+				
 		</div><!-- end .product_commerce -->
 		
-		<div class="span-12 last product_shipping_destinations">
-			<h6>Ships To:</h6>
-			<p>
-				list of shipping destinations
-			</p>
-		</div><!-- end .product_shipping_destinations -->
+
 		
 		<% unless @product.shipping_note.blank? %>
-		<div class="span-12 last product_shipping_note">
-		<h6>Shipping Note:</h6>
+		<div class="span-6 last product_shipping_note">
+			<h6>Shipping Note:</h6>
 			<p>
 				<%= @product.shipping_note %>
 			</p>
 		</div><!-- end .product_shipping_note -->
 		<% end %>
 		
-		<div class="span-12 last">
+		<div class="span-6 last">
 			<div class="seller_info_wrapper">
 				<div class="seller_info_icon">
-					<%= image_tag @product.seller.avatar.url(:thumb_65), :class => 'avatar' %>
-				</div>
-				<div>
-					<p>Artist: <%= link_to @product.seller.store_name, seller_url(:id => @product.seller.id) %><br/>
-					<%= link_to "Home", seller_url(:id => @product.seller.id), :class => (@profile_section ? nil : 'selected') %> | 
-					<%= link_to "Products (#{@product.seller.products.active.count})", seller_url(:id => @product.seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %> | 
-					<%= link_to "Blog", seller_url(:id => @product.seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %> | 
-					<%= link_to "Notes", seller_url(:id => @product.seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %> | 
+					<% if @product.seller.avatar.exists? %>
+						<%= image_tag @product.seller.avatar.url(:thumb_65), :class => 'avatar' %>
+					<% end %>
+				</div><!-- end .seller_info_icon -->
+				<div class="seller_info_name">
+					<%= link_to @product.seller.store_name, seller_url(:id => @product.seller.id) %>
+				</div><!-- end .seller_info_name -->
+				<div class="seller_info_location">
+					<%= @product.seller.location %>
+				</div><!-- end .seller_info_location -->
+				
+				<div class="seller_info_nav">
+					<%= link_to "Home", seller_url(:id => @product.seller.id), :class => (@profile_section ? nil : 'selected') %> <br/>
+					<%= link_to "Products (#{@product.seller.products.active.count})", seller_url(:id => @product.seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %><br/>
+					<%= link_to "News", seller_url(:id => @product.seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %><br/>
+					<%= link_to "Notes", seller_url(:id => @product.seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %><br/>
 					<%= link_to "About", seller_url(:id => @product.seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %>
-					</p>
-					<p>Products: <%= @product.seller.products.active.count %><br/>
-				Joined: 05/13/2007<br/>
-				Location: <%= @product.seller.location %><br/>
-				Items: <% for collection in @product.seller.collections.active %>
-					<%= link_to collection.name, seller_url(:id => @product.seller.id, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %>, 
-				<% end %>
-				<%= link_to 'See All', seller_url(:id => @product.seller.id, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %>
-					</p>
-					<div class="product_tags">
-						<h3>Tags</h3>
-						<p><%= @product.tags.map{|tag| tag.name}.join(' ') if @product.tags.any?%></p>
-					</div>
-				</div>
+				</div><!-- end .seller_info_nav -->
+<!--
+				<div class="seller_info_sets">
+					<%# for collection in @product.seller.collections.active %>
+						<%#= link_to collection.name, seller_url(:id => @product.seller.id, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %><br/>
+					<%# end %>
+					<%#= link_to 'See All', seller_url(:id => @product.seller.id, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %>
+				</div> end .seller_info_sets -->
+
+				<div class="seller_info_send_message">
+					<%= link_to "Ask", new_manage_message_url(:message => {:recipient_id => @product.seller.id}) %> this seller a question.
+				</div><!-- end .seller_info_send_message -->
 			</div><!-- end .seller_info_wrapper -->
-		</div><!-- end .span-12 -->
-		
-		<div class="span-12 last">
-			<p class="bottom"><%= link_to "Ask", new_manage_message_url(:message => {:recipient_id => @product.seller.id}) %> <%= @product.seller.store_name%> a question.</p>
-		</div>
+		</div><!-- end .span-6 -->
 		
 	</div><!-- end .span-12 -->
 	

@@ -3,8 +3,8 @@
 		<div class="halfpadbox">
 			<% if product.product_images.any? %>
 				<%= link_to image_tag(product.product_images.first.image(:thumb_216)), product_url(product), :class => 'product' %>
-				<h4 class="product_panel_product_name"><%= link_to product.name, product_url(product) %></h4>
-				<h6 class="product_panel_seller_name"><%= link_to product.seller.store_name, seller_url(:id => product.seller.id) %></h6>
+				<h4 class="product_panel_product_name"><%= link_to truncate(product.name,28), product_url(product) %></h4>
+				<h6 class="product_panel_seller_name"><%= link_to truncate(product.seller.store_name,28), seller_url(:id => product.seller.id) %></h6>
 			<% else %>
 				<h4><%= product.seller.name %></h4>
 				<h6><%= product.category.name %></h6>
