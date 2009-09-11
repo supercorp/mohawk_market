@@ -30,6 +30,15 @@
 			<p>list of shipping destinations</p>
 		</div><!-- end .product_shipping_destinations -->
 		
+		<% unless @product.shipping_note.blank? %>
+		<div class="product_shipping_note">
+			<h6>Shipping Note:</h6>
+			<p>
+				<%= @product.shipping_note %>
+			</p>
+		</div><!-- end .product_shipping_note -->
+		<% end %>
+		
 		<div class="product_tags">
 			<h6>Tags</h6>
 			<p><%= @product.tags.map{|tag| tag.name}.join(' ') if @product.tags.any?%></p>
@@ -54,9 +63,7 @@
 						});
 					<% end %>
 				<% else %>
-					<div class="span-6">
 						<span id="price_display" class="price"><%= @product.product_options.first.price.format %></span>
-					</div><!-- end .span-6 -->
 				<% end %>
 			<div class="product_commerce_add">
 				<% form_tag update_cart_url, :method => :put do -%>
@@ -66,17 +73,6 @@
 			</div><!-- end .product_commerce_add -->
 				
 		</div><!-- end .product_commerce -->
-		
-
-		
-		<% unless @product.shipping_note.blank? %>
-		<div class="span-6 last product_shipping_note">
-			<h6>Shipping Note:</h6>
-			<p>
-				<%= @product.shipping_note %>
-			</p>
-		</div><!-- end .product_shipping_note -->
-		<% end %>
 		
 		<div class="span-6 last">
 			<div class="seller_info_wrapper">
