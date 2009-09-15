@@ -533,12 +533,16 @@ h1.product_name {
 
 /* @end */
 /* @group dashboard */
+body.dashboard .header_bar {
+	background-color:#fff;
+}
 body.dashboard {
 	background-color:#f0f2e5;
 }
 body.dashboard a {
 	text-decoration:underline;
 }
+/* @group dashboard nav */
 div.dashboard_nav ul li a {
 	text-decoration:none;
 	font-family:georgia;
@@ -560,6 +564,15 @@ div.dashboard_nav ul li ul li a.selected {
 	font-weight:bold;
 	color:#666;
 }
+/* @end */
+/* @group dashboard main */
+.welcome_message {
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+/* @end */
+/* @group dashboard lists */
 .list_header {
 	background-color:#52cbba;
 	color:#333;
@@ -568,6 +581,7 @@ div.dashboard_nav ul li ul li a.selected {
 	font-weight:bold;
 }
 .list_item {
+	border-bottom:1px solid #ddd;
 	background-color:#fff;
 }
 .list_item_new {
@@ -581,10 +595,7 @@ div.dashboard_nav ul li ul li a.selected {
 	font-size:10px;
 	color:#333;
 }
-.welcome_message {
-	border-top:1px solid #ccc;
-	border-bottom:1px solid #ccc;
-}
+/* @end */
 /* @group dashboard page tabs */
 body.dashboard .dashboard_page_tabs a {
 	font-family:verdana;
@@ -941,7 +952,6 @@ ul.store_sub_nav a.selected {
 .cart_seller_wrapper a:hover {
 	color:#666;
 }
-
 .cart_seller_wrapper .list_header {
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
@@ -970,7 +980,6 @@ ul.store_sub_nav a.selected {
 	font-size:11px;
 	font-weight:bold;	
 }
-
 .cart_seller_wrapper .list_item {
 	background-color:#fff;
 	font-weight:bold;
@@ -990,12 +999,29 @@ ul.store_sub_nav a.selected {
 	color: #514721;
 	background-color: #FFF6BF;
 }
+.no_address_wrapper {
+	background-color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	padding:6px;
+}
+.no_address_wrapper a {
+	color:#71b50a;
+}
 .cart_checkout_bar {
 	background-color:#fff;
 	text-align:center;
 	height:36px;
 	padding-top:12px;
 	border-top:1px solid #ddd;
+}
+.cart_checkout_wrapper {
+	background-color:#fff;
+	padding:6px;
+	margin-left:104px;
+	width:208px;
+	border:1px solid #ddd;
 }
 /* @end */
 /* @group widgets public*/
