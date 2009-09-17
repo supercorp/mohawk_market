@@ -51,47 +51,17 @@
 			   </div><!-- end .store_header -->
 			<% end %>	
 		<% end %>
-		
-		<div class="span-18">
-		<%= yield %>
-		</div>
+				
+		<% unless action_name == 'index' %>
+				<div class="span-18">
+		<% end %>
+				<%= yield %>
+		<% unless action_name == 'index' %>
+				</div>
+		<% end %>
 		
 		<% if action_name != 'index' %>
-			<div class="span-6 last">
-				<div class="seller_info_wrapper">
-
-					<div class="seller_info_icon">
-						<% if @seller.avatar.exists? %>
-							<%= image_tag @seller.avatar.url(:thumb_65), :class => 'avatar' %>
-						<% end %>
-					</div><!-- end .seller_info_icon -->
-
-					<div class="seller_info_name">
-						<%= link_to @seller.store_name, seller_url(:id => @seller.id) %>
-					</div><!-- end .seller_info_name -->
-
-					<div class="seller_info_location">
-						<%= @seller.location %>
-					</div><!-- end .seller_info_location -->
-					
-					<div class="seller_info_nav">
-						<%= link_to "Home", seller_url(:id => @seller.id), :class => (@profile_section ? nil : 'selected') %><br/>
-						<%= link_to "Products (#{@seller.products.active.count})", seller_url(:id => @seller.id, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %><br/>
-						<%= link_to "Blog", seller_url(:id => @seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %><br/>
-						<%= link_to "Notes", seller_url(:id => @seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %><br/>
-						<%= link_to "About", seller_url(:id => @seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %>
-					</div><!-- end .seller_info_nav -->
-					
-					<div class="seller_info_sets">
-						<% for collection in @seller.collections.active %>
-							<%= link_to collection.name, seller_url(:id => @seller.id, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %><br/>
-						<% end %>
-						<%= link_to 'See All', seller_url(:id => @seller.id, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %>
-						<%= @seller.store_url if @seller.subdomain%>
-					</div><!-- end .seller_info_sets -->
-						
-				</div><!-- end .seller_info_wrapper -->
-			</div><!-- end .span-6 -->
+			<%= render :partial => 'sellers/sidebar' %>
 		<% end %>
 		
 		</div><!-- end .container -->
