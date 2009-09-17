@@ -507,8 +507,13 @@ h1.product_name {
 /* @group sidebar */
 
 .sidebar {
-	background-color:#eee;
 	margin-bottom:18px;
+}
+.sidebar_liner {
+	border:1px solid #ccc;
+	float:left;
+	width:220px;
+	padding:8px;
 }
 .sidebar a {
 	color:#52cbba;
@@ -518,15 +523,18 @@ h1.product_name {
 }
 .sidebar_panel {
 	background-color:#fff;
-	padding:9px;
-	border-top:1px solid #ddd;
+	border-top:1px solid #ccc;
 	margin-bottom:9px;
 	float:left;
-	width:201px;
+	width:220px;
+	padding-top:9px;
+}
+.sidebar_panel.user_info {
+	border-top:0;
 }
 .sidebar h4 {
 	margin-bottom:0;
-	color:#52cbba;
+	color:#666;
 }
 .sidebar_panel a.avatar img {
 	border:2px solid #fff;
@@ -538,7 +546,8 @@ h1.product_name {
 	list-style-type:none;
 	margin:0;
 }
-.sidebar_panel.store_description p {
+.sidebar_panel.store_description p, .sidebar_panel p {
+	font-size:12px;
 	margin-bottom:0;
 }
 
@@ -1194,36 +1203,39 @@ ul.comment_tabs a.selected {
 /* @end */
 /* @group store nav */
 ul.store_nav {
-	margin:0 0 18px 0;
+	margin:0 0 0 0;
 	float:left;
 	list-style-type:none;
+	font-family:georgia;
 }
 
 ul.store_nav li{
 	display:block;
 }
 ul.store_nav a {
-	font-size:24px;
+	font-size:16px;
 	text-decoration:none;
-	width:190px;
+	width:214px;
 	display:block;
-	height:36px;
+	height:24px;
+	padding-left:6px;
 	float:left;
+	border-top:1px solid #ccc;
 }
 ul.store_nav a:hover {
-	color:#666;
-	background-color:#fff;
+	color:#fff;
+	background-color:#52cbba;
+	text-decoration:none;
 }
 ul.store_nav a.selected {
-	padding-left:30px;
-	background:#52cbba url(../images/store_nav_arrow.png) no-repeat;
-	color:#fff;
+	padding-left:6px;
+	color:#666;
 }
 
 ul.store_sub_nav {
 	float:left;
-	margin-top:1px;
 	list-style-type:none;
+	margin-bottom:0;
 }
 
 ul.store_sub_nav li {
@@ -1235,22 +1247,20 @@ ul.store_sub_nav a {
 	font-size:13px;
 	background-color:#fff;
 	display:block;
-	width:180px;
+	width:182px;
 	height:18px;
 	padding:2px 10px 2px 10px;
-	margin-bottom:1px;
 }
 
 ul.store_sub_nav a:hover {
-	color:#666;
-	background-color:#fff;
+	color:#fff;
+	background-color:#52cbba;
 }
 
 ul.store_sub_nav a.selected {
-	background-color:#52cbba;
 	background-image:none;
-	color:#fff;
-	width:180px;
+	color:#666;
+	width:182px;
 	padding:2px 10px 2px 10px;
 }
 /* @end */

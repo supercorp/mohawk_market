@@ -1,10 +1,14 @@
 <div class="span-6 last sidebar">
-	<div class="halfpadbox">
-		<div class="sidebar_panel">
-			<%= image_tag @seller.avatar.url(:thumb_110), :class => 'avatar' %>
-			<h4><%= @seller.store_name %></h4><!-- store name -->
-			<h6><%= @seller.name %></h6><!-- personal name-->
-			<p class="bottom"><%= @seller.location %></p><!-- location -->
+	<div class="sidebar_liner">
+		<div class="sidebar_panel user_info">
+			<div class="span-2">
+				<%= image_tag @seller.avatar.url(:thumb_69), :class => 'avatar' %>
+			</div>
+			<div class="span-3">
+				<h4><%= @seller.store_name %></h4><!-- store name -->
+				<h6><%= @seller.name %></h6><!-- personal name-->
+				<p class="bottom"><%= @seller.location %></p><!-- location -->
+			</div>
 		</div>
 		<ul class="store_nav">
 			<li><%= link_to "home", seller_url(:id => @seller.id), :class => (@profile_section == 'home' ? 'selected' : nil) %></li>
@@ -40,5 +44,5 @@
 			<h4>Have a question?</h4>
 			<p class="bottom"><%= link_to "Send #{@seller.store_name} a message", new_manage_message_url(:message => {:recipient_id => @seller.id}) %></p>
 		</div>
-	</div>
-</div>
+	</div><!--end .sidebar_liner -->
+</div><!--end .sidebar -->
