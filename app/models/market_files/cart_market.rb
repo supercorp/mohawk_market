@@ -1,3 +1,3 @@
 module CartMarket
-  PAYPAL_RETURN_MESSAGE = "Return to Felt and Wire Shop"
+  PAYPAL_RETURN_MESSAGE = "Return to Felt & Wire Shop"
 end
