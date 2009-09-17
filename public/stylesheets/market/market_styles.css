@@ -1379,6 +1379,10 @@ ul.store_sub_nav a.selected {
 	height:226px;
 	overflow:hidden;
 }
+.public_widget_sidebar {
+	margin-bottom:9px;
+	overflow:hidden;
+}
 .widget_header {
 	width:100%;
 	background-color:#52cbba;
