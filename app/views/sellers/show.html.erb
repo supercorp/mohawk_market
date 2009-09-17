@@ -1,28 +1,14 @@
+<%= render :partial => 'products' %>
 <div class="span-18 last">
-	<h3>Products <%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :products) %></h3>
-	<% for product in @seller.products.active.most_recent_6 %>
-		<div class="span-6 product_panel">
-			<div class="halfpadbox">
-				<% if product.product_images.any? and product.product_images.first.image.exists? %>
-					<%= link_to image_tag(product.product_images.first.image.url(:thumb_216)), product_url(product), :class => 'product' %>						
-					<h4 class="product_panel_product_name"><%= link_to product.name, product_url(product) %></h4>
-				<% else %>
-					<h3><%= product.name %></h3>
-				<% end %>
-			</div>
-		</div>
-	<% end %>
-</div><!-- end .span-18 -->
 
-<div class="span-18 last">
-	<div class="span-9">
-		<h3>Blog
-			<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :blog) %></h3>
-		</h3>
+	<div class="span-18 panel">
+		<div class="panel_header">
+			<h3>Blog <%= link_to 'more', seller_url(:id => @seller.id, :profile_section => :blog) %></h3>
+		</div>
 		<!-- post [begin]-->
 		<% for blog_post in @seller.blog_posts.seller.published.most_recent_3 %>
-		<div class="span-9 last post">
-			<div class="span-9 last">
+		<div class="span-18 last post">
+			<div class="span-18 last">
 					<h3><%= link_to blog_post.title, seller_url(:id => @seller.id, :profile_section => :blog, :blog_post_id => blog_post.id) %></h3>
 					<p class="post_date">Feb 27, 2009<%= blog_post.created_at.strftime('%b %d, %Y') %><br/>
 					(<%= blog_post.comments.published.enabled.count %>)</p><!--number is the count of the number of responses-->
@@ -30,15 +16,16 @@
 		</div>
 		<% end %>
 		<!--post [end]-->
-	</div><!-- end .span-9 -->
-	<div class="span-9 last">
+	</div>
+
+	<div class="span-18 last panel">		
 		<div class="panel_header">
-			<h3>Notes
-			<%= link_to 'more', seller_url(:id => @seller.id, :profile_section => 'notes') %></h3>
+			<h3>Notes <%= link_to 'more', seller_url(:id => @seller.id, :profile_section => 'notes') %></h3>
 		</div>
 		<% for note in @seller.notes.featured.published.enabled %>
 			<%= render :partial => 'sellers/note', :object => note %>
 		<% end %>
-		<p><%= link_to 'Add a note', seller_url(:id => @seller.id, :profile_section => 'notes') %>
-	</div><!-- end .span-9 -->
-</div><!-- end .span-18 -->
+		<p><%= link_to 'Add a note', seller_url(:id => @seller.id, :profile_section => 'notes') %></p>
+	</div>	
+	
+</div>
