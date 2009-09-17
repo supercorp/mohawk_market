@@ -9,6 +9,8 @@ RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
+require 'market_config.rb'
+require 'local_config.rb'
 
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here.
@@ -87,8 +89,6 @@ end
 require 'money'
 require 'mailer_config.rb'
 require 'oembed'
-require 'market_config.rb'
-require 'local_config.rb'
 VIMEO = OEmbed::Provider.new("http://www.vimeo.com/api/oembed.xml",:xml)
 VIMEO << "http://vimeo.com/*"
 VIMEO << "http://*.vimeo.com/*"
