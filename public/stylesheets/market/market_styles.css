@@ -800,6 +800,9 @@ div.dashboard_nav li.dashboard_nav_label {
 	font-size:10px;
 	font-weight:bold;
 }
+.list_header a {
+	color:#fff;
+}
 .list_item {
 	border-bottom:1px solid #ddd;
 	background-color:#fff;
