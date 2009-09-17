@@ -14,7 +14,10 @@
 				
 				<div class="main_search_account_wrapper">
 					<div class="main_search">
-						<input type="text" value="SEARCH" class="search_input"/>
+						<% form_tag '/search', :method => :post do %>
+							<%= text_field_tag :search_terms, @search_terms, :class => 'search_input' %>
+							<%= submit_tag 'go' %>
+						<% end %>
 					</div>
 					<div class="main_account">
 						<% if logged_in? %>

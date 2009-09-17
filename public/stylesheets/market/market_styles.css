@@ -105,7 +105,7 @@ h3 {
 }
 
 .main_search .search_input {
-	width:130px;
+	width:90px;
 	color:#52cbba;
 	font-family:verdana;
 	font-size:11px;
@@ -617,18 +617,17 @@ h1.product_name {
 }
 .pagination span.disabled {
 	color:#fff;
-	padding:4px;
+	padding:2px 4px 2px 4px;
 	background-color:#ccc;
-	font-weight:bold;
 }
 .pagination span.current {
 	color:#fff;
-	padding:4px;
+	padding:2px 4px 2px 4px;
 	background-color:#52cbba;
 }
 .pagination a {
 	color:#52cbba;
-	padding:4px;
+	padding:2px 4px 2px 4px;
 	text-decoration:none;
 }
 .pagination a:hover {
@@ -1371,6 +1370,54 @@ ul.store_sub_nav a.selected {
 	margin-left:104px;
 	width:208px;
 	border:1px solid #ddd;
+}
+/* @end */
+
+/* @group search */
+.search_header {
+	margin-bottom:12px;
+}
+.search_header_liner {
+	border-bottom:1px solid #ccc;
+	padding:0 9px 9px 9px;
+}
+.search_header h3 {
+	color:#52cbba;
+	font-weight:normal;
+	margin-bottom:0;
+}
+.search_header .search_term {
+	color:#666;
+}
+.search_result_group {
+	border-bottom:1px solid #ccc;
+	margin-bottom:18px;
+	padding-bottom:18px;
+}
+.search_result_group h3 {
+	font-weight:normal;
+	color:#52cbba;
+	margin-left:9px;
+}
+.search_result_blog_posts_wrapper, .search_result_tags_wrapper {
+	margin-left:9px;
+	margin-right:9px;
+	float:left;
+}
+.search_result_group a.tag_link {
+	font-size:32px;
+	color:#666;
+	background-color:#ccc;
+	padding:2px;
+	display:block;
+	float:left;
+	text-decoration:none;
+	margin-right:4px;
+	margin-bottom:4px;
+}
+.search_result_group a.tag_link:hover {
+	color:#fff;
+	background-color:#52cbba;
 }
 /* @end */
 /* @group widgets public*/
