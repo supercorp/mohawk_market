@@ -1207,6 +1207,7 @@ ul.store_nav a {
 	padding-left:6px;
 	float:left;
 	border-top:1px solid #ccc;
+	text-transform:lowercase;
 }
 ul.store_nav a:hover {
 	color:#fff;
