@@ -21,15 +21,12 @@
 		<p>Our newsletter is awesome.<br/>
 			Subscribe and get the latest news.<br/>
 		</p>
-		<p>
-			<input type="text" value="YOUR EMAIL ADDRESS" class="subscribe_input"/><input type="submit" value="subscribe"/>
-		</p>
+			<form action="http://mohawkpaper.createsend.com/t/r/s/juldty/" method="post">
+				<p><input type="text" name="cm-juldty-juldty" id="juldty-juldty" class="subscribe_input" value="YOUR EMAIL ADDRESS"/> <input type="submit" value="subscribe" />
+				</p>
+			</form>
 	</div>
 	<div class="span-24 footer_lastline">
 		<p><%= link_to (image_tag 'market/mohawk_logo_footer.png'), "http://mohawkpaper.com" %> 465 Saratoga Street | Cohoes, NY 12047 | 1 800 the mill <%= image_tag 'market/mohawk_rss_icon.png' %> RSS Feed | Privacy Policy</p>
 	</div>
 </div><!-- end container -->
-
-<%#= link_to 'products', '/products', :class => (@nav_tab == 'products') ? 'selected' : '' %>
-<%#= link_to 'sellers', '/sellers', :class => (@nav_tab == 'sellers') ? 'selected' : '' %>
-<%#= link_to 'blog', '/blog_posts', :class => (@nav_tab == 'blog_posts') ? 'selected' : '' %>
