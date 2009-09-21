@@ -8,6 +8,7 @@ set :db_pass, "sup3r"
 
 set :branch, "production"
 set :rails_env, "production"
+set (:deploy_to) { "/var/www/feltandwireshop.com/#{stage}" }
 
 desc "Export data to fixtures."
 task :export_fixtures, :roles => :db do
