@@ -736,6 +736,7 @@ body.dashboard {
 .welcome_message {
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
+	margin-bottom:18px;
 }
 /* @end */
 /* @group dashboard nav */
