@@ -21,7 +21,7 @@
 					<% end %>
 				</ul>
 			<% end %>
-		  <li><%= link_to "blog", seller_url(:id => @seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %></li>
+		  <li><%= link_to BlogPost::CLASS_DISPLAY_NAME, seller_url(:id => @seller.id, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %></li>
 		  <li><%= link_to "notes", seller_url(:id => @seller.id, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %></li>
 		  <li><%= link_to "about", seller_url(:id => @seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %></li>
 		</ul>
