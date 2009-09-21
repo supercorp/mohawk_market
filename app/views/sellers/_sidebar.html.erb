@@ -37,8 +37,15 @@
 			<% end %>
 		</div>
 		<div class="sidebar_panel">
-			<%= link_to 'Follow this seller', '#' %>
-			<%#= link_to 'Log in to follow this seller', '#' %>
+			<% if logged_in? %>
+				<% if @this_user.sellers.include? @seller %>
+					You're following this seller.
+				<% else %>
+					<%= link_to 'Follow this seller', manage_store_follows_url + "?seller_id=#{@seller.id}", :method => :post %>
+				<% end %>
+			<% else %>
+				<%= link_to 'Log in to follow this seller', seller_url(@seller) + '?log_me_in=true' %>
+			<% end %>
 		</div>
 		<div class="sidebar_panel bottom">
 			<h4>Have a question?</h4>
