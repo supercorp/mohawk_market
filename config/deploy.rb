@@ -18,6 +18,7 @@ set :repository,  "git@github.com:supercorp/mohawk_market.git"
 set :core_repository, "git@github.com:supercorp/curated_commerce.git"
 set :scm, :git
 set :ssh_options, { :forward_agent => true }
+set :use_sudo, false
 
 set :keep_releases, 2
 
