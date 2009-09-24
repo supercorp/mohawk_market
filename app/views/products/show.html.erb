@@ -66,30 +66,6 @@
 			
 			<div class="span-6 last">
 				
-				<div class="span-6 last favorite_panel">
-					<div class="favorite_panel_wrapper">
-					<% if logged_in? %>
-					<!-- if logged in -->
-						<% if @this_user.favorite_products.map{|fp| fp.id}.include? @product.id %>
-							This product's on your favorites.<br/>
-							<a href="#favorites" onclick="$('#favorites_tab').click();" >See who else likes it.</a>
-						<% else %>
-							<%= link_to 'add to your favorites', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
-						<% end %>
-					<% else %>
-						<% session[:favorites] ||= [] %>
-						<% if session[:favorites].include? @product.id %>
-							<a href="#">You appreciate it.</a>
-							<a href="#favorites" onclick="$('#favorites_tab').click();">see who else likes is</a>
-						<% else %>
-							<%= link_to 'appreciate it', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
-							or<br/>
-							<%= link_to 'log in to add to your favorites', product_url(@product) + '?log_me_in=true' %>
-						<% end %>
-					<% end %>
-					</div><!-- end .favorite_panel_wrapper -->
-				</div><!-- end .favorite_panel -->
-				
 				<div class="span-6 product_commerce">
 						<% if @product.product_options.length > 1 %>
 							<%= select_tag 'product_option_id', options_for_select(@product.product_options.map{|po| [po.name,po.id]},@product.product_options.first.id), :class => 'product_option_select' %><br/>
@@ -120,25 +96,51 @@
 
 				</div><!-- end .product_commerce -->
 				
-				
+				<div class="span-6 last favorite_panel">
+					<div class="favorite_panel_liner">
+					<% if logged_in? %>
+					<!-- if logged in -->
+						<% if @this_user.favorite_products.map{|fp| fp.id}.include? @product.id %>
+							This product's on your favorites.<br/>
+							<a href="#favorites" onclick="$('#favorites_tab').click();" >See who else likes it.</a>
+						<% else %>
+							<%= link_to 'add to your favorites', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
+						<% end %>
+					<% else %>
+						<% session[:favorites] ||= [] %>
+						<% if session[:favorites].include? @product.id %>
+							<a href="#">You appreciate it.</a>
+							<a href="#favorites" onclick="$('#favorites_tab').click();">see who else likes is</a>
+						<% else %>
+							<%= link_to 'appreciate it', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
+							or<br/>
+							<%= link_to 'log in to add to your favorites', product_url(@product) + '?log_me_in=true' %>
+						<% end %>
+					<% end %>
+					</div><!-- end .favorite_panel_liner -->
+				</div><!-- end .favorite_panel -->
 				
 				<% if @product.shippable %>
 					<% unless @product.shipping_note.blank? %>
 						<div class="span-6 last shipping_note">
-							<h6>Shipping Note</h6>
-							<p><%= @product.shipping_note %></p>
+							<div class="shipping_note_liner">
+								<h6>Shipping Note</h6>
+								<p><%= @product.shipping_note %></p>
+							</div><!-- end .shipping_note_liner -->
 						</div><!-- end .shipping_note -->
 					<% end %>
 				
 					<div class="span-6 last shipping_destinations">
-						<h6>Ships To</h6>
-						<p>	<%= @product.shipping_class.everywhere_else ? 'Everywhere' : @product.shipping_class.shipping_destinations.map{|sd| sd.country.name }.join(', ') %></p>
-					</div><!-- end .shipping_destinations -->
-				<% else %>
-					<div class="span-6 last shipping_note">
-						<h6>Downloadable</h6>
-					</div>
-				<% end %>
+						<div class="shipping_destinations_liner">
+							<h6>Ships To</h6>
+							<p>	<%= @product.shipping_class.everywhere_else ? 'Everywhere' : @product.shipping_class.shipping_destinations.map{|sd| sd.country.name }.join(', ') %></p>
+						</div><!-- end .shipping_destinations -->
+					<% else %>
+						<div class="span-6 last shipping_note">
+							<h6>Downloadable</h6>
+						</div>
+					<% end %>
+					</div><!--end .shipping_destinations_liner -->
 			</div><!-- end .span-6 -->
 		</div><!-- end .panel_group -->
 		
@@ -239,8 +241,10 @@
 			<!-- end favorites -->
 		<% end %>
 	</div><!-- end .span-18 -->
-
-	<%= render :partial => 'sellers/sidebar' %>
+	
+	<div class="span-6 last sidebar_wrapper_product">
+		<%= render :partial => 'sellers/sidebar' %>
+	</div><!--end sidebar_wrapper_product-->
 	
 	<div class="span-6 last panel tags_panel">
 		<h3>Tags</h3>

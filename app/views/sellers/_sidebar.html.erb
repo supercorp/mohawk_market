@@ -29,7 +29,7 @@
 			<%= link_to @seller.store_url, seller_url(@seller) %>
 		</div>
 		<div class="sidebar_panel store_description">
-			<%= RedCloth.new(truncate(@seller.store_description,250,link_to('more »', seller_url(:id => @seller.id, :profile_section => :about)))).to_html unless @seller.store_description.blank? %>
+			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", seller_url(:id => @seller.id, :profile_section => :about)))).to_html unless @seller.store_description.blank? %>
 		</div>
 		<div class="sidebar_panel">
 			<% if @seller.faq %>

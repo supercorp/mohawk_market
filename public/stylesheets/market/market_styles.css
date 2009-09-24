@@ -283,21 +283,12 @@ h1.product_name {
 	padding:6px;
 }
 
-.product_commerce {
-	/*border-top:1px solid #ccc;*/
-	/*background-color:#f0f2e5;*/
-	background:url(../../images/market/stripes.gif) repeat;
-	text-align:center;
-}
-
 .product_commerce .price {
 	font-size:28px;
-	border:1px solid #999;
-	width:216px;
+	width:177px;
 	display:block;
 	float:left;
-	margin-top:18px;
-	margin-left:9px;
+	margin-left:48px;
 	color:#666;
 }
 
@@ -308,9 +299,10 @@ h1.product_name {
 	padding-bottom:6px;
 	display:block;
 	float:left;
-	margin-top:18px;
-	margin-bottom:18px;
+	margin-bottom:9px;
 	margin-left:9px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
 }
 
 .product_shipping_destinations h6, .product_shipping_note h6, .product_tags h6 {
@@ -323,6 +315,12 @@ h1.product_name {
 	margin-bottom:0;
 }
 
+.shipping_destinations_liner, .shipping_note_liner {
+	float:left;
+	padding-left:14px;
+	padding-right:18px;
+}
+
 .product_option_select {
 	width:220px;
 	padding:6px;
@@ -330,25 +328,21 @@ h1.product_name {
 	margin-top:18px;
 }
 
-
 .favorite_panel {
-	background-color:#eee;
 	margin-bottom:9px;
 }
-.favorite_panel_wrapper {
-	padding:9px;
+.favorite_panel_liner {
+	padding:0px 18px 0px 14px;
 }
 .favorite_panel a {
 	color:#52cbba;
 	padding:2px;
-	font-weight:bold;
 	text-decoration:none;
 }
 .favorite_panel a:hover {
 	color:#666;
 	padding:2px;
 	background-color:#fff;
-	font-weight:bold;
 }
 .favorites_anonymous {
 	float:left;
@@ -423,8 +417,7 @@ h1.product_name {
 	margin-right:2px;
 	background-color:#f0f2e5;
 	text-decoration:none;
-	color:#666;
-	font-weight:bold;
+	color:#666158;
 }
 .product_page_tabs a:hover {
 	background-color:#52cbba;
@@ -432,14 +425,19 @@ h1.product_name {
 	cursor:pointer;
 }
 .product_page_tabs a.selected {
-	background-color:#666;
-	color:#fff;
+	background-color:#ccc;
+	color:#666158;
 }
 .product_tabbed_contents {
 	margin-bottom:18px;
 }
+.product_tabbed_contents p {
+	color:#666158;
+	font-size:12px;
+	width:400px;
+}
 .product_tabbed_contents_wrapper {
-	border:1px solid #666;
+	border:1px solid #ccc;
 	padding:9px;
 	float:left;
 	width:709px;
@@ -493,6 +491,9 @@ h1.product_name {
 
 .sidebar {
 	margin-bottom:18px;
+}
+.sidebar_wrapper_product {
+	margin-top:60px;
 }
 .sidebar_liner {
 	border:1px solid #ccc;
@@ -1068,14 +1069,12 @@ h3.featured_comments_header, h3.all_comments_header {
 	padding:2px;
 	background-color:#52cbba;
 	color:#fff;
-	font-weight:bold;
 	text-decoration:none;
 }
 .comment_tools a.unfeature {
 	padding:2px;
 	background-color:#666;
 	color:#fff;
-	font-weight:bold;
 	text-decoration:none;
 }
 .comment_tools a:hover.feature, .comment_tools a:hover.unfeature {
@@ -1206,7 +1205,6 @@ ul.store_nav a {
 	height:24px;
 	padding-left:6px;
 	float:left;
-	border-top:1px solid #ccc;
 	text-transform:lowercase;
 }
 ul.store_nav a:hover {
