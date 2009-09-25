@@ -1754,3 +1754,14 @@ ul.store_sub_nav a.selected {
 	float:left;
 }
 /* @end */
+/* @group curated commerce */
+.footer .footer_lastline p.curated_commerce {
+	font-family:arial;
+	font-size:10px;
+	color:#ccc;
+	margin-top:2px;
+}
+p.curated_commerce a {
+	color:#aaa;
+}
+/* @end */
