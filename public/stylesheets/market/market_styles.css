@@ -660,11 +660,15 @@ h1.product_name {
 	color:#52cbba;
 	text-decoration:none;
 }
-
 .footer a:hover {
 	color:#666;
 }
-
+.footer h2 a {
+	color:#666;
+}
+.footer h2 a:hover {
+	color:#52cbba;
+}
 .footer input.subscribe_input {
 	color:#46b9ae;
 	font-family:verdana;
