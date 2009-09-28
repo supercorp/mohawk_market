@@ -1,8 +1,7 @@
 ActionMailer::Base.smtp_settings = {
-  :address  => "smtp.google.com",
+  :address  => "smtp.gmail.com",
   :port => 587,
-  :domain => 'wearesupercorp.com',
-  :user_name => 'mohawk.cc.dev',
+  :user_name => 'mohawk.cc.dev@wearesupercorp.com',
   :password => '233N0rm4n',
   :authentication => :plain
 }
