@@ -2,7 +2,7 @@ module UserMailerBrand
   ######## Felt and Wire #########
 
   #COMMON#
-  SETUP_EMAIL_SUBJECT = "Felt & Wire Shop - "
+  SETUP_EMAIL_SUBJECT = "[Felt & Wire Shop] "
   FOOTER = "Got questions? http://#{MARKET_DOMAIN_NAME}/help"
 
   #ACCOUNT EMAILS#
