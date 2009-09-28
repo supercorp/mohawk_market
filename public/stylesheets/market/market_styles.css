@@ -36,7 +36,6 @@ h3 {
 	margin-top:9px;
 	margin-bottom:9px;
 	border-bottom:1px solid #ccc;
-	float:left;
 }
 
 .market_main_nav .main_category a {
@@ -105,7 +104,7 @@ h3 {
 }
 
 .main_search .search_input {
-	width:90px;
+	width:84px;
 	color:#52cbba;
 	font-family:verdana;
 	font-size:11px;
@@ -609,6 +608,7 @@ h1.product_name {
 	clear:left;
 	font-size:16px;
 	margin-bottom:18px;
+	width:100%;
 }
 .pagination span.disabled {
 	color:#fff;
@@ -808,6 +808,9 @@ div.dashboard_nav li.dashboard_nav_label {
 }
 .list_item_new {
 	background-color:#52cbba;
+}
+.list_item_new a {
+	color:#666;
 }
 .list_item_new h3 {
 	color:#fff;

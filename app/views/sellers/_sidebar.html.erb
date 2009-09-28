@@ -26,7 +26,7 @@
 		  <li><%= link_to "about", seller_url(:id => @seller.id, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %></li>
 		</ul>
 		<div class="sidebar_panel">
-			<%= link_to @seller.store_url, seller_url(@seller) %>
+			<%= link_to @seller.store_domain_name, seller_url(@seller) %>
 		</div>
 		<div class="sidebar_panel store_description">
 			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", seller_url(:id => @seller.id, :profile_section => :about)))).to_html unless @seller.store_description.blank? %>
