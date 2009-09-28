@@ -1,5 +1,6 @@
 #this is a test of git merge
 MARKET_HELP_EMAIL = 'help@feltandwireshop.com'
+MARKET_ORDER_EMAIL = 'orders@feltandwireshop.com'
 MARKET_LETTER_CLOSING = 'The Felt and Wire Shop'
 MARKET_NAME = 'Felt & Wire'
 MARKET_BILLING_NAME = "Mohawk Fine Papers Inc."
