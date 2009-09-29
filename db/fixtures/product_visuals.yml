@@ -9,6 +9,7 @@ product_images_004:
   position: 2
   created_at: 2009-08-26 21:23:48.840294 Z
   image_file_name: tangreysilver.jpg
+  type: 'ProductImage'
 product_images_005: 
   image_file_size: 792660
   updated_at: 2009-08-26 21:27:30.741954 Z
@@ -20,6 +21,7 @@ product_images_005:
   position: 0
   created_at: 2009-08-26 21:27:30.741954 Z
   image_file_name: pigeons.jpg
+  type: 'ProductImage'
 product_images_006: 
   image_file_size: 37363
   updated_at: 2009-08-24 17:25:08.029403 Z
@@ -31,6 +33,7 @@ product_images_006:
   position: 0
   created_at: 2009-08-24 17:25:08.029403 Z
   image_file_name: greyforestfront.jpg
+  type: 'ProductImage'
 product_images_007: 
   image_file_size: 34368
   updated_at: 2009-08-26 21:18:32.663274 Z
@@ -42,6 +45,7 @@ product_images_007:
   position: 0
   created_at: 2009-08-26 21:18:32.663274 Z
   image_file_name: tanbirdfront.jpg
+  type: 'ProductImage'
 product_images_008: 
   image_file_size: 35839
   updated_at: 2009-08-26 21:20:37.027560 Z
@@ -53,6 +57,7 @@ product_images_008:
   position: 0
   created_at: 2009-08-26 21:20:37.027560 Z
   image_file_name: brownchrismastreesfront.jpg
+  type: 'ProductImage'
 product_images_001: 
   image_file_size: 11223
   updated_at: 2009-08-26 21:24:23.387339 Z
@@ -64,6 +69,7 @@ product_images_001:
   position: 3
   created_at: 2009-08-26 21:23:39.789884 Z
   image_file_name: colors.gif
+  type: 'ProductImage'
 product_images_002: 
   image_file_size: 26959
   updated_at: 2009-08-26 21:24:28.452225 Z
@@ -75,6 +81,7 @@ product_images_002:
   position: 0
   created_at: 2009-08-26 21:24:06.828075 Z
   image_file_name: twowavesfront.jpg
+  type: 'ProductImage'
 product_images_003: 
   image_file_size: 36757
   updated_at: 2009-08-26 21:24:32.567282 Z
@@ -86,3 +93,4 @@ product_images_003:
   position: 1
   created_at: 2009-08-26 21:23:58.324777 Z
   image_file_name: twowavesdetail.jpg
+  type: 'ProductImage'
