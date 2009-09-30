@@ -45,7 +45,6 @@ namespace :config_files do
   task :create do
     make_directories
     database_yml
-    mailer_config
     local_config
     # pictures
   end
@@ -62,7 +61,6 @@ namespace :config_files do
   desc "Make symlink for config files" 
   task :symlink do
     symlink_database_yml
-    symlink_mailer_config
     symlink_local_config
     # symlink_pictures
   end
