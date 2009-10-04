@@ -251,9 +251,9 @@
 		<%= @product.tags.map{|tag| link_to tag.name, products_url(:tag => tag.name)}.join(' ') if @product.tags.any?%>
 	</div><!-- end .tags_panel -->
 	
-	<% if @product.market_collections.published.show_icon.any? %>
+	<% if @product.market_collections.published.show_icon.any? or @product.market_collections_from_tags_icon.any? %>
 		<div class="span-6 last panel collections_panel">		
-			<% for market_collection in @product.market_collections.published.show_icon %>
+			<% for market_collection in (@product.market_collections.published.show_icon + @product.market_collections_from_tags_icon).uniq %>
 				<% if market_collection.icon.exists? %>
 					<%= link_to image_tag(market_collection.icon.url(:full_width)), market_collection_url(market_collection) %>
 				<% end %>
