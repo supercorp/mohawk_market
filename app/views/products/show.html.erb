@@ -248,7 +248,7 @@
 	
 	<div class="span-6 last panel tags_panel">
 		<h3>Tags</h3>
-		<%= @product.tags.map{|tag| link_to tag.name, products_url(:tag => tag.name)}.join(' ') if @product.tags.any?%>
+		<%= @product.tags.public.map{|tag| link_to tag.name, products_url(:tag => tag.name)}.join(' ') if @product.tags.public.any?%>
 	</div><!-- end .tags_panel -->
 	
 	<% if @product.market_collections.published.show_icon.any? or @product.market_collections_from_tags_icon.any? %>
