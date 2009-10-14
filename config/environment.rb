@@ -97,10 +97,3 @@ VIDDLER << "http://*.viddler.com/*"
 FLICKR = OEmbed::Provider.new("http://www.flickr.com/services/oembed/",:xml)
 FLICKR << "http://*.flickr.com/*"     
 OEmbed::Providers.register(VIMEO,VIDDLER,FLICKR)
-SHARING_LINK_URLS = {
-  :facebook => "http://www.facebook.com/share.php?u=",
-  :twitter => "http://twitter.com/home?status=",
-  :delicious => "http://del.icio.us/post?v=4&noui&jump=close&url=",
-  :stumbleupon => "http://www.stumbleupon.com/submit?url=",
-  :kaboodle => "http://www.kaboodle.com/za/additem?redirectToKPage=true&pidOrRid=pid%3D&url="
-}

@@ -262,7 +262,7 @@
 	<% end %>
 	<div class="span-6 last panel">
 		<% for sharing_link in [:facebook,:twitter,:delicious,:stumbleupon,:kaboodle] do %>
-		<%= link_to sharing_link, SHARING_LINK_URLS[sharing_link] + url_encode(request.url) %>
+		<%= link_to sharing_link, SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
 		<% end %>
 	</div>
 </div>
