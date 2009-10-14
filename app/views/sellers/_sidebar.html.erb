@@ -47,6 +47,13 @@
 				<%= link_to 'Log in to follow this seller', seller_url(@seller) + '?log_me_in=true' %>
 			<% end %>
 		</div>
+		<% if controller_name == 'sellers' %>
+			<div class="sidebar_panel">
+				<% for sharing_link in [:facebook,:twitter,:delicious,:stumbleupon,:kaboodle] do %>
+				<%= link_to SharingLinks::ICONS[sharing_link].blank? ? sharing_link : image_tag(SharingLinks::ICONS[sharing_link]), SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
+				<% end %>
+			</div>
+		<% end %>
 		<div class="sidebar_panel bottom">
 			<h4>Have a question?</h4>
 			<p class="bottom"><%= link_to "Send #{@seller.store_name} a message", new_manage_message_url(:message => {:recipient_id => @seller.id}) %></p>
