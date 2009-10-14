@@ -1,5 +1,6 @@
 post_elements_001: 
-  blog_post_id: 2
+  container_id: 2
+  container_type: 'BlogPost'
   image_file_size: 
   updated_at: 2009-08-26 21:42:16.278036 Z
   body: "We\xE2\x80\x99ve been in the paper business for a while, and over the years have come to know some crazy talented people. Here, we present you with our favorite paper goods. We will be updating the product list constantly, so make sure to check in regularly. \n\
@@ -14,7 +15,8 @@ post_elements_001:
   created_at: 2009-08-26 21:42:16.278036 Z
   image_file_name: 
 post_elements_002: 
-  blog_post_id: 3
+  container_id: 3
+  container_type: 'BlogPost'
   image_file_size: 
   updated_at: 2009-08-26 21:45:35.393311 Z
   body: |-
@@ -29,7 +31,8 @@ post_elements_002:
   created_at: 2009-08-26 21:45:35.393311 Z
   image_file_name: 
 post_elements_003: 
-  blog_post_id: 3
+  container_id: 3
+  container_type: 'BlogPost'
   image_file_size: 
   updated_at: 2009-08-26 21:45:56.891454 Z
   body: Look at how Paula Scher uses her notebook.
