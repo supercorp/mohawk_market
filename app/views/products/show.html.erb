@@ -67,14 +67,17 @@
 			<div class="span-6 last">
 				
 				<div class="span-6 product_commerce">
-						<% if @product.product_options.length > 1 %>
-							<%= select_tag 'product_option_id', options_for_select(@product.product_options.map{|po| [po.name,po.id]},@product.product_options.first.id), :class => 'product_option_select' %><br/>
+						<% if @product.product_options.active.in_stock.length > 1 %>
+						<% for option in @product.product_options.active.out_of_stock %>
+							<span class="out_of_stock"><%= option.name %><%= option.price.format %> - out of stock</span><br/>
+						<% end %>
+							<%= select_tag 'product_option_id', options_for_select(@product.product_options.active.in_stock.map{|po| [po.name,po.id]},@product.product_options.active.in_stock.first.id), :class => 'product_option_select' %><br/>
 							<div class="span-6">
 								<span id="price_display" class="price"></span>
 							</div><!-- end .span-6 -->
 							<% javascript_tag do %>
 								$(document).ready(function(){
-									<% for option in @product.product_options %>
+									<% for option in @product.product_options.active.in_stock %>
 										$('#product_option_id').find("[value='<%= option.id %>']").data("price","<%= option.price.format %>")
 									<% end %>
 									$('#product_option_id').change(function(e){
@@ -85,15 +88,22 @@
 								});
 							<% end %>
 						<% else %>
-								<span id="price_display" class="price"><%= @product.product_options.first.price.format %></span>
+							<% display_option_name = (@product.product_options.active.length > 1) %>
+							<% for option in @product.product_options.active.out_of_stock %>
+								<span class="out_of_stock"><% if display_option_name %><%= option.name %><% end %> <%= option.price.format %> - out of stock</span><br/>
+							<% end %>
+							<% for option in @product.product_options.active.in_stock %>
+									<span id="price_display" class="price"><% if display_option_name %><%= option.name %><% end %> <%= option.price.format %></span><br/>
+							<% end %>
 						<% end %>
-					<div class="product_commerce_add">
-						<% form_tag update_cart_url, :method => :put do -%>
-							<%= hidden_field_tag 'product_option_id', @product.product_options.first.id, :id => 'product_option_id_field' %>
-							<%= image_submit_tag("market/add_to_cart.png", :'data-binding' => "image_state_normal", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_hover.png", :'data-binding' => "image_state_hover", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_active.png", :'data-binding' => "image_state_active", :'data-group' => "add_to_cart") %>					
+						<% if @product.product_options.active.in_stock.any? %>
+						<div class="product_commerce_add">
+							<% form_tag update_cart_url, :method => :put do -%>
+								<%= hidden_field_tag 'product_option_id', @product.product_options.first.id, :id => 'product_option_id_field' %>
+								<%= image_submit_tag("market/add_to_cart.png", :'data-binding' => "image_state_normal", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_hover.png", :'data-binding' => "image_state_hover", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_active.png", :'data-binding' => "image_state_active", :'data-group' => "add_to_cart") %>					
+							<% end %>
+						</div><!-- end .product_commerce_add -->
 						<% end %>
-					</div><!-- end .product_commerce_add -->
-
 				</div><!-- end .product_commerce -->
 				
 				<div class="span-6 last favorite_panel">
