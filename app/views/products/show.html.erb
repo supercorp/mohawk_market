@@ -68,9 +68,6 @@
 				
 				<div class="span-6 product_commerce">
 						<% if @product.product_options.active.in_stock.length > 1 %>
-						<% for option in @product.product_options.active.out_of_stock %>
-							<span class="out_of_stock"><%= option.name %><%= option.price.format %> - out of stock</span><br/>
-						<% end %>
 							<%= select_tag 'product_option_id', options_for_select(@product.product_options.active.in_stock.map{|po| [po.name,po.id]},@product.product_options.active.in_stock.first.id), :class => 'product_option_select' %><br/>
 							<div class="span-6">
 								<span id="price_display" class="price"></span>
@@ -89,9 +86,6 @@
 							<% end %>
 						<% else %>
 							<% display_option_name = (@product.product_options.active.length > 1) %>
-							<% for option in @product.product_options.active.out_of_stock %>
-								<span class="out_of_stock"><% if display_option_name %><%= option.name %><% end %> <%= option.price.format %> - out of stock</span><br/>
-							<% end %>
 							<% for option in @product.product_options.active.in_stock %>
 									<span id="price_display" class="price"><% if display_option_name %><%= option.name %><% end %> <%= option.price.format %></span><br/>
 							<% end %>
@@ -106,6 +100,39 @@
 						<% end %>
 				</div><!-- end .product_commerce -->
 				
+				
+				<div class="span-6 last out_of_stock_panel">
+					<div class="out_of_stock_panel_liner">
+						
+						<!-- begin note for eric 
+						if at least 1 option is in stock, show this
+						-->
+						<div ui_binding="expander" ui_state="contracted" ui_id="out_of_stock" class="out_of_stock_header">
+							Some options are out of stock. <a ui_binding="expander" ui_action="expand" ui_id="out_of_stock">(info)</a>
+						</div>
+						<div ui_binding="expander" ui_state="expanded" ui_id="out_of_stock" class="out_of_stock_header">
+							Out of stock options:	<a ui_binding="expander" ui_action="contract" ui_id="out_of_stock">(hide)</a>
+						</div>
+						
+						<!-- else: if all options are out of stock, show this -->
+						
+						<div class="out_of_stock_header_all">
+							<div class="header_all_text">out of stock</div>
+							<div class="header_all_list_label">options:</div>
+						</div>
+						
+						<!-- end note for Eric -->
+						
+						<div ui_binding="expander" ui_state="expanded" ui_id="out_of_stock">
+							<% display_option_name = (@product.product_options.active.length > 1) %>
+							<% for option in @product.product_options.active.out_of_stock %>
+								<div class="out_of_stock_item"><% if display_option_name %><%= option.name %> &ndash; <% end %><%= option.price.format %></div>
+							<% end %>
+						</div>
+						
+					</div>
+				</div>
+	
 				<div class="span-6 last favorite_panel">
 					<div class="favorite_panel_liner">
 					<% if logged_in? %>
@@ -114,7 +141,7 @@
 							This product's on your favorites.<br/>
 							<a href="#favorites" onclick="$('#favorites_tab').click();" >See who else likes it.</a>
 						<% else %>
-							<%= link_to 'add to your favorites', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
+							<%= link_to 'Add to your favorites.', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
 						<% end %>
 					<% else %>
 						<% session[:favorites] ||= [] %>
@@ -122,9 +149,9 @@
 							<a href="#">You appreciate it.</a>
 							<a href="#favorites" onclick="$('#favorites_tab').click();">see who else likes is</a>
 						<% else %>
-							<%= link_to 'appreciate it', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
+							<%= link_to 'Appreciate it.', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
 							or<br/>
-							<%= link_to 'log in to add to your favorites', product_url(@product) + '?log_me_in=true' %>
+							<%= link_to 'Log in to add to your favorites.', product_url(@product) + '?log_me_in=true' %>
 						<% end %>
 					<% end %>
 					</div><!-- end .favorite_panel_liner -->
@@ -300,5 +327,6 @@ function moveThumbs(direction){
 $(document).ready(function(){
 	bindImageSwaps();
 	bindTabs();
+	bindExpanders();
 	});
 <% end %>

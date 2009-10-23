@@ -17,6 +17,7 @@ a {
 
 a:hover {
 	color:#666;
+	cursor:pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -326,7 +327,23 @@ h1.product_name {
 	font-size:16px;
 	margin-top:18px;
 }
-
+.out_of_stock_panel {
+	margin-bottom:9px;
+	border-bottom:1px solid #ccc;
+}
+.out_of_stock_panel_liner {
+	padding:0px 18px 9px 14px;
+}
+.out_of_stock_header {
+	color:#666;
+}
+.out_of_stock_header_all .header_all_text {
+	font-size:28px;
+	color:#666;
+}
+.out_of_stock_header_all .header_all_list_label {
+	color:#666;
+}
 .favorite_panel {
 	margin-bottom:9px;
 }
@@ -335,12 +352,10 @@ h1.product_name {
 }
 .favorite_panel a {
 	color:#52cbba;
-	padding:2px;
 	text-decoration:none;
 }
 .favorite_panel a:hover {
 	color:#666;
-	padding:2px;
 	background-color:#fff;
 }
 .favorites_anonymous {
