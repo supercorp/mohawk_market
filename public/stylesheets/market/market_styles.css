@@ -850,6 +850,9 @@ div.dashboard_page_tabs a, div.dashboard_product_tabs a {
 .dashboard_tabbed_contents {
 	background-color:#f0f2e5;
 }
+.dashboard_tabbed_contents .tab_description {
+	color:#666;
+}
 .dashboard_tabbed_contents .panel_show {
 	background-color:#fff;
 }
