@@ -1042,24 +1042,26 @@ a:hover img.thumb {border-color:#52cbba;}
 	text-align:right;
 }
 
+.blog_categories {
+	border-top:1px solid #999;
+}
 .blog_categories ul {
 	list-style-type:none;
 	margin:0;
 	font-size:24px;
 }
-
 .blog_categories a {
-	color:#000;
+	color:#666;
 }
-
+.blog_categories a:hover {
+	color:#52cbba;
+}
 .blog_categories a.selected {
-	padding:6px;
-	color:#fff;
-	background-color:#666	;
+	color:#52cbba;
 }
 
 .comment, .list_item_comment {
-	border-top:1px solid #ddd;
+	border-top:1px solid #aaa;
 	padding-top:8px;
 	min-height:96px;
 	margin-bottom:12px;
