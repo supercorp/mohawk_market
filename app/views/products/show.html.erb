@@ -120,6 +120,26 @@
 					</div><!-- end .favorite_panel_liner -->
 				</div><!-- end .favorite_panel -->
 				
+				<div class="span-6 last share_panel">
+					<div class="share_panel_liner">
+               <div ui_binding="expander" ui_state="contracted" ui_id="share_this" class="share_this_header">
+                   <a ui_binding="expander" ui_action="expand" ui_id="share_this">Share this.</a>
+               </div>
+               <div ui_binding="expander" ui_state="expanded" ui_id="share_this" class="share_this_header">
+                   Share this. <a ui_binding="expander" ui_action="contract" ui_id="share_this">(close)</a>
+               </div>
+
+               <div ui_binding="expander" ui_state="expanded" ui_id="share_this">
+                   <% for sharing_link in [:facebook,:twitter,:delicious,:stumbleupon,:kaboodle] do %>
+                       <div class="share_link_wrapper"><%= link_to SharingLinks::ICONS[sharing_link].blank? ? sharing_link : image_tag(SharingLinks::ICONS[sharing_link]), SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
+                       <%= link_to SharingLinks::TEXT[sharing_link], SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
+                       </div><!--end .share_link_wrapper -->
+                   <% end %>
+               </div>
+
+        	</div><!--end .share_panel_liner -->
+	      </div><!-- end .share_panel -->
+				
 				<% if @product.shippable %>
 					<% unless @product.shipping_note.blank? %>
 						<div class="span-6 last shipping_note">
@@ -260,11 +280,7 @@
 			<% end %>
 		</div><!-- end .collections_panel -->
 	<% end %>
-	<div class="span-6 last panel">
-		<% for sharing_link in [:facebook,:twitter,:delicious,:stumbleupon,:kaboodle] do %>
-		<%= link_to SharingLinks::ICONS[sharing_link].blank? ? sharing_link : image_tag(SharingLinks::ICONS[sharing_link]), SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
-		<% end %>
-	</div>
+
 </div>
 <% javascript_tag do %>
 var thumb_count = <%= @product.product_visuals.count %>;
@@ -294,5 +310,6 @@ function moveThumbs(direction){
 $(document).ready(function(){
 	bindImageSwaps();
 	bindTabs();
+	bindExpanders();
 	});
 <% end %>

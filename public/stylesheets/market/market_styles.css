@@ -327,22 +327,26 @@ h1.product_name {
 	margin-top:18px;
 }
 
-.favorite_panel {
+.favorite_panel, .share_panel {
 	margin-bottom:9px;
 }
-.favorite_panel_liner {
+.favorite_panel_liner, .share_panel_liner {
 	padding:0px 18px 0px 14px;
 }
-.favorite_panel a {
+.favorite_panel a, .share_panel a {
 	color:#52cbba;
-	padding:2px;
 	text-decoration:none;
 }
-.favorite_panel a:hover {
+.favorite_panel a:hover, .share_panel a:hover {
 	color:#666;
-	padding:2px;
 	background-color:#fff;
 }
+.share_link_wrapper {
+    width:96px;
+    float:left;
+    margin-right:6px;
+}
+
 .favorites_anonymous {
 	float:left;
 	height:58px;
