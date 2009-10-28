@@ -170,6 +170,9 @@
 			<% unless @product.specs.blank? %>
 				<a ui_binding="tab" ui_set="product_info" ui_tab="specs" href="#specs">Specs</a>
 			<% end %>
+			<% if @product.product_assets.any? %>
+				<a ui_binding="tab" ui_set="product_info" ui_tab="assets" href="#assets">Downloads</a>
+			<% end %>
 			<% if @product.faq %>
 				<a ui_binding="tab" ui_set="product_info" ui_tab="faq" href="#faq">FAQ</a>
 			<% end %>
@@ -196,6 +199,18 @@
 				</div><!-- end .product_tabbed_contents_wrapper -->
 			</div><!-- end .product_tabbed_contents -->
 			<!-- end specs -->
+		<% end %>
+		
+		<% if @product.product_assets.any? %>
+			<!-- start faq -->
+			<div class="span-18 last product_tabbed_contents" id="assets" ui_binding="tab_content" ui_set="product_info"  style="display:none;">
+				<div class="product_tabbed_contents_wrapper product_assets">
+					<% for product_asset in @product.product_assets %>
+						<%= link_to product_asset.file_file_name, product_asset.file.url %>
+					<% end %>
+				</div><!-- end .product_tabbed_contents_wrapper -->
+			</div><!-- end .product_tabbed_contents -->
+			<!-- end faq -->
 		<% end %>
 		
 		<% if @product.faq %>

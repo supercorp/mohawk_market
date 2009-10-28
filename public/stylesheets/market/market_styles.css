@@ -346,7 +346,14 @@ h1.product_name {
     float:left;
     margin-right:6px;
 }
-
+.product_assets a {
+	color:#52cbba;
+	float:left;
+	clear:left;
+}
+.product_assets a:hover {
+	color:#666;
+}
 .favorites_anonymous {
 	float:left;
 	height:58px;
