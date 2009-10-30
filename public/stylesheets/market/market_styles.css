@@ -815,7 +815,18 @@ div.dashboard_nav li.dashboard_nav_label {
 	font-weight:bold;
 }
 .list_header a {
+	color:#333;
+	font-family:verdana;
+	font-size:10px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.list_header a:hover {
 	color:#fff;
+}
+.list_header a.selected {
+	background:url(../../images/market/header_sort_down.gif) no-repeat right;
+	padding-right:14px;
 }
 .list_item {
 	border-bottom:1px solid #ddd;
