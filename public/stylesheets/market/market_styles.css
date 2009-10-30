@@ -344,7 +344,7 @@ h1.product_name {
 .out_of_stock_header_all .header_all_list_label {
 	color:#666;
 }
-.favorite_panel {
+.favorite_panel, .share_panel {
 	margin-bottom:9px;
 }
 .favorite_panel_liner, .share_panel_liner {
