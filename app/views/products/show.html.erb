@@ -215,7 +215,7 @@
 			<% if @product.product_assets.any? %>
 				<a ui_binding="tab" ui_set="product_info" ui_tab="assets" href="#assets">Downloads</a>
 			<% end %>
-			<% if @product.faq %>
+			<% if @product.faq and @product.faq.active %>
 				<a ui_binding="tab" ui_set="product_info" ui_tab="faq" href="#faq">FAQ</a>
 			<% end %>
 			<a ui_binding="tab"  ui_set="product_info" ui_tab="comments" href="#comments">Comments (<%= @product.comments.published.enabled.count %>)</a>
@@ -255,7 +255,7 @@
 			<!-- end faq -->
 		<% end %>
 		
-		<% if @product.faq %>
+		<% if @product.faq and @product.faq.active %>
 			<!-- start faq -->
 			<div class="span-18 last product_tabbed_contents" id="faq" ui_binding="tab_content" ui_set="product_info"  style="display:none;">
 				<div class="product_tabbed_contents_wrapper product_faq">
