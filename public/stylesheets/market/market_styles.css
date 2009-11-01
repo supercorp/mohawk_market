@@ -972,8 +972,15 @@ div.dashboard_page_tabs a, div.dashboard_product_tabs a {
 	font-size:14px;
 	margin-bottom:9px;
 }
-.faq_seller .faq_answer {
-	
+.faq_seller .faq_header h1 {
+	color:#52cbba;
+	font-weight:normal;
+	font-size:18px;
+	margin-top:6px;
+}
+.faq_seller .faq_header_liner {
+	width:729px;
+	border-top:1px solid #ccc;
 }
 .faq_market .faq_question_answer {
 	width:729px;
@@ -982,37 +989,125 @@ div.dashboard_page_tabs a, div.dashboard_product_tabs a {
 	font-weight:bold;
 	font-size:18px;
 	margin-bottom:9px;
-	color:#52cbba;
-	
+	color:#000;
 }
 .faq_market .faq_answer {
-	font-size:14px;
-	margin-bottom:9px;
+	margin-bottom:24px;
+	float:left;
 }
-.faq_header h1 {
+.faq_market .faq_answer p {
+	font-size:12px;
+}
+.faq_market .faq_answer a {
+	color:#52cbba;
+}
+.faq_market .faq_header {
+	padding-bottom:18px;
+	padding-top:18px;
+	float:left;
+}
+.faq_market .faq_header_liner {
+	width:974px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.faq_market .faq_header h1 {
+	color:#52cbba;
+	font-weight:normal;
+	font-size:24px;
+	margin:12px 12px 12px 4px;
+}
+.faq_nav h6 {
+	font-size:14px;
+	color:#52cbba;
+}
+.faq_nav_liner {
+	margin-right:40px;
+	margin-left:4px;
+	padding-top:6px;
+}
+.faq_nav h6 {
+	padding-left:2px;
+}
+.faq_nav ul {
+	list-style-type:none;
+	margin-left:0;
+}
+.faq_nav ul a {
+	padding:2px;
+	text-decoration:none;
 	color:#666;
 }
-.faq_header a {
+.faq_nav ul a.selected {
+	color:black;
+}
+.faq_nav ul a:hover {
 	color:#52cbba;
 }
 .faq_footer {
+  float:left;
 	background-color:#eee;
 }
 .faq_footer_wrapper {
 	padding:9px;
 }
+.faq_return_to_top a {
+	font-size:12px;
+	color:#666;
+}
+.faq_return_to_top a:hover {
+	color:#52cbba;
+}
 .faq_footer a {
+	color:#52cbba;
+}
+.faq_footer a:hover {
+	color:#666;
+}
+.faq_title h2, .faq_main_column h2 {
+	color:#52cbba;
+	font-weight:normal;
+	font-size:24px;
+}
+.faq_question_nav {
+	margin-bottom:36px;
+}
+.faq_question_nav ul {
+	list-style-type:none;
+	margin-left:0;
+	font-size:14px;
+}
+.faq_question_nav a {
+	color:#666;
+}
+.faq_question_nav a:hover {
+	color:#52cbba;
+}
+.faq_answer h4 {
+	color:#52cbba;
+	font-weight:normal;
+	font-size:18px;
+}
+.faq_title h4 {
+	font-weight:normal;
+	font-size:18px;
+	margin-bottom:9px;
+}
+.faq_title a {
+	color:#666;
+}
+.faq_title a:hover {
 	color:#52cbba;
 }
 ul.faq_list {
 	list-style-type:none;
 	margin-left:0;
 	margin-right:0;
+	margin-bottom:18px;
 }
-ul.faq_list li a {
+ul.faq_list a {
 	font-size:18px;
 	color:#52cbba;
-	font-weight:bold;
 }
 /* @end */
 
