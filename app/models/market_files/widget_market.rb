@@ -8,5 +8,6 @@ module WidgetMarket
                      :widget_wide_3 => '729x238#',
                      :widget_wide_4 => '975x238#',
                      :widget_tall => '238'}
+  IMAGE_SIZE_HELP_TEXT = "Images should be..."
   
 end
