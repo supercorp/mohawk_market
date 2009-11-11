@@ -328,33 +328,33 @@ site_sections_020:
   staging_dirty: true
   position: 
   state: staging
-site_sections_021: 
+site_sections_098: 
   name: Home Page
   type: HomePageSection
   id: 98
-  resource_id: 16
+  resource_id: 98
   state_changed_at: 
   category_id: 
   market_collection_id: 
   staging_dirty: true
   position: 1
   state: staging
-site_sections_022: 
+site_sections_099: 
   name: Market Blog
   type: BlogSection
   id: 99
-  resource_id: 17
+  resource_id: 99
   state_changed_at: 
   category_id: 
   market_collection_id: 
   staging_dirty: true
   position: 3
   state: staging
-site_sections_023: 
+site_sections_100: 
   name: Seller Index
   type: DesignerSection
   id: 100
-  resource_id: 4
+  resource_id: 100
   state_changed_at: 
   category_id: 
   market_collection_id: 
