@@ -725,6 +725,10 @@ h1.product_name {
 	color:#52cbba;
 }
 
+.public_form_items a {
+	font-size:11px;
+}
+
 .public_form_explanation a:hover, .public_form_items a:hover {
 	color:#666;
 }
