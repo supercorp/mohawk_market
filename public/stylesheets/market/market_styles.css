@@ -845,6 +845,10 @@ div.dashboard_nav li.dashboard_nav_label {
 	background:url(../../images/market/header_sort_down.gif) no-repeat right;
 	padding-right:14px;
 }
+.list_header a.selected_descending {
+	background:url(../../images/market/header_sort_up.gif) no-repeat right;
+	padding-right:14px;
+}
 .list_item {
 	border-bottom:1px solid #ddd;
 	background-color:#fff;
