@@ -934,6 +934,12 @@ div.dashboard_page_tabs a, div.dashboard_product_tabs a {
 	color:#52cbba;
 	font-weight:bold;
 }
+.help_hover_content a {
+  color:#52cbba;
+}
+.help_hover_content a:hover {
+  color:#999;
+}
 /* @end */
 /* @group help slider */
 .help_content {
