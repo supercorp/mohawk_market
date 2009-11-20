@@ -594,6 +594,9 @@ h1.product_name {
 	padding-top:6px;
 	color:#333;
 }
+.panel_header h3 a {
+	text-transform:lowercase;
+}
 .panel_group {margin-bottom:18px;}
 .tags_panel a {
 	color:#666;
