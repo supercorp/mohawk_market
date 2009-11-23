@@ -89,6 +89,7 @@ end
 require 'money'
 require 'mailer_config.rb'
 require 'oembed'
+require 'shellwords'
 VIMEO = OEmbed::Provider.new("http://www.vimeo.com/api/oembed.xml",:xml)
 VIMEO << "http://vimeo.com/*"
 VIMEO << "http://*.vimeo.com/*"
