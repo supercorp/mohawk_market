@@ -5,7 +5,7 @@
 			
 			<% for category in Category.top_level %>
 				<% if category.show_empty or category.children_products.any? %>
-				<div class="main_category <% if @category and @category == category %> selected<% end %>"><a href="<%= home_url(:category_id => category.id) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a>
+				<div class="main_category <% if @category and @category == category %> selected<% end %>"><a href="<%= home_url(:category_id => category.to_param) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a>
 				</div>
 				<% end %>
 			<% end %>
@@ -39,7 +39,7 @@
 				<li><a href="<%= home_url(:category_id => @category.id ) %>"<% unless @sub_category %> class="selected"<% end %>>all</a></li>
 				<% for sub_category in @category.children %>
 					<% if sub_category.show_empty or sub_category.products.any? %>
-						<li<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><a href="<%= home_url(:category_id => sub_category.id) %>"<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><%= sub_category.name %></a></li>
+						<li<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><a href="<%= home_url(:category_id => sub_category.to_param) %>"<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><%= sub_category.name %></a></li>
 					<% end %>
 				<% end %>
 			</ul>
