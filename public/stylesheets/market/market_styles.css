@@ -1928,3 +1928,22 @@ p.curated_commerce a {
 	color:#aaa;
 }
 /* @end */
+/* @group cc_unit */
+.cc_unit_1, .cc_unit_2, .cc_unit_3, .cc_unit_4{
+	float:left;
+	margin-right:9px;
+	position:relative;
+}
+.cc_unit_1 {
+	width: 237px;
+}
+.cc_unit_2 {
+	width: 483px;
+}
+.cc_unit_3 {
+	width: 729px;
+}
+.cc_unit_4 {
+	width: 975px;margin-right:0;
+}
+/* @end */
