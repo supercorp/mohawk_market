@@ -12,3 +12,9 @@ MARKET_AUTH_TRANS_ID = '3Pw6X4t8Q2973Hu8'
 MARKET_UNITS_PER_ROW = 4
 MARKET_UNIT_PIXEL_WIDTH = 237
 MARKET_PREFIX = 'cc_mohawk'
+
+#optional CC features
+MARKET_USE_SELLER_BANNER = true
+
+#temporary market content
+MARKET_WELCOME_TEXT = ""
