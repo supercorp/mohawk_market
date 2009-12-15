@@ -818,6 +818,8 @@ div.dashboard_nav li.dashboard_nav_label {
 	color:#fff;
 	border-right:1px solid #52cbba;
 	border-bottom:1px solid #52cbba;
+	font-weight:normal;
+	font-size:12px;
 }
 /* @end */
 /* @group dashboard panels */
