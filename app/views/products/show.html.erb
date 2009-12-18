@@ -195,8 +195,19 @@
 							<p>	<%= @product.shipping_class.everywhere_else ? 'Everywhere' : @product.shipping_class.shipping_destinations.map{|sd| sd.country.name }.join(', ') %></p>
 						</div><!-- end .shipping_destinations -->
 					<% else %>
-						<div class="span-6 last shipping_note">
-							<h6>Downloadable</h6>
+						<div class="cc_unit_1 last shipping_note">
+							<div class="shipping_note_liner">
+								digital delivery
+								<div class="help_hover_wrapper">
+									<a data-binding="hover_help" data-help-div="restock_field_help">(?)</a>
+									<div id="restock_field_help" class="help_hover" style="display:none;"> 
+										<div class="help_hover_content">
+										This is a downloadable product. It won't be shipped to you, but we still need a street address at checkout.
+										</div>
+										<%= image_tag 'market/help_hover_nipple.png' %>
+									</div><!-- end .help_hover -->
+								</div><!-- end .help_hover_wrapper -->
+							</div><!--end .shipping_note_liner -->
 						</div>
 					<% end %>
 					</div><!--end .shipping_destinations_liner -->

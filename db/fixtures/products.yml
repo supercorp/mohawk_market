@@ -3,9 +3,16 @@ products_001:
   permalink: 
   status: ACTIVE
   updated_at: 2009-08-24 17:26:44.967372 Z
+  downloadable: 
+  specs: 
+  suppressed: false
+  shippable: true
   shipping_note: ""
   short_description: 
   id: 1
+  reviewed: 
+  store_feature_position: 
+  store_featured: false
   vectors: 
   category_id: 10
   description: "Color: cement\n\
@@ -19,18 +26,28 @@ products_001:
     Cards comes packaged in a clear plastic pack\n\
     Blank Inside\n\
     Shipped in a sturdy mailer"
+  seller_active: true
   sku: ""
+  page_views: 0
   shipping_class_id: 1
   user_id: 2
   created_at: 2009-08-24 17:19:00.598121 Z
+  reviewer_id: 
 products_002: 
   name: Bird Card
   permalink: 
   status: ACTIVE
   updated_at: 2009-08-26 21:19:14.546073 Z
+  downloadable: 
+  specs: 
+  suppressed: false
+  shippable: true
   shipping_note: ""
   short_description: 
   id: 2
+  reviewed: 
+  store_feature_position: 
+  store_featured: false
   vectors: "'4':12A 'a2':79A 'x5':17A '3.5':16A '5.5':83A 'bar':13A 'cut':20A 'fee':75A 'tan':4A '4.25':82A 'acid':28A 'also':76A 'bird':1A 'card':2A,14A,22A,30A,44A,84A 'come':85A 'free':29A 'line':35A 'made':24A 'pack':91A 'ship':94A 'size':11A,80A 'addit':56A,70A,74A 'avail':77A 'blank':92A 'charg':57A 'clear':89A 'color':3A,6A,9A,42A,53A,62A,71A 'fulli':34A 'insid':93A 'liner':5A 'order':47A 'paper':21A 'stock':31A,65A 'white':7A 'custom':52A 'gravel':10A 'mailer':98A 'measur':15A,81A 'packag':86A 'sturdi':97A 'contact':66A 'cut-pap':19A 'envelop':8A,38A 'plastic':90A 'request':63A,69A 'acid-fre':27A 'complementari':41A"
   category_id: 17
   description: "Color: tan\n\
@@ -44,18 +61,28 @@ products_002:
     Cards comes packaged in a clear plastic pack\n\
     Blank Inside\n\
     Shipped in a sturdy mailer"
+  seller_active: true
   sku: ""
+  page_views: 0
   shipping_class_id: 1
   user_id: 2
   created_at: 2009-08-26 21:18:19.691180 Z
+  reviewer_id: 
 products_003: 
   name: Christmas Tree Card
   permalink: 
   status: ACTIVE
-  updated_at: 2009-08-26 21:21:37.126932 Z
+  updated_at: 2009-08-26 21:21:37.126931 Z
+  downloadable: 
+  specs: 
+  suppressed: false
+  shippable: true
   shipping_note: 7 days
   short_description: 
   id: 3
+  reviewed: 
+  store_feature_position: 
+  store_featured: false
   vectors: "'4':79A '5':84A 'a2':13A '3.5':83A '5.5':17A 'bar':80A 'cut':20A 'fee':75A '4.25':16A 'acid':28A 'also':76A 'card':3A,14A,22A,30A,44A,85A 'come':86A 'fawn':5A 'free':29A 'line':35A 'made':24A 'moss':11A 'pack':92A 'ship':95A 'size':12A,81A 'tree':2A 'addit':56A,70A,74A 'avail':77A 'blank':93A 'charg':57A 'clear':90A 'color':4A,7A,10A,42A,53A,62A,71A 'fulli':34A 'insid':94A 'liner':6A 'order':47A 'paper':21A 'stock':31A,65A 'chocol':8A 'custom':52A 'mailer':99A 'measur':15A,82A 'packag':87A 'sturdi':98A 'contact':66A 'cut-pap':19A 'envelop':9A,38A 'plastic':91A 'request':63A,69A 'acid-fre':27A 'christma':1A 'complementari':41A"
   category_id: 16
   description: "Color: fawn\n\
@@ -69,18 +96,28 @@ products_003:
     Cards comes packaged in a clear plastic pack\n\
     Blank Inside\n\
     Shipped in a sturdy mailer"
+  seller_active: true
   sku: ""
+  page_views: 0
   shipping_class_id: 1
   user_id: 2
   created_at: 2009-08-26 21:20:28.637522 Z
+  reviewer_id: 
 products_004: 
   name: Waves Card
   permalink: 
   status: ACTIVE
   updated_at: 2009-08-26 21:26:32.211161 Z
+  downloadable: 
+  specs: 
+  suppressed: false
+  shippable: true
   shipping_note: ""
   short_description: 
   id: 4
+  reviewed: 
+  store_feature_position: 
+  store_featured: false
   vectors: "'4':80A '5':85A 'a2':14A '3.5':84A '5.5':18A 'bar':81A 'cut':21A 'fee':76A 'tan':4A '4.25':17A 'acid':29A 'also':77A 'card':2A,15A,23A,31A,45A,86A 'come':87A 'free':30A 'line':36A 'made':25A 'pack':93A 'ship':96A 'size':13A,82A 'wave':1A 'addit':57A,71A,75A 'avail':78A 'blank':94A 'charg':58A 'clear':91A 'color':3A,8A,11A,43A,54A,63A,72A 'cream':5A 'fulli':35A 'insid':95A 'liner':7A 'order':48A 'paper':22A 'stock':32A,66A 'white':6A,9A 'cement':12A 'custom':53A 'mailer':100A 'measur':16A,83A 'packag':88A 'sturdi':99A 'contact':67A 'cut-pap':20A 'envelop':10A,39A 'plastic':92A 'request':64A,70A 'acid-fre':28A 'complementari':42A"
   category_id: 16
   description: "Color: tan, cream & white\n\
@@ -94,18 +131,28 @@ products_004:
     Cards comes packaged in a clear plastic pack\n\
     Blank Inside\n\
     Shipped in a sturdy mailer"
+  seller_active: true
   sku: ""
+  page_views: 0
   shipping_class_id: 1
   user_id: 2
   created_at: 2009-08-26 21:22:40.288201 Z
+  reviewer_id: 
 products_005: 
   name: Pigeons Print
   permalink: 
   status: ACTIVE
   updated_at: 2009-08-26 21:31:42.432857 Z
+  downloadable: 
+  specs: 
+  suppressed: false
+  shippable: true
   shipping_note: 5-7 business days
   short_description: 
   id: 5
+  reviewed: 
+  store_feature_position: 
+  store_featured: false
   vectors: "'x':40A '15':39A,41A '17':23A,24A '100':51A 'pad':76A 'run':49A 'back':73A 'card':72A 'care':58A 'flat':68A 'imag':35A,54A 'matt':13A 'ship':67A 'sign':45A 'size':36A 'acryl':18A 'board':20A 'frame':30A,31A 'limit':48A 'paint':10A 'paper':15A 'print':2A,6A,21A,43A,56A 'sleev':63A 'stiff':71A 'white':27A 'actual':34A 'approx':38A 'archiv':12A 'border':28A 'includ':25A,33A 'mailer':77A 'measur':22A 'number':47A 'origin':9A,16A 'packag':59A 'pigeon':1A 'beneath':52A 'protect':62A 'qualiti':5A 'profession':4A 'heavyweight':14A 'professional-qu':3A"
   category_id: 9
   description: "Professional-quality print of an original painting on archival matte heavyweight paper. Original is acrylic on board.\n\
@@ -113,7 +160,10 @@ products_005:
     Actual image size is approx. 15\" X 15\"\n\
     Each print is signed and numbered (limited run of 100) beneath the image.\n\
     The print is carefully packaged in a protective sleeve and will be shipped flat with a stiff card backing in a padded mailer."
+  seller_active: true
   sku: ""
+  page_views: 0
   shipping_class_id: 1
   user_id: 2
   created_at: 2009-08-26 21:27:17.622097 Z
+  reviewer_id: 

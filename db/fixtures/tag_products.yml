@@ -1,20 +1,20 @@
 tag_products_003: 
-  product_id: 5
-  tag_id: 4
-  id: 6
-tag_products_004: 
-  product_id: 1
-  tag_id: 3
-  id: 3
-tag_products_005: 
   product_id: 1
   tag_id: 1
   id: 1
-tag_products_001: 
+tag_products_004: 
   product_id: 1
   tag_id: 2
   id: 2
-tag_products_002: 
+tag_products_005: 
   product_id: 2
   tag_id: 4
   id: 4
+tag_products_001: 
+  product_id: 5
+  tag_id: 4
+  id: 6
+tag_products_002: 
+  product_id: 1
+  tag_id: 3
+  id: 3

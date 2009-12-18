@@ -1,45 +1,45 @@
 post_elements_001: 
-  container_id: 2
-  container_type: 'BlogPost'
   image_file_size: 
   updated_at: 2009-08-26 21:42:16.278036 Z
   body: "We\xE2\x80\x99ve been in the paper business for a while, and over the years have come to know some crazy talented people. Here, we present you with our favorite paper goods. We will be updating the product list constantly, so make sure to check in regularly. \n\
     In addition to this new curated shopping experience, we\xE2\x80\x99re simultaneously introducing Felt & Wire Press, an on-demand printing service expanding possibilities even further.\n\
     Now, you have no excuse to deny grandma the beautiful, personalized birthday card she\xE2\x80\x99s been waiting for."
+  container_id: 2
   image_content_type: 
   type: PostText
   video_url: 
   id: 4
+  container_type: BlogPost
   image_updated_at: 
   position: 1
   created_at: 2009-08-26 21:42:16.278036 Z
   image_file_name: 
 post_elements_002: 
-  container_id: 3
-  container_type: 'BlogPost'
   image_file_size: 
   updated_at: 2009-08-26 21:45:35.393311 Z
   body: |-
     We have some great new artists selling journals.
     Learn more about them at "Felt & Wire":http://feltandwire.com
+  container_id: 3
   image_content_type: 
   type: PostText
   video_url: 
   id: 5
+  container_type: BlogPost
   image_updated_at: 
   position: 1
   created_at: 2009-08-26 21:45:35.393311 Z
   image_file_name: 
 post_elements_003: 
-  container_id: 3
-  container_type: 'BlogPost'
   image_file_size: 
   updated_at: 2009-08-26 21:45:56.891454 Z
   body: Look at how Paula Scher uses her notebook.
+  container_id: 3
   image_content_type: 
   type: PostVideo
   video_url: http://www.youtube.com/watch?v=I7M7U8rP_K8
   id: 6
+  container_type: BlogPost
   image_updated_at: 
   position: 2
   created_at: 2009-08-26 21:45:56.891454 Z

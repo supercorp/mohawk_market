@@ -1,75 +1,6 @@
 product_options_008: 
-  name: chocolate
-  updated_at: 2009-08-26 21:25:22.974518 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 5
-  sku: wave-choc
-  position: 
-  created_at: 2009-08-26 21:25:22.974518 Z
-product_options_010: 
-  name: sage
-  updated_at: 2009-08-27 18:50:32.837749 Z
-  price: 400
-  product_id: 4
-  quantity: 6
-  id: 7
-  sku: wave-sage
-  position: 
-  created_at: 2009-08-26 21:25:40.157401 Z
-product_options_009: 
-  name: tan
-  updated_at: 2009-08-26 21:25:31.679416 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 6
-  sku: wave-tan
-  position: 
-  created_at: 2009-08-26 21:25:31.679416 Z
-product_options_011: 
-  name: card
-  updated_at: 2009-08-27 18:50:32.841756 Z
-  price: 400
-  product_id: 2
-  quantity: 7
-  id: 2
-  sku: ""
-  position: 
-  created_at: 2009-08-26 21:18:42.597626 Z
-product_options_001: 
-  name: cream
-  updated_at: 2009-08-26 21:25:54.970624 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 8
-  sku: wave-cream
-  position: 
-  created_at: 2009-08-26 21:25:54.970624 Z
-product_options_002: 
-  name: cement
-  updated_at: 2009-08-26 21:26:03.538124 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 9
-  sku: wave-cement
-  position: 
-  created_at: 2009-08-26 21:26:03.538124 Z
-product_options_003: 
-  name: gravel
-  updated_at: 2009-08-26 21:26:13.040303 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 10
-  sku: wave-gravel
-  position: 
-  created_at: 2009-08-26 21:26:13.040303 Z
-product_options_004: 
   name: print
+  restock_quantity: 1
   updated_at: 2009-08-26 21:31:06.245608 Z
   price: 4000
   product_id: 5
@@ -78,18 +9,10 @@ product_options_004:
   sku: pig-print
   position: 
   created_at: 2009-08-26 21:31:06.245608 Z
-product_options_005: 
-  name: card
-  updated_at: 2009-08-24 17:25:22.271317 Z
-  price: 1000
-  product_id: 1
-  quantity: 10
-  id: 1
-  sku: ""
-  position: 
-  created_at: 2009-08-24 17:25:22.271317 Z
-product_options_006: 
+  state: 
+product_options_010: 
   name: brown
+  restock_quantity: 1
   updated_at: 2009-08-26 21:20:53.097124 Z
   price: 400
   product_id: 3
@@ -98,8 +21,22 @@ product_options_006:
   sku: xmast1
   position: 
   created_at: 2009-08-26 21:20:53.097124 Z
-product_options_007: 
+  state: 
+product_options_009: 
+  name: card
+  restock_quantity: 1
+  updated_at: 2009-08-24 17:25:22.271317 Z
+  price: 1000
+  product_id: 1
+  quantity: 10
+  id: 1
+  sku: ""
+  position: 
+  created_at: 2009-08-24 17:25:22.271317 Z
+  state: 
+product_options_011: 
   name: tan
+  restock_quantity: 1
   updated_at: 2009-08-26 21:21:03.576231 Z
   price: 400
   product_id: 3
@@ -108,3 +45,88 @@ product_options_007:
   sku: xmast2
   position: 
   created_at: 2009-08-26 21:21:03.576231 Z
+  state: 
+product_options_001: 
+  name: chocolate
+  restock_quantity: 1
+  updated_at: 2009-08-26 21:25:22.974518 Z
+  price: 400
+  product_id: 4
+  quantity: 10
+  id: 5
+  sku: wave-choc
+  position: 
+  created_at: 2009-08-26 21:25:22.974518 Z
+  state: 
+product_options_002: 
+  name: tan
+  restock_quantity: 1
+  updated_at: 2009-08-26 21:25:31.679416 Z
+  price: 400
+  product_id: 4
+  quantity: 10
+  id: 6
+  sku: wave-tan
+  position: 
+  created_at: 2009-08-26 21:25:31.679416 Z
+  state: 
+product_options_003: 
+  name: sage
+  restock_quantity: 1
+  updated_at: 2009-08-27 18:50:32.837749 Z
+  price: 400
+  product_id: 4
+  quantity: 6
+  id: 7
+  sku: wave-sage
+  position: 
+  created_at: 2009-08-26 21:25:40.157401 Z
+  state: 
+product_options_004: 
+  name: card
+  restock_quantity: 1
+  updated_at: 2009-08-27 18:50:32.841756 Z
+  price: 400
+  product_id: 2
+  quantity: 7
+  id: 2
+  sku: ""
+  position: 
+  created_at: 2009-08-26 21:18:42.597626 Z
+  state: 
+product_options_005: 
+  name: cream
+  restock_quantity: 1
+  updated_at: 2009-08-26 21:25:54.970624 Z
+  price: 400
+  product_id: 4
+  quantity: 10
+  id: 8
+  sku: wave-cream
+  position: 
+  created_at: 2009-08-26 21:25:54.970624 Z
+  state: 
+product_options_006: 
+  name: cement
+  restock_quantity: 1
+  updated_at: 2009-08-26 21:26:03.538124 Z
+  price: 400
+  product_id: 4
+  quantity: 10
+  id: 9
+  sku: wave-cement
+  position: 
+  created_at: 2009-08-26 21:26:03.538124 Z
+  state: 
+product_options_007: 
+  name: gravel
+  restock_quantity: 1
+  updated_at: 2009-08-26 21:26:13.040303 Z
+  price: 400
+  product_id: 4
+  quantity: 10
+  id: 10
+  sku: wave-gravel
+  position: 
+  created_at: 2009-08-26 21:26:13.040303 Z
+  state: 
