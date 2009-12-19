@@ -1,96 +1,104 @@
-product_images_004: 
-  image_file_size: 27162
-  updated_at: 2009-08-26 21:24:36.565990 Z
-  image_content_type: image/jpeg
-  product_id: 4
-  id: 5
-  caption: back
-  image_updated_at: 2009-08-26 21:23:46.388177 Z
-  position: 2
-  created_at: 2009-08-26 21:23:48.840294 Z
-  image_file_name: tangreysilver.jpg
-  type: 'ProductImage'
-product_images_005: 
+product_visuals_002: 
   image_file_size: 792660
   updated_at: 2009-08-26 21:27:30.741954 Z
   image_content_type: image/jpeg
   product_id: 5
+  type: ProductImage
+  video_url: 
   id: 8
   caption: 
   image_updated_at: 2009-08-26 21:27:23.048507 Z
   position: 0
   created_at: 2009-08-26 21:27:30.741954 Z
   image_file_name: pigeons.jpg
-  type: 'ProductImage'
-product_images_006: 
+product_visuals_003: 
   image_file_size: 37363
   updated_at: 2009-08-24 17:25:08.029403 Z
   image_content_type: image/jpeg
   product_id: 1
+  type: ProductImage
+  video_url: 
   id: 1
   caption: 
   image_updated_at: 2009-08-24 17:25:04.042203 Z
   position: 0
   created_at: 2009-08-24 17:25:08.029403 Z
   image_file_name: greyforestfront.jpg
-  type: 'ProductImage'
-product_images_007: 
+product_visuals_004: 
   image_file_size: 34368
   updated_at: 2009-08-26 21:18:32.663274 Z
   image_content_type: image/jpeg
   product_id: 2
+  type: ProductImage
+  video_url: 
   id: 2
   caption: 
   image_updated_at: 2009-08-26 21:18:29.505540 Z
   position: 0
   created_at: 2009-08-26 21:18:32.663274 Z
   image_file_name: tanbirdfront.jpg
-  type: 'ProductImage'
-product_images_008: 
+product_visuals_005: 
   image_file_size: 35839
   updated_at: 2009-08-26 21:20:37.027560 Z
   image_content_type: image/jpeg
   product_id: 3
+  type: ProductImage
+  video_url: 
   id: 3
   caption: 
   image_updated_at: 2009-08-26 21:20:34.260214 Z
   position: 0
   created_at: 2009-08-26 21:20:37.027560 Z
   image_file_name: brownchrismastreesfront.jpg
-  type: 'ProductImage'
-product_images_001: 
+product_visuals_006: 
   image_file_size: 11223
   updated_at: 2009-08-26 21:24:23.387339 Z
   image_content_type: image/gif
   product_id: 4
+  type: ProductImage
+  video_url: 
   id: 4
   caption: colors to choose from
   image_updated_at: 2009-08-26 21:23:36.556005 Z
   position: 3
   created_at: 2009-08-26 21:23:39.789884 Z
   image_file_name: colors.gif
-  type: 'ProductImage'
-product_images_002: 
+product_visuals_007: 
   image_file_size: 26959
   updated_at: 2009-08-26 21:24:28.452225 Z
   image_content_type: image/jpeg
   product_id: 4
+  type: ProductImage
+  video_url: 
   id: 7
   caption: front
   image_updated_at: 2009-08-26 21:24:03.742643 Z
   position: 0
   created_at: 2009-08-26 21:24:06.828075 Z
   image_file_name: twowavesfront.jpg
-  type: 'ProductImage'
-product_images_003: 
+product_visuals_008: 
   image_file_size: 36757
   updated_at: 2009-08-26 21:24:32.567282 Z
   image_content_type: image/jpeg
   product_id: 4
+  type: ProductImage
+  video_url: 
   id: 6
   caption: detail
   image_updated_at: 2009-08-26 21:23:55.777252 Z
   position: 1
   created_at: 2009-08-26 21:23:58.324777 Z
   image_file_name: twowavesdetail.jpg
-  type: 'ProductImage'
+product_visuals_001: 
+  image_file_size: 27162
+  updated_at: 2009-08-26 21:24:36.565990 Z
+  image_content_type: image/jpeg
+  product_id: 4
+  type: ProductImage
+  video_url: 
+  id: 5
+  caption: back
+  image_updated_at: 2009-08-26 21:23:46.388177 Z
+  position: 2
+  created_at: 2009-08-26 21:23:48.840294 Z
+  image_file_name: tangreysilver.jpg

@@ -1,150 +1,180 @@
 categories_020: 
-  name: DIY
-  id: 20
-  parent_id: 2
+  name: Tabletop
+  show_empty: 
+  id: 12
+  parent_id: 4
   position: 
 categories_009: 
-  name: Food Packaging
-  id: 25
-  parent_id: 5
-  position: 
-categories_021: 
-  name: Books
-  id: 29
-  parent_id: 6
-  position: 
-categories_010: 
-  name: Prints
-  id: 10
-  parent_id: 4
-  position: 
-categories_022: 
-  name: Custom
-  id: 13
-  parent_id: 4
-  position: 
-categories_011: 
-  name: Greeting cards
-  id: 17
-  parent_id: 2
-  position: 
-categories_023: 
   name: Pre-printed
+  show_empty: 
   id: 21
   parent_id: 3
   position: 
-categories_012: 
-  name: Favor Boxes
-  id: 26
-  parent_id: 5
-  position: 
-categories_001: 
-  name: Package
-  id: 5
-  parent_id: 1
-  position: 
-categories_024: 
-  name: Zines
-  id: 30
+categories_021: 
+  name: Custom
+  show_empty: 
+  id: 31
   parent_id: 6
   position: 
-categories_013: 
-  name: Top
-  id: 1
-  parent_id: 0
-  position: 1
-categories_002: 
+categories_010: 
   name: Place
+  show_empty: 
   id: 4
   parent_id: 1
   position: 
-categories_025: 
-  name: Invite
-  id: 3
+categories_022: 
+  name: Gift Wrap
+  show_empty: 
+  id: 24
+  parent_id: 5
+  position: 
+categories_011: 
+  name: Top
+  show_empty: 
+  id: 1
+  parent_id: 0
+  position: 1
+categories_023: 
+  name: Custom
+  show_empty: 
+  id: 19
+  parent_id: 2
+  position: 
+categories_012: 
+  name: Zines
+  show_empty: 
+  id: 30
+  parent_id: 6
+  position: 
+categories_001: 
+  name: Food Packaging
+  show_empty: 
+  id: 25
+  parent_id: 5
+  position: 
+categories_024: 
+  name: DIY
+  show_empty: 
+  id: 14
+  parent_id: 4
+  position: 
+categories_013: 
+  name: Read
+  show_empty: 
+  id: 6
   parent_id: 1
+  position: 
+categories_002: 
+  name: DIY
+  show_empty: 
+  id: 20
+  parent_id: 2
+  position: 
+categories_025: 
+  name: Posters
+  show_empty: 
+  id: 9
+  parent_id: 4
   position: 
 categories_014: 
   name: Journals
+  show_empty: 
   id: 18
   parent_id: 2
   position: 
 categories_003: 
-  name: Read
-  id: 6
-  parent_id: 1
+  name: Prints
+  show_empty: 
+  id: 10
+  parent_id: 4
   position: 
 categories_026: 
   name: Custom
-  id: 22
-  parent_id: 3
-  position: 
-categories_015: 
-  name: Tags & Labels
-  id: 27
-  parent_id: 5
-  position: 
-categories_004: 
-  name: "D\xC3\xA9cor"
-  id: 11
-  parent_id: 4
-  position: 
-categories_027: 
-  name: Custom
-  id: 31
-  parent_id: 6
-  position: 
-categories_016: 
-  name: Tabletop
-  id: 12
-  parent_id: 4
-  position: 
-categories_005: 
-  name: Stationery
-  id: 15
-  parent_id: 2
-  position: 
-categories_028: 
-  name: DIY
-  id: 14
-  parent_id: 4
-  position: 
-categories_017: 
-  name: Custom
-  id: 19
-  parent_id: 2
-  position: 
-categories_006: 
-  name: Gift Wrap
-  id: 24
-  parent_id: 5
-  position: 
-categories_029: 
-  name: DIY
-  id: 23
-  parent_id: 3
-  position: 
-categories_018: 
-  name: Custom
+  show_empty: 
   id: 28
   parent_id: 5
   position: 
-categories_007: 
-  name: Posters
-  id: 9
+categories_015: 
+  name: Invite
+  show_empty: 
+  id: 3
+  parent_id: 1
+  position: 
+categories_004: 
+  name: Books
+  show_empty: 
+  id: 29
+  parent_id: 6
+  position: 
+categories_027: 
+  name: DIY
+  show_empty: 
+  id: 23
+  parent_id: 3
+  position: 
+categories_016: 
+  name: "D\xC3\xA9cor"
+  show_empty: 
+  id: 11
   parent_id: 4
+  position: 
+categories_005: 
+  name: Greeting cards
+  show_empty: 
+  id: 17
+  parent_id: 2
+  position: 
+categories_028: 
+  name: Note cards
+  show_empty: 
+  id: 16
+  parent_id: 2
+  position: 
+categories_017: 
+  name: Tags & Labels
+  show_empty: 
+  id: 27
+  parent_id: 5
+  position: 
+categories_006: 
+  name: Custom
+  show_empty: 
+  id: 13
+  parent_id: 4
+  position: 
+categories_029: 
+  name: Write
+  show_empty: 
+  id: 2
+  parent_id: 1
+  position: 
+categories_018: 
+  name: Custom
+  show_empty: 
+  id: 22
+  parent_id: 3
+  position: 
+categories_007: 
+  name: Package
+  show_empty: 
+  id: 5
+  parent_id: 1
   position: 
 categories_030: 
   name: Give Back
+  show_empty: 
   id: 7
   parent_id: 1
   position: 
 categories_019: 
-  name: Write
-  id: 2
-  parent_id: 1
+  name: Stationery
+  show_empty: 
+  id: 15
+  parent_id: 2
   position: 
 categories_008: 
-  name: Note cards
-  id: 16
-  parent_id: 2
+  name: Favor Boxes
+  show_empty: 
+  id: 26
+  parent_id: 5
   position: 

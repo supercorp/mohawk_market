@@ -3,6 +3,7 @@ comments_001:
   image_file_size: 
   updated_at: 2009-08-26 21:39:42.153035 Z
   body: Thanks so much for all of the wonderful feedback!
+  featured: false
   published: true
   image_content_type: 
   video_url: 
@@ -19,6 +20,7 @@ comments_002:
   image_file_size: 36757
   updated_at: 2009-08-26 21:40:34.809574 Z
   body: Here's a detail of the two waves card.
+  featured: false
   published: true
   image_content_type: image/jpeg
   video_url: 

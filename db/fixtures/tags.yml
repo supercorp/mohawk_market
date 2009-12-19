@@ -1,16 +1,24 @@
 tags_001: 
   name: card
+  private_curator_tag: false
   id: 1
   vectors: 
+  curator_suggestion: false
 tags_002: 
   name: cut
+  private_curator_tag: false
   id: 2
   vectors: 
+  curator_suggestion: false
 tags_003: 
   name: strathmore
+  private_curator_tag: false
   id: 3
   vectors: 
+  curator_suggestion: false
 tags_004: 
   name: birds
+  private_curator_tag: false
   id: 4
   vectors: "'bird':1A"
+  curator_suggestion: false
