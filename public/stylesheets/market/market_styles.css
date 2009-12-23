@@ -1611,7 +1611,7 @@ ul.store_sub_nav a.selected {
 	border-top:1px solid #ccc;
 }
 .widget_header h4 {
-	padding:6px 6px 6px 6px;
+	padding:6px 6px 6px 12px;
 	color:#666;
 	font-size:16px;
 	text-transform:capitalize;
@@ -1732,14 +1732,14 @@ ul.store_sub_nav a.selected {
 }
 .activity_widget_product .widget_page_panel_liner {
 	width:240px;
-	padding:0 0px 0 0px;
+	padding:0;
 	overflow:hidden;
 }
 .activity_widget_product_item {
 	float:left;
 	margin-right:12px;
 	margin-left:12px;
-	margin-bottom:24px;
+	margin-bottom:22px;
 }
 .activity_widget_product_item a img {
 	border-bottom:2px solid #fff;
@@ -1747,13 +1747,18 @@ ul.store_sub_nav a.selected {
 .activity_widget_product_item a:hover img {
 	border-bottom:2px solid #52cbba;
 }
+.activity_widget_blog_item {
+	margin-bottom:22px;
+	margin-left:12px;
+	margin-right:12px;
+}
 .activity_widget_blog_item a {
 	display:inline-table;
-	width:235px;
-	height:83px;
+	width:216px;
+	height:98px;
 	padding:4px 6px;
 	overflow:hidden;
-	border-bottom:1px solid #fff;
+	border-bottom:2px solid #fff;
 	background-color:#efefef;
 }
 
