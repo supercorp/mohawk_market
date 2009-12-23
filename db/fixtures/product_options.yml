@@ -1,3 +1,27 @@
+product_options_020: 
+  name: regular
+  restock_quantity: 10
+  updated_at: 2009-12-23 16:27:27.872839 Z
+  price: 2500
+  product_id: 6
+  quantity: 100
+  id: 20
+  sku: "1001"
+  position: 
+  created_at: 2009-12-23 16:27:27.872839 Z
+  state: active
+product_options_019: 
+  name: standard
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:20:16.041535 Z
+  price: 100
+  product_id: 5
+  quantity: 10
+  id: 19
+  sku: "0010"
+  position: 
+  created_at: 2009-12-16 20:20:16.041535 Z
+  state: active
 product_options_008: 
   name: print
   restock_quantity: 1
@@ -10,6 +34,18 @@ product_options_008:
   position: 
   created_at: 2009-08-26 21:31:06.245608 Z
   state: 
+product_options_021: 
+  name: red on black
+  restock_quantity: 100
+  updated_at: 2009-12-23 16:39:53.207588 Z
+  price: 2000
+  product_id: 7
+  quantity: 1000
+  id: 22
+  sku: 1111-2
+  position: 
+  created_at: 2009-12-23 16:39:53.207588 Z
+  state: active
 product_options_010: 
   name: brown
   restock_quantity: 1
@@ -34,6 +70,18 @@ product_options_009:
   position: 
   created_at: 2009-08-24 17:25:22.271317 Z
   state: 
+product_options_022: 
+  name: black on white
+  restock_quantity: 100
+  updated_at: 2009-12-23 16:40:06.753814 Z
+  price: 1000
+  product_id: 7
+  quantity: 1000
+  id: 21
+  sku: 1111-1
+  position: 
+  created_at: 2009-12-23 16:39:26.926911 Z
+  state: active
 product_options_011: 
   name: tan
   restock_quantity: 1
@@ -46,6 +94,30 @@ product_options_011:
   position: 
   created_at: 2009-08-26 21:21:03.576231 Z
   state: 
+product_options_023: 
+  name: map
+  restock_quantity: 5
+  updated_at: 2009-12-23 16:53:05.000681 Z
+  price: 850
+  product_id: 8
+  quantity: 25
+  id: 23
+  sku: "2222"
+  position: 
+  created_at: 2009-12-23 16:53:05.000681 Z
+  state: active
+product_options_012: 
+  name: basic
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:17:14.258579 Z
+  price: 100
+  product_id: 1
+  quantity: 10
+  id: 12
+  sku: "001"
+  position: 
+  created_at: 2009-12-16 20:17:14.258579 Z
+  state: active
 product_options_001: 
   name: chocolate
   restock_quantity: 1
@@ -58,6 +130,18 @@ product_options_001:
   position: 
   created_at: 2009-08-26 21:25:22.974518 Z
   state: 
+product_options_013: 
+  name: white
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:18:07.350015 Z
+  price: 100
+  product_id: 2
+  quantity: 10
+  id: 13
+  sku: "0004"
+  position: 
+  created_at: 2009-12-16 20:18:07.350015 Z
+  state: active
 product_options_002: 
   name: tan
   restock_quantity: 1
@@ -70,6 +154,18 @@ product_options_002:
   position: 
   created_at: 2009-08-26 21:25:31.679416 Z
   state: 
+product_options_014: 
+  name: red
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:18:16.064899 Z
+  price: 125
+  product_id: 2
+  quantity: 10
+  id: 14
+  sku: "0005"
+  position: 
+  created_at: 2009-12-16 20:18:16.064899 Z
+  state: active
 product_options_003: 
   name: sage
   restock_quantity: 1
@@ -82,6 +178,18 @@ product_options_003:
   position: 
   created_at: 2009-08-26 21:25:40.157401 Z
   state: 
+product_options_015: 
+  name: standard
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:19:08.469409 Z
+  price: 200
+  product_id: 3
+  quantity: 10
+  id: 15
+  sku: "0006"
+  position: 
+  created_at: 2009-12-16 20:19:08.469409 Z
+  state: active
 product_options_004: 
   name: card
   restock_quantity: 1
@@ -94,6 +202,18 @@ product_options_004:
   position: 
   created_at: 2009-08-26 21:18:42.597626 Z
   state: 
+product_options_016: 
+  name: deluxe
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:19:17.286171 Z
+  price: 250
+  product_id: 3
+  quantity: 10
+  id: 16
+  sku: "0007"
+  position: 
+  created_at: 2009-12-16 20:19:17.286171 Z
+  state: active
 product_options_005: 
   name: cream
   restock_quantity: 1
@@ -106,6 +226,18 @@ product_options_005:
   position: 
   created_at: 2009-08-26 21:25:54.970624 Z
   state: 
+product_options_017: 
+  name: basic
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:19:43.531408 Z
+  price: 50
+  product_id: 4
+  quantity: 10
+  id: 17
+  sku: 0008
+  position: 
+  created_at: 2009-12-16 20:19:43.531408 Z
+  state: active
 product_options_006: 
   name: cement
   restock_quantity: 1
@@ -118,6 +250,18 @@ product_options_006:
   position: 
   created_at: 2009-08-26 21:26:03.538124 Z
   state: 
+product_options_018: 
+  name: deluxe
+  restock_quantity: 1
+  updated_at: 2009-12-16 20:19:53.484421 Z
+  price: 75
+  product_id: 4
+  quantity: 10
+  id: 18
+  sku: 0009
+  position: 
+  created_at: 2009-12-16 20:19:53.484421 Z
+  state: active
 product_options_007: 
   name: gravel
   restock_quantity: 1

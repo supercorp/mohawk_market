@@ -1,81 +1,15 @@
 site_sections_032: 
-  name: Pre-printed
-  type: CategorySection
-  id: 20
-  resource_id: 20
+  name: Special Collection
+  type: MarketCollectionSection
+  id: 101
+  resource_id: 101
   state_changed_at: 
-  category_id: 21
-  market_collection_id: 
+  category_id: 
+  market_collection_id: 1
   staging_dirty: true
   position: 
   state: staging
 site_sections_021: 
-  name: DIY
-  type: CategorySection
-  id: 22
-  resource_id: 22
-  state_changed_at: 
-  category_id: 23
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_010: 
-  name: Tabletop
-  type: CategorySection
-  id: 11
-  resource_id: 11
-  state_changed_at: 
-  category_id: 12
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_009: 
-  name: Package
-  type: CategorySection
-  id: 4
-  resource_id: 4
-  state_changed_at: 
-  category_id: 5
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_033: 
-  name: Custom
-  type: CategorySection
-  id: 27
-  resource_id: 27
-  state_changed_at: 
-  category_id: 28
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_022: 
-  name: Note cards
-  type: CategorySection
-  id: 15
-  resource_id: 15
-  state_changed_at: 
-  category_id: 16
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_011: 
-  name: Books
-  type: CategorySection
-  id: 28
-  resource_id: 28
-  state_changed_at: 
-  category_id: 29
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_023: 
   name: Decorate
   type: CategorySection
   id: 3
@@ -86,7 +20,7 @@ site_sections_023:
   staging_dirty: true
   position: 
   state: staging
-site_sections_012: 
+site_sections_010: 
   name: Read
   type: CategorySection
   id: 5
@@ -97,18 +31,29 @@ site_sections_012:
   staging_dirty: true
   position: 
   state: staging
-site_sections_001: 
-  name: Home Page
-  type: HomePageSection
-  id: 98
-  resource_id: 98
+site_sections_009: 
+  name: Books
+  type: CategorySection
+  id: 28
+  resource_id: 28
   state_changed_at: 
-  category_id: 
+  category_id: 29
   market_collection_id: 
   staging_dirty: true
-  position: 1
+  position: 
   state: staging
-site_sections_024: 
+site_sections_033: 
+  name: Package
+  type: CategorySection
+  id: 105
+  resource_id: 4
+  state_changed_at: 2009-12-23 15:57:40.803237 Z
+  category_id: 5
+  market_collection_id: 
+  staging_dirty: false
+  position: 
+  state: staging
+site_sections_022: 
   name: Prints
   type: CategorySection
   id: 9
@@ -119,7 +64,7 @@ site_sections_024:
   staging_dirty: true
   position: 
   state: staging
-site_sections_013: 
+site_sections_011: 
   name: Stationery
   type: CategorySection
   id: 14
@@ -130,18 +75,18 @@ site_sections_013:
   staging_dirty: true
   position: 
   state: staging
-site_sections_002: 
-  name: Decor
+site_sections_034: 
+  name: Package
   type: CategorySection
-  id: 10
-  resource_id: 10
-  state_changed_at: 
-  category_id: 11
+  id: 4
+  resource_id: 4
+  state_changed_at: 2009-12-23 15:57:40.803237 Z
+  category_id: 5
   market_collection_id: 
   staging_dirty: true
   position: 
-  state: staging
-site_sections_025: 
+  state: published
+site_sections_023: 
   name: Tags & Labels
   type: CategorySection
   id: 26
@@ -152,7 +97,7 @@ site_sections_025:
   staging_dirty: true
   position: 
   state: staging
-site_sections_014: 
+site_sections_012: 
   name: DIY
   type: CategorySection
   id: 13
@@ -163,18 +108,29 @@ site_sections_014:
   staging_dirty: true
   position: 
   state: staging
-site_sections_003: 
-  name: Posters
+site_sections_001: 
+  name: Decor
   type: CategorySection
-  id: 8
-  resource_id: 8
+  id: 10
+  resource_id: 10
   state_changed_at: 
-  category_id: 9
+  category_id: 11
   market_collection_id: 
   staging_dirty: true
   position: 
   state: staging
-site_sections_026: 
+site_sections_035: 
+  name: Home Page
+  type: HomePageSection
+  id: 109
+  resource_id: 98
+  state_changed_at: 2009-12-23 18:22:33.059615 Z
+  category_id: 
+  market_collection_id: 
+  staging_dirty: false
+  position: 1
+  state: staging
+site_sections_024: 
   name: DIY
   type: CategorySection
   id: 19
@@ -185,7 +141,7 @@ site_sections_026:
   staging_dirty: true
   position: 
   state: staging
-site_sections_015: 
+site_sections_013: 
   name: Custom
   type: CategorySection
   id: 21
@@ -196,18 +152,29 @@ site_sections_015:
   staging_dirty: true
   position: 
   state: staging
-site_sections_004: 
-  name: Invite
+site_sections_002: 
+  name: Posters
   type: CategorySection
-  id: 2
-  resource_id: 2
+  id: 8
+  resource_id: 8
   state_changed_at: 
-  category_id: 3
+  category_id: 9
   market_collection_id: 
   staging_dirty: true
   position: 
   state: staging
-site_sections_027: 
+site_sections_036: 
+  name: Home Page
+  type: HomePageSection
+  id: 108
+  resource_id: 98
+  state_changed_at: 2009-12-23 18:22:33.059615 Z
+  category_id: 
+  market_collection_id: 
+  staging_dirty: true
+  position: 1
+  state: published
+site_sections_025: 
   name: All
   type: CategorySection
   id: 7
@@ -218,7 +185,7 @@ site_sections_027:
   staging_dirty: true
   position: 
   state: staging
-site_sections_016: 
+site_sections_014: 
   name: Favor Boxes
   type: CategorySection
   id: 25
@@ -229,18 +196,29 @@ site_sections_016:
   staging_dirty: true
   position: 
   state: staging
-site_sections_005: 
-  name: Market Blog
-  type: BlogSection
-  id: 99
-  resource_id: 99
+site_sections_003: 
+  name: Invite
+  type: CategorySection
+  id: 2
+  resource_id: 2
   state_changed_at: 
+  category_id: 3
+  market_collection_id: 
+  staging_dirty: true
+  position: 
+  state: staging
+site_sections_037: 
+  name: Home Page
+  type: HomePageSection
+  id: 107
+  resource_id: 98
+  state_changed_at: 2009-12-23 18:22:33.173476 Z
   category_id: 
   market_collection_id: 
   staging_dirty: true
-  position: 3
-  state: staging
-site_sections_028: 
+  position: 1
+  state: retired
+site_sections_026: 
   name: Custom
   type: CategorySection
   id: 12
@@ -251,7 +229,7 @@ site_sections_028:
   staging_dirty: true
   position: 
   state: staging
-site_sections_017: 
+site_sections_015: 
   name: Custom
   type: CategorySection
   id: 18
@@ -262,18 +240,18 @@ site_sections_017:
   staging_dirty: true
   position: 
   state: staging
-site_sections_006: 
-  name: Food Packaging
-  type: CategorySection
-  id: 24
-  resource_id: 24
+site_sections_004: 
+  name: Market Blog
+  type: BlogSection
+  id: 99
+  resource_id: 99
   state_changed_at: 
-  category_id: 25
+  category_id: 
   market_collection_id: 
   staging_dirty: true
-  position: 
+  position: 3
   state: staging
-site_sections_029: 
+site_sections_027: 
   name: Custom
   type: CategorySection
   id: 30
@@ -284,7 +262,7 @@ site_sections_029:
   staging_dirty: true
   position: 
   state: staging
-site_sections_018: 
+site_sections_016: 
   name: Goodwill
   type: CategorySection
   id: 6
@@ -295,18 +273,18 @@ site_sections_018:
   staging_dirty: true
   position: 
   state: staging
-site_sections_007: 
-  name: Journals
+site_sections_005: 
+  name: Food Packaging
   type: CategorySection
-  id: 17
-  resource_id: 17
+  id: 24
+  resource_id: 24
   state_changed_at: 
-  category_id: 18
+  category_id: 25
   market_collection_id: 
   staging_dirty: true
   position: 
   state: staging
-site_sections_030: 
+site_sections_028: 
   name: Gift Wrap
   type: CategorySection
   id: 23
@@ -317,7 +295,7 @@ site_sections_030:
   staging_dirty: true
   position: 
   state: staging
-site_sections_019: 
+site_sections_017: 
   name: Write
   type: CategorySection
   id: 1
@@ -328,18 +306,18 @@ site_sections_019:
   staging_dirty: true
   position: 
   state: staging
-site_sections_008: 
-  name: Seller Index
-  type: DesignerSection
-  id: 100
-  resource_id: 100
+site_sections_006: 
+  name: Journals
+  type: CategorySection
+  id: 17
+  resource_id: 17
   state_changed_at: 
-  category_id: 
+  category_id: 18
   market_collection_id: 
   staging_dirty: true
-  position: 2
+  position: 
   state: staging
-site_sections_031: 
+site_sections_029: 
   name: Greeting cards
   type: CategorySection
   id: 16
@@ -350,13 +328,79 @@ site_sections_031:
   staging_dirty: true
   position: 
   state: staging
-site_sections_020: 
+site_sections_018: 
   name: Zines
   type: CategorySection
   id: 29
   resource_id: 29
   state_changed_at: 
   category_id: 30
+  market_collection_id: 
+  staging_dirty: true
+  position: 
+  state: staging
+site_sections_007: 
+  name: Seller Index
+  type: DesignerSection
+  id: 100
+  resource_id: 100
+  state_changed_at: 
+  category_id: 
+  market_collection_id: 
+  staging_dirty: true
+  position: 2
+  state: staging
+site_sections_030: 
+  name: Pre-printed
+  type: CategorySection
+  id: 20
+  resource_id: 20
+  state_changed_at: 
+  category_id: 21
+  market_collection_id: 
+  staging_dirty: true
+  position: 
+  state: staging
+site_sections_019: 
+  name: DIY
+  type: CategorySection
+  id: 22
+  resource_id: 22
+  state_changed_at: 
+  category_id: 23
+  market_collection_id: 
+  staging_dirty: true
+  position: 
+  state: staging
+site_sections_008: 
+  name: Tabletop
+  type: CategorySection
+  id: 11
+  resource_id: 11
+  state_changed_at: 
+  category_id: 12
+  market_collection_id: 
+  staging_dirty: true
+  position: 
+  state: staging
+site_sections_031: 
+  name: Custom
+  type: CategorySection
+  id: 27
+  resource_id: 27
+  state_changed_at: 
+  category_id: 28
+  market_collection_id: 
+  staging_dirty: true
+  position: 
+  state: staging
+site_sections_020: 
+  name: Note cards
+  type: CategorySection
+  id: 15
+  resource_id: 15
+  state_changed_at: 
+  category_id: 16
   market_collection_id: 
   staging_dirty: true
   position: 

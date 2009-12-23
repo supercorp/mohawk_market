@@ -44,3 +44,62 @@ post_elements_003:
   position: 2
   created_at: 2009-08-26 21:45:56.891454 Z
   image_file_name: 
+post_elements_004: 
+  image_file_size: 
+  updated_at: 2009-12-18 20:46:42.851554 Z
+  body: |-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
+  container_id: 4
+  image_content_type: 
+  type: PostText
+  video_url: 
+  id: 7
+  container_type: BlogPost
+  image_updated_at: 
+  position: 1
+  created_at: 2009-12-18 20:46:42.851554 Z
+  image_file_name: 
+post_elements_005: 
+  image_file_size: 
+  updated_at: 2009-12-18 20:46:51.702473 Z
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
+  container_id: 4
+  image_content_type: 
+  type: PostText
+  video_url: 
+  id: 8
+  container_type: BlogPost
+  image_updated_at: 
+  position: 2
+  created_at: 2009-12-18 20:46:51.702473 Z
+  image_file_name: 
+post_elements_006: 
+  image_file_size: 
+  updated_at: 2009-12-18 20:49:28.815985 Z
+  body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
+  container_id: 5
+  image_content_type: 
+  type: PostText
+  video_url: 
+  id: 9
+  container_type: BlogPost
+  image_updated_at: 
+  position: 1
+  created_at: 2009-12-18 20:49:28.815985 Z
+  image_file_name: 
+post_elements_007: 
+  image_file_size: 35722
+  updated_at: 2009-12-18 20:50:55.451840 Z
+  body: ""
+  container_id: 5
+  image_content_type: image/jpeg
+  type: PostVideo
+  video_url: http://vimeo.com/8238942
+  id: 10
+  container_type: BlogPost
+  image_updated_at: 2009-12-18 20:50:55.637897 Z
+  position: 2
+  created_at: 2009-12-18 20:50:55.451840 Z
+  image_file_name: 37886292_200.jpg

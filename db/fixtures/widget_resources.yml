@@ -1,2 +1,24 @@
---- {}
-
+widget_resources_005: 
+  publisher_type: SiteSection
+  id: 4
+  publisher_id: 106
+widget_resources_006: 
+  publisher_type: SiteSection
+  id: 6
+  publisher_id: 107
+widget_resources_001: 
+  publisher_type: SiteSection
+  id: 1
+  publisher_id: 98
+widget_resources_002: 
+  publisher_type: SiteSection
+  id: 2
+  publisher_id: 102
+widget_resources_003: 
+  publisher_type: SiteSection
+  id: 3
+  publisher_id: 102
+widget_resources_004: 
+  publisher_type: SiteSection
+  id: 5
+  publisher_id: 4

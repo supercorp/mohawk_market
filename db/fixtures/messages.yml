@@ -1,19 +1,95 @@
-messages_001: 
+messages_003: 
   order_id: 
-  updated_at: 2009-08-27 14:17:14.503625 Z
+  updated_at: 2009-12-16 20:45:59.453236 Z
+  body: Looks good.
+  sent: true
+  unread: false
+  id: 8
+  parent_uuid: cfa88d70-ccb1-012c-c822-001f5bdc1a78
+  recipient_id: 12
+  subject: 
+  uuid: f0adc7a0-ccb1-012c-c823-001f5bdc1a78
+  archived: false
+  boxholder_id: 11
+  replied: false
+  store_application: false
+  author_id: 2
+  parent_id: 6
+  sender_id: 11
+  created_at: 2009-12-16 20:45:49.755894 Z
+messages_004: 
+  order_id: 
+  updated_at: 2009-12-16 20:45:59.459369 Z
+  body: Looks good.
+  sent: true
+  unread: true
+  id: 9
+  parent_uuid: cfa88d70-ccb1-012c-c822-001f5bdc1a78
+  recipient_id: 12
+  subject: 
+  uuid: f0adc7a0-ccb1-012c-c823-001f5bdc1a78
+  archived: false
+  boxholder_id: 12
+  replied: false
+  store_application: false
+  author_id: 2
+  parent_id: 5
+  sender_id: 11
+  created_at: 2009-12-16 20:45:59.459369 Z
+messages_005: 
+  order_id: 
+  updated_at: 2009-12-16 20:46:04.307900 Z
   body: 
   sent: false
   unread: true
-  id: 4
+  id: 10
   parent_uuid: 
-  recipient_id: 11
+  recipient_id: 12
   subject: 
   uuid: 
   archived: false
-  boxholder_id: 2
+  boxholder_id: 11
+  replied: false
+  store_application: false
+  author_id: 2
+  parent_id: 6
+  sender_id: 11
+  created_at: 2009-12-16 20:46:04.307900 Z
+messages_001: 
+  order_id: 
+  updated_at: 2009-12-16 20:45:04.052242 Z
+  body: Hwoa bout this
+  sent: true
+  unread: false
+  id: 5
+  parent_uuid: 
+  recipient_id: 11
+  subject: 
+  uuid: cfa88d70-ccb1-012c-c822-001f5bdc1a78
+  archived: false
+  boxholder_id: 12
   replied: false
   store_application: false
   author_id: 
   parent_id: 
-  sender_id: 2
-  created_at: 2009-08-27 14:17:14.503625 Z
+  sender_id: 12
+  created_at: 2009-12-16 20:44:56.796333 Z
+messages_002: 
+  order_id: 
+  updated_at: 2009-12-16 20:45:49.295367 Z
+  body: Hwoa bout this
+  sent: true
+  unread: false
+  id: 6
+  parent_uuid: 
+  recipient_id: 11
+  subject: 
+  uuid: cfa88d70-ccb1-012c-c822-001f5bdc1a78
+  archived: false
+  boxholder_id: 11
+  replied: false
+  store_application: false
+  author_id: 
+  parent_id: 
+  sender_id: 12
+  created_at: 2009-12-16 20:45:04.057921 Z

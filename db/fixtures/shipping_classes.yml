@@ -4,3 +4,9 @@ shipping_classes_001:
   id: 1
   seller_id: 2
   created_at: 2009-08-24 17:25:52.940402 Z
+shipping_classes_002: 
+  name: All Products
+  updated_at: 2009-12-23 16:28:01.942996 Z
+  id: 2
+  seller_id: 12
+  created_at: 2009-12-23 16:28:01.942996 Z

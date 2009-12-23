@@ -1,3 +1,16 @@
+product_visuals_013: 
+  image_file_size: 242613
+  updated_at: 2009-12-23 16:39:08.610018 Z
+  image_content_type: image/jpeg
+  product_id: 7
+  type: ProductImage
+  video_url: 
+  id: 14
+  caption: 
+  image_updated_at: 2009-12-23 16:39:05.087307 Z
+  position: 2
+  created_at: 2009-12-23 16:39:08.610018 Z
+  image_file_name: SleepGoodStop.jpg
 product_visuals_002: 
   image_file_size: 792660
   updated_at: 2009-08-26 21:27:30.741954 Z
@@ -11,6 +24,19 @@ product_visuals_002:
   position: 0
   created_at: 2009-08-26 21:27:30.741954 Z
   image_file_name: pigeons.jpg
+product_visuals_014: 
+  image_file_size: 712101
+  updated_at: 2009-12-23 16:52:38.517221 Z
+  image_content_type: image/jpeg
+  product_id: 8
+  type: ProductImage
+  video_url: 
+  id: 15
+  caption: 
+  image_updated_at: 2009-12-23 16:52:33.423865 Z
+  position: 0
+  created_at: 2009-12-23 16:52:38.517221 Z
+  image_file_name: Design_Army_DCMap.jpg
 product_visuals_003: 
   image_file_size: 37363
   updated_at: 2009-08-24 17:25:08.029403 Z
@@ -89,6 +115,58 @@ product_visuals_008:
   position: 1
   created_at: 2009-08-26 21:23:58.324777 Z
   image_file_name: twowavesdetail.jpg
+product_visuals_009: 
+  image_file_size: 705911
+  updated_at: 2009-12-23 16:26:15.981064 Z
+  image_content_type: image/jpeg
+  product_id: 6
+  type: ProductImage
+  video_url: 
+  id: 9
+  caption: 
+  image_updated_at: 2009-12-23 16:26:09.873849 Z
+  position: 0
+  created_at: 2009-12-23 16:26:15.981064 Z
+  image_file_name: nocturne_wrap_1.jpg
+product_visuals_010: 
+  image_file_size: 506023
+  updated_at: 2009-12-23 16:26:46.235215 Z
+  image_content_type: image/jpeg
+  product_id: 6
+  type: ProductImage
+  video_url: 
+  id: 11
+  caption: 
+  image_updated_at: 2009-12-23 16:26:34.141566 Z
+  position: 2
+  created_at: 2009-12-23 16:26:46.235215 Z
+  image_file_name: loopwrap_nocturne.JPG.jpeg
+product_visuals_011: 
+  image_file_size: 627571
+  updated_at: 2009-12-23 16:31:59.459778 Z
+  image_content_type: image/jpeg
+  product_id: 7
+  type: ProductImage
+  video_url: 
+  id: 12
+  caption: 
+  image_updated_at: 2009-12-23 16:31:54.317959 Z
+  position: 0
+  created_at: 2009-12-23 16:31:59.459778 Z
+  image_file_name: TodayWasLarge.jpg
+product_visuals_012: 
+  image_file_size: 103617
+  updated_at: 2009-12-23 16:38:57.097798 Z
+  image_content_type: image/jpeg
+  product_id: 7
+  type: ProductImage
+  video_url: 
+  id: 13
+  caption: 
+  image_updated_at: 2009-12-23 16:38:53.595134 Z
+  position: 1
+  created_at: 2009-12-23 16:38:57.097798 Z
+  image_file_name: TodayWasDetailLarge.jpg
 product_visuals_001: 
   image_file_size: 27162
   updated_at: 2009-08-26 21:24:36.565990 Z

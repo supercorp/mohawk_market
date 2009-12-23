@@ -1,8 +1,44 @@
+tags_008: 
+  name: gift
+  private_curator_tag: true
+  id: 8
+  vectors: "'gift':1A"
+  curator_suggestion: false
+tags_009: 
+  name: special collection
+  private_curator_tag: true
+  id: 9
+  vectors: "'collect':2A 'special':1A"
+  curator_suggestion: false
+tags_010: 
+  name: plants
+  private_curator_tag: false
+  id: 10
+  vectors: "'plant':1A"
+  curator_suggestion: false
+tags_011: 
+  name: hip hop
+  private_curator_tag: false
+  id: 11
+  vectors: "'hip':1A 'hop':2A"
+  curator_suggestion: false
+tags_012: 
+  name: poster
+  private_curator_tag: false
+  id: 12
+  vectors: "'poster':1A"
+  curator_suggestion: false
 tags_001: 
   name: card
   private_curator_tag: false
   id: 1
   vectors: 
+  curator_suggestion: false
+tags_013: 
+  name: rap
+  private_curator_tag: false
+  id: 13
+  vectors: "'rap':1A"
   curator_suggestion: false
 tags_002: 
   name: cut
@@ -10,15 +46,51 @@ tags_002:
   id: 2
   vectors: 
   curator_suggestion: false
+tags_014: 
+  name: lyrics
+  private_curator_tag: false
+  id: 14
+  vectors: "'lyric':1A"
+  curator_suggestion: false
 tags_003: 
   name: strathmore
   private_curator_tag: false
   id: 3
   vectors: 
   curator_suggestion: false
+tags_015: 
+  name: letterpress
+  private_curator_tag: false
+  id: 15
+  vectors: "'letterpress':1A"
+  curator_suggestion: false
 tags_004: 
   name: birds
   private_curator_tag: false
   id: 4
   vectors: "'bird':1A"
+  curator_suggestion: false
+tags_016: 
+  name: map
+  private_curator_tag: false
+  id: 16
+  vectors: "'map':1A"
+  curator_suggestion: false
+tags_005: 
+  name: mother's day
+  private_curator_tag: true
+  id: 5
+  vectors: "'day':3A 'mother':1A"
+  curator_suggestion: false
+tags_006: 
+  name: father's day
+  private_curator_tag: true
+  id: 6
+  vectors: "'day':3A 'father':1A"
+  curator_suggestion: false
+tags_007: 
+  name: holiday
+  private_curator_tag: true
+  id: 7
+  vectors: "'holiday':1A"
   curator_suggestion: false

@@ -1,2 +1,169 @@
---- {}
-
+widgets_007: 
+  content_type: 
+  name: large image
+  filter_type: 
+  size: wide_4
+  title: 
+  quantity: 
+  type: FreeFormWidget
+  id: 9
+  resource_id: 5
+  state_changed_at: 2009-12-23 15:57:40.854594 Z
+  staging_dirty: true
+  state: published
+widgets_008: 
+  content_type: 
+  name: large image
+  filter_type: 
+  size: wide_4
+  title: 
+  quantity: 
+  type: FreeFormWidget
+  id: 10
+  resource_id: 5
+  state_changed_at: 2009-12-23 15:57:40.854594 Z
+  staging_dirty: true
+  state: staging
+widgets_010: 
+  content_type: product
+  name: New Products
+  filter_type: recent
+  size: square
+  title: Latest & Greatest
+  quantity: 
+  type: ActivityWidget
+  id: 11
+  resource_id: 4
+  state_changed_at: 2009-12-23 18:14:56.348812 Z
+  staging_dirty: true
+  state: published
+widgets_009: 
+  content_type: product
+  name: New Products
+  filter_type: recent
+  size: square
+  title: Latest & Greatest
+  quantity: 
+  type: ActivityWidget
+  id: 12
+  resource_id: 4
+  state_changed_at: 2009-12-23 18:14:56.348812 Z
+  staging_dirty: false
+  state: staging
+widgets_011: 
+  content_type: product
+  name: New Products
+  filter_type: recent
+  size: wide_2
+  title: Latest & Greatest
+  quantity: 
+  type: ActivityWidget
+  id: 8
+  resource_id: 4
+  state_changed_at: 2009-12-23 18:14:56.431164 Z
+  staging_dirty: true
+  state: retired
+widgets_012: 
+  content_type: product
+  name: activity products 2x1
+  filter_type: recent
+  size: wide_2
+  title: More Latest & Greatest
+  quantity: 
+  type: ActivityWidget
+  id: 14
+  resource_id: 6
+  state_changed_at: 2009-12-23 18:22:13.260168 Z
+  staging_dirty: false
+  state: staging
+widgets_001: 
+  content_type: blog_post
+  name: new blog posts
+  filter_type: recent
+  size: square
+  title: new blog posts
+  quantity: 
+  type: ActivityWidget
+  id: 2
+  resource_id: 1
+  state_changed_at: 2009-12-18 20:57:07.053758 Z
+  staging_dirty: false
+  state: staging
+widgets_013: 
+  content_type: product
+  name: activity products 2x1
+  filter_type: recent
+  size: wide_2
+  title: More Latest & Greatest
+  quantity: 
+  type: ActivityWidget
+  id: 13
+  resource_id: 6
+  state_changed_at: 2009-12-23 18:22:13.260168 Z
+  staging_dirty: true
+  state: published
+widgets_002: 
+  content_type: blog_post
+  name: new blog posts
+  filter_type: recent
+  size: square
+  title: new blog posts
+  quantity: 
+  type: ActivityWidget
+  id: 1
+  resource_id: 1
+  state_changed_at: 2009-12-18 20:57:07.053758 Z
+  staging_dirty: true
+  state: published
+widgets_003: 
+  content_type: 
+  name: Curator's Picks
+  filter_type: 
+  size: wide_2
+  title: Curator's Picks
+  quantity: 
+  type: MarketContentWidget
+  id: 5
+  resource_id: 2
+  state_changed_at: 2009-12-18 23:18:14.470655 Z
+  staging_dirty: false
+  state: staging
+widgets_004: 
+  content_type: 
+  name: Curator's Picks
+  filter_type: 
+  size: wide_2
+  title: Curator's Picks
+  quantity: 
+  type: MarketContentWidget
+  id: 3
+  resource_id: 2
+  state_changed_at: 2009-12-18 23:18:14.470655 Z
+  staging_dirty: true
+  state: published
+widgets_005: 
+  content_type: 
+  name: freeform test
+  filter_type: 
+  size: square
+  title: 
+  quantity: 
+  type: FreeFormWidget
+  id: 6
+  resource_id: 3
+  state_changed_at: 2009-12-18 23:18:14.890663 Z
+  staging_dirty: false
+  state: staging
+widgets_006: 
+  content_type: 
+  name: freeform test
+  filter_type: 
+  size: square
+  title: 
+  quantity: 
+  type: FreeFormWidget
+  id: 4
+  resource_id: 3
+  state_changed_at: 2009-12-18 23:18:14.890663 Z
+  staging_dirty: true
+  state: published
