@@ -12,5 +12,5 @@ module WidgetMarket
                          'wide_2' => "483px x 238px",
                          'wide_3' => "729px x 238px",
                          'wide_4' => "975px x 238px"} 
-  PANEL_WIDTH = {1 => 249, 2 => 494, 3 => 740, 4 => 986}
+  PANEL_WIDTH = {1 => 243, 2 => 488, 3 => 734, 4 => 980}
 end
