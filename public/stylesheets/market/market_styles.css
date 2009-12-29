@@ -1690,7 +1690,7 @@ ul.store_sub_nav a.selected {
 }
 .widget_page_panel_liner {
 	/*padding:6px;*/
-	width:237px;
+	width:237px; /* This width is unused, as it is always overridden by a cascade. Does it serve a purpose? Is there a potential future need for it?*/
 	float:left;
 	overflow:hidden;
 }
@@ -1731,7 +1731,7 @@ ul.store_sub_nav a.selected {
 	height:224px;
 }
 .activity_widget_product .widget_page_panel_liner {
-	width:240px;
+	width:243px;
 	padding:0;
 	overflow:hidden;
 }
@@ -1805,16 +1805,16 @@ p.activity_blog_date {
 	height:196px;
 }
 .widget_page_panel_liner_1 {
-	width:240px;
+	width:243px;
 }
 .widget_page_panel_liner_2 {
-	width:485px;	
+	width:489px;	
 }
 .widget_page_panel_liner_3 {
-	width:731px;
+	width:735px;
 }
 .widget_page_panel_liner_4 {
-	width:977px;
+	width:981px;
 }
 .widget_freeform_text {
 	color:#666;
@@ -1855,7 +1855,7 @@ p.activity_blog_date {
 }
 .market_content_widget .widget_page_panel_liner {
  padding:0 6px;
- width:225px;	
+ width:231px;	
 }
 h4.market_content_title {
 	margin-top:6px;
