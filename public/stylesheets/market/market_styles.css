@@ -1747,6 +1747,11 @@ ul.store_sub_nav a.selected {
 .activity_widget_product_item a:hover img {
 	border-bottom:2px solid #52cbba;
 }
+.activity_widget_blog .widget_page_panel_liner {
+	width:243px;
+	padding:0;
+	overflow:hidden;
+}
 .activity_widget_blog_item {
 	margin-bottom:22px;
 	margin-left:12px;
@@ -1801,8 +1806,8 @@ p.activity_blog_date {
 	background-color:#fff;
 	overflow:hidden;
 }
-.market_content_widget .page_mask_1, .market_content_widget .page_mask_2, .market_content_widget .page_mask_3, .market_content_widget .page_mask_4, .market_content_widget .page_mask_5 {
-	height:196px;
+.freeform_widget .page_mask_1, .freeform_widget .page_mask_2, .freeform_widget .page_mask_3, .freeform_widget .page_mask_4, .freeform_widget .page_mask_5 {
+	height:254px;
 }
 .widget_page_panel_liner_1 {
 	width:243px;
@@ -1850,16 +1855,16 @@ p.activity_blog_date {
 	background-color:#fff;
 	overflow:hidden;
 }
-.freeform_widget .page_mask_1, .freeform_widget .page_mask_2, .freeform_widget .page_mask_3, .freeform_widget .page_mask_4, .freeform_widget .page_mask_5 {
-	height:254px;
+.market_content_widget .page_mask_1, .market_content_widget .page_mask_2, .market_content_widget .page_mask_3, .market_content_widget .page_mask_4, .market_content_widget .page_mask_5 {
+	height:216px;
 }
 .market_content_widget .widget_page_panel_liner {
- padding:0 8px;
- width:227px;	
+ padding:0 12px 0 12px;
+ width:214px;	
 }
 h4.market_content_title {
 	margin-top:6px;
-	font-size:12px;
+	font-size:16px;
 	margin-bottom:0;
 }
 img.market_content_image {
@@ -1874,11 +1879,12 @@ p.market_content_excerpt, p.activity_blog_date {
 }
 h6.market_content_user {
 	font-weight:normal;
+	font-size:16px;
 }
 .market_content_widget .market_content_icons {
 	position:absolute;
-	left:0;
-	top:147px;
+	left:6px;
+	top:196px;
 	height:20px;
 	z-index:100;
 	padding-left:6px;
