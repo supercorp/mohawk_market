@@ -1860,12 +1860,18 @@ p.activity_blog_date {
 }
 .market_content_widget .widget_page_panel_liner {
  padding:0 12px 0 12px;
- width:214px;	
+ width:219px;	
 }
 h4.market_content_title {
 	margin-top:6px;
 	font-size:16px;
 	margin-bottom:0;
+}
+h4.market_content_title a, h6.market_content_user a {
+	color:#52cbba;
+}
+h4.market_content_title a:hover, h6.market_content_user a:hover {
+	color:#333;
 }
 img.market_content_image {
 	float:left;
