@@ -164,18 +164,17 @@
                <div ui_binding="expander" ui_state="contracted" ui_id="share_this" class="share_this_header">
                    <a ui_binding="expander" ui_action="expand" ui_id="share_this">Share this.</a>
                </div>
-               <div ui_binding="expander" ui_state="expanded" ui_id="share_this" class="share_this_header">
+               <div ui_binding="expander" ui_state="expanded" ui_id="share_this" class="share_this_header" style="display:none">
                    Share this. <a ui_binding="expander" ui_action="contract" ui_id="share_this">(close)</a>
                </div>
 
-               <div ui_binding="expander" ui_state="expanded" ui_id="share_this">
+               <div ui_binding="expander" ui_state="expanded" ui_id="share_this" style="display:none">
                    <% for sharing_link in [:facebook,:twitter,:delicious,:stumbleupon,:kaboodle] do %>
                        <div class="share_link_wrapper"><%= link_to SharingLinks::ICONS[sharing_link].blank? ? sharing_link : image_tag(SharingLinks::ICONS[sharing_link]), SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
                        <%= link_to SharingLinks::TEXT[sharing_link], SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
                        </div><!--end .share_link_wrapper -->
                    <% end %>
                </div>
-
         	</div><!--end .share_panel_liner -->
 	      </div><!-- end .share_panel -->
 				
