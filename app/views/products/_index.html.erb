@@ -6,10 +6,10 @@
 			<% 	product_visual = product.product_visuals.first %>
 			<% 	case product_visual.class.name
 				 	when 'ProductImage' %>
-				<%= link_to image_tag(product_visual.image.url(:thumb_216)), product_url(product), :class => 'product' %>
+				<%= link_to image_tag(product_visual.image.url(:thumb_product_panel)), product_url(product), :class => 'product' %>
 			<% 	when 'ProductVideo' %>
 				<div style="width: 216px; height: 216px;">
-					<%= link_to image_tag(product_visual.thumbnail_url, :width => 216), product_url(product), :class => 'product' %>
+					<%= link_to image_tag(product_visual.image.url(:thumb_product_panel)), product_url(product), :class => 'product' %>
 				</div>
 			<% end %>
 				<h4 class="product_panel_product_name"><%= link_to truncate(product.name,28), product_url(product) %></h4>
