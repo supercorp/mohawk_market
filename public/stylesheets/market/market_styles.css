@@ -1650,10 +1650,8 @@ ul.store_sub_nav a.selected {
 .page_mask_4 {
 	width:975px;
 }
-
-
 .widget_page_wrapper {
-	height:206px;
+	height:216px;
 	position:absolute;
 	left:0px;
 	top:0px
@@ -1859,8 +1857,10 @@ p.activity_blog_date {
 	height:216px;
 }
 .market_content_widget .widget_page_panel_liner {
- padding:0 12px 0 12px;
- width:219px;	
+ 	padding:0 12px 0 12px;
+ 	width:219px;
+ 	height:216px;
+ 	position:relative;
 }
 h4.market_content_title {
 	margin-top:6px;
