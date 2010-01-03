@@ -1808,16 +1808,20 @@ p.activity_blog_date {
 	height:254px;
 }
 .widget_page_panel_liner_1 {
-	width:243px;
+	width:216px;
+	padding:0 14px 0 13px;
 }
 .widget_page_panel_liner_2 {
-	width:489px;	
+	width:462px;
+	padding:0 14px 0 13px;
 }
 .widget_page_panel_liner_3 {
-	width:735px;
+	width:708px;
+	padding:0 14px 0 13px;
 }
 .widget_page_panel_liner_4 {
-	width:981px;
+	width:954px;
+	padding:0 14px 0 13px;
 }
 .widget_freeform_text {
 	color:#666;
