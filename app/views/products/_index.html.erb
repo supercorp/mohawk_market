@@ -4,14 +4,7 @@
 			
 			<% if product.product_visuals.any? %>
 			<% 	product_visual = product.product_visuals.first %>
-			<% 	case product_visual.class.name
-				 	when 'ProductImage' %>
 				<%= link_to image_tag(product_visual.image.url(:thumb_product_panel)), product_url(product), :class => 'product' %>
-			<% 	when 'ProductVideo' %>
-				<div style="width: 216px; height: 216px;">
-					<%= link_to image_tag(product_visual.image.url(:thumb_product_panel)), product_url(product), :class => 'product' %>
-				</div>
-			<% end %>
 				<h4 class="product_panel_product_name"><%= link_to truncate(product.name,28), product_url(product) %></h4>
 				<h6 class="product_panel_seller_name"><%= link_to truncate(product.seller.store_name,28), seller_url(:id => product.seller.id) %></h6>
 			<% else %>
