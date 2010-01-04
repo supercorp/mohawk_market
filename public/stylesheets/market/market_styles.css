@@ -1678,11 +1678,11 @@ ul.store_sub_nav a.selected {
 .cc_unit_4 .widget_paging_controls {
 	width:973px;
 }
-.widget_paging_controls a {
+.widget_paging_controls a, .activity_widget_product .widget_paging_controls a, .activity_widget_blog .widget_paging_controls a {
 	color:#ccc;
 	text-decoration:none;
 }
-.widget_paging_controls a:hover {
+.widget_paging_controls a:hover, .activity_widget_product .widget_paging_controls a:hover, .activity_widget_blog .widget_paging_controls a:hover {
 	color:#52cbba;
 }
 .widget_page_prev {
@@ -1696,8 +1696,6 @@ ul.store_sub_nav a.selected {
 	padding-right:12px;
 }
 .widget_page_panel_liner {
-	/*padding:6px;*/
-	/* width:237px; This width is unused, as it is always overridden by a cascade. Does it serve a purpose? Is there a potential future need for it?*/
 	float:left;
 	overflow:hidden;
 }
