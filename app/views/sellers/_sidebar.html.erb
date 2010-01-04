@@ -31,11 +31,11 @@
 		<div class="sidebar_panel store_description">
 			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", seller_url(:id => @seller.id, :profile_section => :about)))).to_html unless @seller.store_description.blank? %>
 		</div>
-		<div class="sidebar_panel">
-			<% if @seller.faq %>
-				<%= link_to 'Store FAQ &amp; Policies', faq_url(@seller.faq) %>
-			<% end %>
+		<% if @seller.faq %>
+		<div class="sidebar_panel">			
+			<%= link_to 'Store FAQ &amp; Policies', faq_url(@seller.faq) %>
 		</div>
+		<% end %>
 		<div class="sidebar_panel">
 			<% if logged_in? %>
 				<% if @this_user.sellers.include? @seller %>

@@ -1,11 +1,10 @@
 <div class="container">
+
+	<div class="span-24 last panel_group product_header">
+		<h1 class="product_name"><%= @product.name %></h1>
+	</div><!-- end .panel_group -->
 	
 	<div class="span-18">
-		
-		<div class="span-18 last panel_group product_header">
-				<h1 class="product_name"><%= @product.name %></h1>
-				<!--<h3 class="store_name"><%#= @product.seller.store_name %></h3>-->
-		</div><!-- end .panel_group -->
 		
 		<div class="span-18 last panel_group">
 			
@@ -330,10 +329,12 @@
 		<%= render :partial => 'sellers/sidebar' %>
 	</div><!--end sidebar_wrapper_product-->
 	
+	<% if @product.tags.public.any? %>
 	<div class="span-6 last panel tags_panel">
 		<h3>Tags</h3>
-		<%= @product.tags.public.map{|tag| link_to tag.name, products_url(:tag => tag.name)}.join(' ') if @product.tags.public.any?%>
+		<%= @product.tags.public.map{|tag| link_to tag.name, products_url(:tag => tag.name)}.join(' ') %>
 	</div><!-- end .tags_panel -->
+	<% end %>
 	
 	<% if @product.market_collections.published.show_icon.any? or @product.market_collections_from_tags_icon.any? %>
 		<div class="span-6 last panel collections_panel">		

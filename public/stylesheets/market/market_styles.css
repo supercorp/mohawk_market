@@ -275,6 +275,7 @@ ul.sub_category_nav a.selected {
 h1.product_name {
 	font-size:28px;
 	color:#52cbba;
+	margin-top:18px;
 }
 
 .product_image_caption {
@@ -520,7 +521,7 @@ h1.product_name {
 	margin-bottom:18px;
 }
 .sidebar_wrapper_product {
-	margin-top:60px;
+	margin-top:0px;
 }
 .sidebar_liner {
 	border:1px solid #ccc;
@@ -539,8 +540,10 @@ h1.product_name {
 	border-top:1px solid #ccc;
 	margin-bottom:9px;
 	float:left;
-	width:220px;
+	width:208px;
 	padding-top:9px;
+	padding-left:6px;
+	padding-right:6px;
 }
 .sidebar_panel.user_info {
 	border-top:0;
