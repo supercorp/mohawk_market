@@ -1675,7 +1675,13 @@ ul.store_sub_nav a.selected {
 .cc_unit_4 .widget_paging_controls {
 	width:973px;
 }
-
+.widget_paging_controls a {
+	color:#52cbba;
+	text-decoration:none;
+}
+.widget_paging_controls a:hover {
+	color:#333;
+}
 .widget_page_prev {
 	position:absolute;
 	left:0;
@@ -1805,7 +1811,7 @@ p.activity_blog_date {
 	overflow:hidden;
 }
 .freeform_widget .page_mask_1, .freeform_widget .page_mask_2, .freeform_widget .page_mask_3, .freeform_widget .page_mask_4, .freeform_widget .page_mask_5 {
-	height:254px;
+	height:248px;
 }
 .widget_page_panel_liner_1 {
 	width:216px;
@@ -1825,7 +1831,7 @@ p.activity_blog_date {
 }
 .widget_freeform_text {
 	color:#666;
-	padding-top:10px;
+	padding-top:4px;
 	border-top:1px solid #ccc;
 	float:left;
 	width:100%;
