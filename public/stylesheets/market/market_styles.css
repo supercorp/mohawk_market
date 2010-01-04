@@ -1661,7 +1661,7 @@ ul.store_sub_nav a.selected {
 	height:16px;
 	position:absolute;
 	bottom:0px;
-	border-top:1px solid #eee;
+	border-top:1px solid #ccc;
 }
 .cc_unit_1 .widget_paging_controls {
 	width:235px;
@@ -1676,21 +1676,21 @@ ul.store_sub_nav a.selected {
 	width:973px;
 }
 .widget_paging_controls a {
-	color:#52cbba;
+	color:#ccc;
 	text-decoration:none;
 }
 .widget_paging_controls a:hover {
-	color:#333;
+	color:#52cbba;
 }
 .widget_page_prev {
 	position:absolute;
 	left:0;
-	padding-left:4px;
+	padding-left:12px;
 }
 .widget_page_next {
 	position:absolute;
 	right:0;
-	padding-right:4px;
+	padding-right:12px;
 }
 .widget_page_panel_liner {
 	/*padding:6px;*/
@@ -1802,7 +1802,8 @@ p.activity_blog_date {
 /* @group Free Form Widgets */
 	
 .public_widget_top .freeform_widget {
-	height:270px;
+	height:269px;
+	border-top:1px solid #ccc;
 	background-color:#fff;
 	overflow:hidden;
 }
@@ -1832,7 +1833,6 @@ p.activity_blog_date {
 .widget_freeform_text {
 	color:#666;
 	padding-top:4px;
-	border-top:1px solid #ccc;
 	float:left;
 	width:100%;
 }
@@ -1849,7 +1849,6 @@ p.activity_blog_date {
 	color:#666;
 }
 .widget_freeform_text h1, .widget_freeform_text h2, .widget_freeform_text h3, .widget_freeform_text h4, .widget_freeform_text h5, .widget_freeform_text h6, .widget_freeform_text p {
-	margin-left:9px;
 	margin-right:9px;
 	color:#666;
 }
