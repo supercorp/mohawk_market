@@ -875,6 +875,24 @@ div.dashboard_nav li.dashboard_nav_label {
 	font-size:10px;
 	color:#333;
 }
+div.dashboard_list_tabs a {
+	font-family:verdana;
+	font-size:11px;
+	color:#52cbba;
+	text-decoration:none;
+	font-weight:bold;
+	border-top:1px solid #f0f2e5;
+	border-left:1px solid #f0f2e5;
+	border-right:1px solid #f0f2e5;
+}
+.dashboard_list_tabs a:hover {
+	background-color:#f0f2e5;
+}
+.dashboard_list_tabs a.selected {
+	background-color:#52cbba;
+	border-color:#52cbba;
+	color:#333;
+}
 /* @end */
 /* @group dashboard page tabs */
 div.dashboard_page_tabs a, div.dashboard_product_tabs a {
