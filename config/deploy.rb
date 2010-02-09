@@ -85,7 +85,7 @@ namespace :config_files do
   
   desc "Make symlink for mailer_config.rb" 
   task :symlink_mailer_config do
-    run "ln -nfs #{shared_path}/config/mailer_config.rb #{release_path}/config/mailer_config.rb" 
+    run "ln -nfs #{shared_path}/config/mailer_config.rb #{release_path}/config/initializers/mailer_config.rb" 
   end
 
   task :local_config do
@@ -94,7 +94,7 @@ namespace :config_files do
 
   desc "Make symlink for local_config.rb" 
   task :symlink_local_config do
-    run "ln -nfs #{shared_path}/config/local_config.rb #{release_path}/config/local_config.rb" 
+    run "ln -nfs #{shared_path}/config/local_config.rb #{release_path}/config/initializers/local_config.rb" 
   end
   # desc "Create picture directories in shared path" 
   # task :pictures do
