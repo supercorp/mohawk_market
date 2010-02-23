@@ -5,7 +5,7 @@
 			
 			<% for category in Category.top_level %>
 				<% if category.show_empty or category.children_products.any? %>
-				<div class="main_category <% if @category and @category == category %> selected<% end %>"><a href="<%= home_url(:category_id => category.to_param) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a>
+				<div class="main_category <% if @category and @category == category %> selected<% end %>"><a href="<%= products_url(:category_id => category.to_param) %>"<% if @category and @category == category %> class="selected"<% end %>><%= category.name %></a>
 				</div>
 				<% end %>
 			<% end %>
