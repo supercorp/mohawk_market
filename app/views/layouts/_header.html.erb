@@ -39,7 +39,7 @@
 				<li><a href="<%= home_url(:category_id => @category.id ) %>"<% unless @sub_category %> class="selected"<% end %>>all</a></li>
 				<% for sub_category in @category.children %>
 					<% if sub_category.show_empty or sub_category.products.any? %>
-						<li<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><a href="<%= home_url(:category_id => sub_category.to_param) %>"<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><%= sub_category.name %></a></li>
+						<li<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><a href="<%= products_url(:category_id => sub_category.to_param) %>"<% if @sub_category and @sub_category == sub_category %> class="selected"<% end %>><%= sub_category.name %></a></li>
 					<% end %>
 				<% end %>
 			</ul>
