@@ -64,7 +64,7 @@
 			</div>
 			
 			<div class="span-6 last">
-				
+				<% if @product.product_options.active.in_stock.any? %>
 				<div class="span-6 product_commerce">
 						<% if @product.product_options.active.in_stock.length > 1 %>
 							<%= select_tag 'product_option_id', options_for_select(@product.product_options.active.in_stock.map{|po| [po.name,po.id]},@product.product_options.active.in_stock.first.id), :class => 'product_option_select' %><br/>
@@ -98,10 +98,16 @@
 						</div><!-- end .product_commerce_add -->
 						<% end %>
 				</div><!-- end .product_commerce -->
-				
-				
+				<% else %>
+				<div class="out_of_stock_header_all">
+					<div class="header_all_text">out of stock</div>
+				</div>
+				<% end %>
+				<div id="out_of_stock_wrapper">
+					<%= render :partial => 'out_of_stock' %>
+				</div>
 				<!-- only show the out_of_stock_panel div if there are 1 or more out of stock options -->
-				<% if @product.product_options.active.out_of_stock.any? %>
+				<% if @product.product_options.active.out_of_stock.any? and false %>
 				<div class="span-6 last out_of_stock_panel">
 					<div class="out_of_stock_panel_liner">
 						

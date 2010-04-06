@@ -1,84 +1,84 @@
 tag_products_014: 
-  product_id: 2
-  tag_id: 9
-  id: 15
+  product_id: 5
+  tag_id: 8
+  id: 10
 tag_products_003: 
-  product_id: 1
-  tag_id: 1
-  id: 1
-tag_products_015: 
-  product_id: 6
-  tag_id: 10
-  id: 16
-tag_products_004: 
   product_id: 1
   tag_id: 2
   id: 2
+tag_products_015: 
+  product_id: 4
+  tag_id: 5
+  id: 11
+tag_products_004: 
+  product_id: 6
+  tag_id: 10
+  id: 16
 tag_products_016: 
-  product_id: 7
-  tag_id: 11
-  id: 17
+  product_id: 8
+  tag_id: 16
+  id: 22
 tag_products_005: 
   product_id: 2
   tag_id: 4
   id: 4
 tag_products_017: 
-  product_id: 7
-  tag_id: 12
-  id: 18
-tag_products_006: 
-  product_id: 5
-  tag_id: 5
-  id: 7
-tag_products_018: 
-  product_id: 7
-  tag_id: 13
-  id: 19
-tag_products_007: 
-  product_id: 5
-  tag_id: 6
-  id: 8
-tag_products_020: 
-  product_id: 7
-  tag_id: 15
-  id: 21
-tag_products_019: 
-  product_id: 7
-  tag_id: 14
-  id: 20
-tag_products_008: 
-  product_id: 5
-  tag_id: 7
-  id: 9
-tag_products_021: 
-  product_id: 8
-  tag_id: 16
-  id: 22
-tag_products_010: 
-  product_id: 4
-  tag_id: 5
-  id: 11
-tag_products_009: 
-  product_id: 5
-  tag_id: 8
-  id: 10
-tag_products_011: 
   product_id: 4
   tag_id: 6
   id: 12
-tag_products_012: 
-  product_id: 3
-  tag_id: 7
-  id: 13
-tag_products_001: 
+tag_products_006: 
+  product_id: 7
+  tag_id: 11
+  id: 17
+tag_products_018: 
   product_id: 5
   tag_id: 4
   id: 6
-tag_products_013: 
-  product_id: 3
-  tag_id: 6
-  id: 14
-tag_products_002: 
+tag_products_007: 
+  product_id: 5
+  tag_id: 5
+  id: 7
+tag_products_020: 
   product_id: 1
   tag_id: 3
   id: 3
+tag_products_019: 
+  product_id: 3
+  tag_id: 7
+  id: 13
+tag_products_008: 
+  product_id: 7
+  tag_id: 12
+  id: 18
+tag_products_021: 
+  product_id: 3
+  tag_id: 6
+  id: 14
+tag_products_010: 
+  product_id: 7
+  tag_id: 13
+  id: 19
+tag_products_009: 
+  product_id: 5
+  tag_id: 6
+  id: 8
+tag_products_011: 
+  product_id: 5
+  tag_id: 7
+  id: 9
+tag_products_012: 
+  product_id: 7
+  tag_id: 14
+  id: 20
+tag_products_001: 
+  product_id: 1
+  tag_id: 1
+  id: 1
+tag_products_013: 
+  product_id: 7
+  tag_id: 15
+  id: 21
+tag_products_002: 
+  product_id: 2
+  tag_id: 9
+  id: 15

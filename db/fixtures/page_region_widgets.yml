@@ -1,40 +1,40 @@
-page_region_widgets_006: 
-  page_region_id: 1016
-  id: 20
-  widget_resource_id: 6
-  position: 1
-page_region_widgets_007: 
+page_region_widgets_004: 
+  position: 0
   page_region_id: 1018
   id: 21
   widget_resource_id: 4
-  position: 0
-page_region_widgets_008: 
+page_region_widgets_005: 
+  position: 1
   page_region_id: 1018
   id: 22
   widget_resource_id: 6
-  position: 1
-page_region_widgets_001: 
+page_region_widgets_006: 
+  position: 
   page_region_id: 7
   id: 12
   widget_resource_id: 5
+page_region_widgets_007: 
   position: 
-page_region_widgets_002: 
   page_region_id: 1010
   id: 13
   widget_resource_id: 5
+page_region_widgets_008: 
   position: 
-page_region_widgets_003: 
   page_region_id: 1014
   id: 17
   widget_resource_id: 4
+page_region_widgets_001: 
   position: 
-page_region_widgets_004: 
   page_region_id: 1014
   id: 18
   widget_resource_id: 6
-  position: 
-page_region_widgets_005: 
+page_region_widgets_002: 
+  position: 0
   page_region_id: 1016
   id: 19
   widget_resource_id: 4
-  position: 0
+page_region_widgets_003: 
+  position: 1
+  page_region_id: 1016
+  id: 20
+  widget_resource_id: 6

@@ -1,25 +1,25 @@
 collection_products_001: 
+  position: 
   product_id: 1
   id: 1
-  position: 
   collection_id: 1
 collection_products_002: 
+  position: 
   product_id: 2
   id: 2
-  position: 
   collection_id: 1
 collection_products_003: 
+  position: 
   product_id: 3
   id: 3
-  position: 
   collection_id: 1
 collection_products_004: 
+  position: 
   product_id: 4
   id: 4
-  position: 
   collection_id: 1
 collection_products_005: 
+  position: 
   product_id: 5
   id: 5
-  position: 
   collection_id: 2

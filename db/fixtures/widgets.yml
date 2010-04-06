@@ -1,169 +1,169 @@
 widgets_007: 
-  content_type: 
-  name: large image
-  filter_type: 
-  size: wide_4
-  title: 
-  quantity: 
-  type: FreeFormWidget
-  id: 9
-  resource_id: 5
-  state_changed_at: 2009-12-23 15:57:40.854594 Z
-  staging_dirty: true
-  state: published
-widgets_008: 
-  content_type: 
-  name: large image
-  filter_type: 
-  size: wide_4
-  title: 
-  quantity: 
-  type: FreeFormWidget
-  id: 10
-  resource_id: 5
-  state_changed_at: 2009-12-23 15:57:40.854594 Z
-  staging_dirty: true
-  state: staging
-widgets_010: 
+  name: activity products 2x1
+  size: wide_2
   content_type: product
-  name: New Products
-  filter_type: recent
-  size: square
-  title: Latest & Greatest
   quantity: 
-  type: ActivityWidget
-  id: 11
-  resource_id: 4
-  state_changed_at: 2009-12-23 18:14:56.348812 Z
-  staging_dirty: true
-  state: published
-widgets_009: 
-  content_type: product
-  name: New Products
+  title: More Latest & Greatest
   filter_type: recent
-  size: square
-  title: Latest & Greatest
-  quantity: 
+  resource_id: 6
+  id: 14
+  state_changed_at: 2009-12-23 18:22:13.260168 Z
   type: ActivityWidget
-  id: 12
-  resource_id: 4
-  state_changed_at: 2009-12-23 18:14:56.348812 Z
   staging_dirty: false
   state: staging
-widgets_011: 
-  content_type: product
-  name: New Products
-  filter_type: recent
-  size: wide_2
-  title: Latest & Greatest
+widgets_008: 
+  name: new blog posts
+  size: square
+  content_type: blog_post
   quantity: 
+  title: new blog posts
+  filter_type: recent
+  resource_id: 1
+  id: 1
+  state_changed_at: 2009-12-18 20:57:07.053758 Z
   type: ActivityWidget
-  id: 8
-  resource_id: 4
-  state_changed_at: 2009-12-23 18:14:56.431164 Z
   staging_dirty: true
-  state: retired
-widgets_012: 
-  content_type: product
-  name: activity products 2x1
-  filter_type: recent
+  state: published
+widgets_010: 
+  name: Curator's Picks
   size: wide_2
-  title: More Latest & Greatest
+  content_type: 
   quantity: 
-  type: ActivityWidget
-  id: 14
+  title: Curator's Picks
+  filter_type: 
+  resource_id: 2
+  id: 5
+  state_changed_at: 2009-12-18 23:18:14.470655 Z
+  type: MarketContentWidget
+  staging_dirty: false
+  state: staging
+widgets_009: 
+  name: activity products 2x1
+  size: wide_2
+  content_type: product
+  quantity: 
+  title: More Latest & Greatest
+  filter_type: recent
   resource_id: 6
+  id: 13
   state_changed_at: 2009-12-23 18:22:13.260168 Z
+  type: ActivityWidget
+  staging_dirty: true
+  state: published
+widgets_011: 
+  name: Curator's Picks
+  size: wide_2
+  content_type: 
+  quantity: 
+  title: Curator's Picks
+  filter_type: 
+  resource_id: 2
+  id: 3
+  state_changed_at: 2009-12-18 23:18:14.470655 Z
+  type: MarketContentWidget
+  staging_dirty: true
+  state: published
+widgets_012: 
+  name: freeform test
+  size: square
+  content_type: 
+  quantity: 
+  title: 
+  filter_type: 
+  resource_id: 3
+  id: 6
+  state_changed_at: 2009-12-18 23:18:14.890663 Z
+  type: FreeFormWidget
   staging_dirty: false
   state: staging
 widgets_001: 
-  content_type: blog_post
-  name: new blog posts
-  filter_type: recent
-  size: square
-  title: new blog posts
+  name: large image
+  size: wide_4
+  content_type: 
   quantity: 
-  type: ActivityWidget
-  id: 2
-  resource_id: 1
-  state_changed_at: 2009-12-18 20:57:07.053758 Z
-  staging_dirty: false
-  state: staging
+  title: 
+  filter_type: 
+  resource_id: 5
+  id: 9
+  state_changed_at: 2009-12-23 15:57:40.854594 Z
+  type: FreeFormWidget
+  staging_dirty: true
+  state: published
 widgets_013: 
-  content_type: product
-  name: activity products 2x1
-  filter_type: recent
-  size: wide_2
-  title: More Latest & Greatest
+  name: freeform test
+  size: square
+  content_type: 
   quantity: 
-  type: ActivityWidget
-  id: 13
-  resource_id: 6
-  state_changed_at: 2009-12-23 18:22:13.260168 Z
+  title: 
+  filter_type: 
+  resource_id: 3
+  id: 4
+  state_changed_at: 2009-12-18 23:18:14.890663 Z
+  type: FreeFormWidget
   staging_dirty: true
   state: published
 widgets_002: 
-  content_type: blog_post
-  name: new blog posts
-  filter_type: recent
-  size: square
-  title: new blog posts
-  quantity: 
-  type: ActivityWidget
-  id: 1
-  resource_id: 1
-  state_changed_at: 2009-12-18 20:57:07.053758 Z
-  staging_dirty: true
-  state: published
-widgets_003: 
+  name: large image
+  size: wide_4
   content_type: 
-  name: Curator's Picks
-  filter_type: 
-  size: wide_2
-  title: Curator's Picks
   quantity: 
-  type: MarketContentWidget
-  id: 5
-  resource_id: 2
-  state_changed_at: 2009-12-18 23:18:14.470655 Z
+  title: 
+  filter_type: 
+  resource_id: 5
+  id: 10
+  state_changed_at: 2009-12-23 15:57:40.854594 Z
+  type: FreeFormWidget
+  staging_dirty: true
+  state: staging
+widgets_003: 
+  name: New Products
+  size: square
+  content_type: product
+  quantity: 
+  title: Latest & Greatest
+  filter_type: recent
+  resource_id: 4
+  id: 12
+  state_changed_at: 2009-12-23 18:14:56.348812 Z
+  type: ActivityWidget
   staging_dirty: false
   state: staging
 widgets_004: 
-  content_type: 
-  name: Curator's Picks
-  filter_type: 
-  size: wide_2
-  title: Curator's Picks
+  name: New Products
+  size: square
+  content_type: product
   quantity: 
-  type: MarketContentWidget
-  id: 3
-  resource_id: 2
-  state_changed_at: 2009-12-18 23:18:14.470655 Z
+  title: Latest & Greatest
+  filter_type: recent
+  resource_id: 4
+  id: 11
+  state_changed_at: 2009-12-23 18:14:56.348812 Z
+  type: ActivityWidget
   staging_dirty: true
   state: published
 widgets_005: 
-  content_type: 
-  name: freeform test
-  filter_type: 
-  size: square
-  title: 
+  name: New Products
+  size: wide_2
+  content_type: product
   quantity: 
-  type: FreeFormWidget
-  id: 6
-  resource_id: 3
-  state_changed_at: 2009-12-18 23:18:14.890663 Z
+  title: Latest & Greatest
+  filter_type: recent
+  resource_id: 4
+  id: 8
+  state_changed_at: 2009-12-23 18:14:56.431164 Z
+  type: ActivityWidget
+  staging_dirty: true
+  state: retired
+widgets_006: 
+  name: new blog posts
+  size: square
+  content_type: blog_post
+  quantity: 
+  title: new blog posts
+  filter_type: recent
+  resource_id: 1
+  id: 2
+  state_changed_at: 2009-12-18 20:57:07.053758 Z
+  type: ActivityWidget
   staging_dirty: false
   state: staging
-widgets_006: 
-  content_type: 
-  name: freeform test
-  filter_type: 
-  size: square
-  title: 
-  quantity: 
-  type: FreeFormWidget
-  id: 4
-  resource_id: 3
-  state_changed_at: 2009-12-18 23:18:14.890663 Z
-  staging_dirty: true
-  state: published

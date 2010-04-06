@@ -1,407 +1,407 @@
 site_sections_032: 
-  name: Special Collection
-  type: MarketCollectionSection
-  id: 101
-  resource_id: 101
-  state_changed_at: 
-  category_id: 
-  market_collection_id: 1
-  staging_dirty: true
+  name: Greeting cards
   position: 
+  resource_id: 16
+  id: 16
+  state_changed_at: 
+  category_id: 17
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
   state: staging
 site_sections_021: 
-  name: Decorate
-  type: CategorySection
-  id: 3
-  resource_id: 3
+  name: Custom
+  position: 
+  resource_id: 18
+  id: 18
   state_changed_at: 
-  category_id: 4
+  category_id: 19
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
-  position: 
   state: staging
 site_sections_010: 
-  name: Read
-  type: CategorySection
-  id: 5
-  resource_id: 5
-  state_changed_at: 
-  category_id: 6
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_009: 
-  name: Books
-  type: CategorySection
-  id: 28
-  resource_id: 28
-  state_changed_at: 
-  category_id: 29
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_033: 
-  name: Package
-  type: CategorySection
-  id: 105
-  resource_id: 4
-  state_changed_at: 2009-12-23 15:57:40.803237 Z
-  category_id: 5
-  market_collection_id: 
-  staging_dirty: false
-  position: 
-  state: staging
-site_sections_022: 
-  name: Prints
-  type: CategorySection
-  id: 9
-  resource_id: 9
-  state_changed_at: 
-  category_id: 10
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_011: 
-  name: Stationery
-  type: CategorySection
-  id: 14
-  resource_id: 14
-  state_changed_at: 
-  category_id: 15
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_034: 
-  name: Package
-  type: CategorySection
-  id: 4
-  resource_id: 4
-  state_changed_at: 2009-12-23 15:57:40.803237 Z
-  category_id: 5
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: published
-site_sections_023: 
   name: Tags & Labels
-  type: CategorySection
-  id: 26
+  position: 
   resource_id: 26
+  id: 26
   state_changed_at: 
   category_id: 27
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
-  position: 
   state: staging
-site_sections_012: 
+site_sections_009: 
   name: DIY
-  type: CategorySection
-  id: 13
+  position: 
   resource_id: 13
+  id: 13
   state_changed_at: 
   category_id: 14
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
+  state: staging
+site_sections_033: 
+  name: Tabletop
   position: 
+  resource_id: 11
+  id: 11
+  state_changed_at: 
+  category_id: 12
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_022: 
+  name: Custom
+  position: 
+  resource_id: 12
+  id: 12
+  state_changed_at: 
+  category_id: 13
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_011: 
+  name: Package
+  position: 
+  resource_id: 4
+  id: 4
+  state_changed_at: 2009-12-23 15:57:40.803237 Z
+  category_id: 5
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: published
+site_sections_034: 
+  name: DIY
+  position: 
+  resource_id: 22
+  id: 22
+  state_changed_at: 
+  category_id: 23
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_023: 
+  name: Home Page
+  position: 1
+  resource_id: 98
+  id: 107
+  state_changed_at: 2009-12-23 18:22:33.173476 Z
+  category_id: 
+  type: HomePageSection
+  market_collection_id: 
+  staging_dirty: true
+  state: retired
+site_sections_012: 
+  name: Posters
+  position: 
+  resource_id: 8
+  id: 8
+  state_changed_at: 
+  category_id: 9
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
   state: staging
 site_sections_001: 
-  name: Decor
-  type: CategorySection
-  id: 10
-  resource_id: 10
+  name: Books
+  position: 
+  resource_id: 28
+  id: 28
   state_changed_at: 
-  category_id: 11
+  category_id: 29
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
-  position: 
   state: staging
 site_sections_035: 
-  name: Home Page
-  type: HomePageSection
-  id: 109
-  resource_id: 98
-  state_changed_at: 2009-12-23 18:22:33.059615 Z
-  category_id: 
-  market_collection_id: 
-  staging_dirty: false
-  position: 1
-  state: staging
-site_sections_024: 
-  name: DIY
-  type: CategorySection
-  id: 19
-  resource_id: 19
+  name: Pre-printed
+  position: 
+  resource_id: 20
+  id: 20
   state_changed_at: 
-  category_id: 20
+  category_id: 21
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
+  state: staging
+site_sections_024: 
+  name: Food Packaging
   position: 
+  resource_id: 24
+  id: 24
+  state_changed_at: 
+  category_id: 25
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
   state: staging
 site_sections_013: 
   name: Custom
-  type: CategorySection
-  id: 21
+  position: 
   resource_id: 21
+  id: 21
   state_changed_at: 
   category_id: 22
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
-  position: 
   state: staging
 site_sections_002: 
-  name: Posters
-  type: CategorySection
-  id: 8
-  resource_id: 8
+  name: Read
+  position: 
+  resource_id: 5
+  id: 5
   state_changed_at: 
-  category_id: 9
+  category_id: 6
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
-  position: 
   state: staging
 site_sections_036: 
-  name: Home Page
-  type: HomePageSection
-  id: 108
-  resource_id: 98
-  state_changed_at: 2009-12-23 18:22:33.059615 Z
-  category_id: 
-  market_collection_id: 
-  staging_dirty: true
-  position: 1
-  state: published
-site_sections_025: 
-  name: All
-  type: CategorySection
-  id: 7
-  resource_id: 7
-  state_changed_at: 
-  category_id: 8
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_014: 
-  name: Favor Boxes
-  type: CategorySection
-  id: 25
-  resource_id: 25
-  state_changed_at: 
-  category_id: 26
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_003: 
-  name: Invite
-  type: CategorySection
-  id: 2
-  resource_id: 2
-  state_changed_at: 
-  category_id: 3
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_037: 
-  name: Home Page
-  type: HomePageSection
-  id: 107
-  resource_id: 98
-  state_changed_at: 2009-12-23 18:22:33.173476 Z
-  category_id: 
-  market_collection_id: 
-  staging_dirty: true
-  position: 1
-  state: retired
-site_sections_026: 
-  name: Custom
-  type: CategorySection
-  id: 12
-  resource_id: 12
-  state_changed_at: 
-  category_id: 13
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_015: 
-  name: Custom
-  type: CategorySection
-  id: 18
-  resource_id: 18
-  state_changed_at: 
-  category_id: 19
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_004: 
-  name: Market Blog
-  type: BlogSection
-  id: 99
-  resource_id: 99
-  state_changed_at: 
-  category_id: 
-  market_collection_id: 
-  staging_dirty: true
-  position: 3
-  state: staging
-site_sections_027: 
-  name: Custom
-  type: CategorySection
-  id: 30
-  resource_id: 30
-  state_changed_at: 
-  category_id: 31
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_016: 
-  name: Goodwill
-  type: CategorySection
-  id: 6
-  resource_id: 6
-  state_changed_at: 
-  category_id: 7
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_005: 
-  name: Food Packaging
-  type: CategorySection
-  id: 24
-  resource_id: 24
-  state_changed_at: 
-  category_id: 25
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_028: 
-  name: Gift Wrap
-  type: CategorySection
-  id: 23
-  resource_id: 23
-  state_changed_at: 
-  category_id: 24
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_017: 
-  name: Write
-  type: CategorySection
-  id: 1
-  resource_id: 1
-  state_changed_at: 
-  category_id: 2
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_006: 
-  name: Journals
-  type: CategorySection
-  id: 17
-  resource_id: 17
-  state_changed_at: 
-  category_id: 18
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_029: 
-  name: Greeting cards
-  type: CategorySection
-  id: 16
-  resource_id: 16
-  state_changed_at: 
-  category_id: 17
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_018: 
-  name: Zines
-  type: CategorySection
-  id: 29
-  resource_id: 29
-  state_changed_at: 
-  category_id: 30
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_007: 
-  name: Seller Index
-  type: DesignerSection
-  id: 100
-  resource_id: 100
-  state_changed_at: 
-  category_id: 
-  market_collection_id: 
-  staging_dirty: true
-  position: 2
-  state: staging
-site_sections_030: 
-  name: Pre-printed
-  type: CategorySection
-  id: 20
-  resource_id: 20
-  state_changed_at: 
-  category_id: 21
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_019: 
-  name: DIY
-  type: CategorySection
-  id: 22
-  resource_id: 22
-  state_changed_at: 
-  category_id: 23
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_008: 
-  name: Tabletop
-  type: CategorySection
-  id: 11
-  resource_id: 11
-  state_changed_at: 
-  category_id: 12
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_031: 
-  name: Custom
-  type: CategorySection
-  id: 27
-  resource_id: 27
-  state_changed_at: 
-  category_id: 28
-  market_collection_id: 
-  staging_dirty: true
-  position: 
-  state: staging
-site_sections_020: 
   name: Note cards
-  type: CategorySection
-  id: 15
+  position: 
   resource_id: 15
+  id: 15
   state_changed_at: 
   category_id: 16
+  type: CategorySection
   market_collection_id: 
   staging_dirty: true
+  state: staging
+site_sections_025: 
+  name: Goodwill
   position: 
+  resource_id: 6
+  id: 6
+  state_changed_at: 
+  category_id: 7
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_014: 
+  name: DIY
+  position: 
+  resource_id: 19
+  id: 19
+  state_changed_at: 
+  category_id: 20
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_003: 
+  name: Decorate
+  position: 
+  resource_id: 3
+  id: 3
+  state_changed_at: 
+  category_id: 4
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_037: 
+  name: Custom
+  position: 
+  resource_id: 27
+  id: 27
+  state_changed_at: 
+  category_id: 28
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_026: 
+  name: Custom
+  position: 
+  resource_id: 30
+  id: 30
+  state_changed_at: 
+  category_id: 31
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_015: 
+  name: Home Page
+  position: 1
+  resource_id: 98
+  id: 109
+  state_changed_at: 2009-12-23 18:22:33.059615 Z
+  category_id: 
+  type: HomePageSection
+  market_collection_id: 
+  staging_dirty: false
+  state: staging
+site_sections_004: 
+  name: Special Collection
+  position: 
+  resource_id: 101
+  id: 101
+  state_changed_at: 
+  category_id: 
+  type: MarketCollectionSection
+  market_collection_id: 1
+  staging_dirty: true
+  state: staging
+site_sections_027: 
+  name: Journals
+  position: 
+  resource_id: 17
+  id: 17
+  state_changed_at: 
+  category_id: 18
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_016: 
+  name: Invite
+  position: 
+  resource_id: 2
+  id: 2
+  state_changed_at: 
+  category_id: 3
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_005: 
+  name: Stationery
+  position: 
+  resource_id: 14
+  id: 14
+  state_changed_at: 
+  category_id: 15
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_028: 
+  name: Write
+  position: 
+  resource_id: 1
+  id: 1
+  state_changed_at: 
+  category_id: 2
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_017: 
+  name: Favor Boxes
+  position: 
+  resource_id: 25
+  id: 25
+  state_changed_at: 
+  category_id: 26
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_006: 
+  name: Prints
+  position: 
+  resource_id: 9
+  id: 9
+  state_changed_at: 
+  category_id: 10
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_029: 
+  name: Gift Wrap
+  position: 
+  resource_id: 23
+  id: 23
+  state_changed_at: 
+  category_id: 24
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_018: 
+  name: All
+  position: 
+  resource_id: 7
+  id: 7
+  state_changed_at: 
+  category_id: 8
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_007: 
+  name: Package
+  position: 
+  resource_id: 4
+  id: 105
+  state_changed_at: 2009-12-23 15:57:40.803237 Z
+  category_id: 5
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: false
+  state: staging
+site_sections_030: 
+  name: Seller Index
+  position: 2
+  resource_id: 100
+  id: 100
+  state_changed_at: 
+  category_id: 
+  type: DesignerSection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_019: 
+  name: Home Page
+  position: 1
+  resource_id: 98
+  id: 108
+  state_changed_at: 2009-12-23 18:22:33.059615 Z
+  category_id: 
+  type: HomePageSection
+  market_collection_id: 
+  staging_dirty: true
+  state: published
+site_sections_008: 
+  name: Decor
+  position: 
+  resource_id: 10
+  id: 10
+  state_changed_at: 
+  category_id: 11
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_031: 
+  name: Zines
+  position: 
+  resource_id: 29
+  id: 29
+  state_changed_at: 
+  category_id: 30
+  type: CategorySection
+  market_collection_id: 
+  staging_dirty: true
+  state: staging
+site_sections_020: 
+  name: Market Blog
+  position: 3
+  resource_id: 99
+  id: 99
+  state_changed_at: 
+  category_id: 
+  type: BlogSection
+  market_collection_id: 
+  staging_dirty: true
   state: staging

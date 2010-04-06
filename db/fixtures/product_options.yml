@@ -1,276 +1,288 @@
+product_options_022: 
+  name: brown
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:20:53.097124 Z
+  product_id: 3
+  quantity: 10
+  updated_at: 2009-08-26 21:20:53.097124 Z
+  id: 3
+  sku: xmast1
+  restock_quantity: 1
+  state: 
+product_options_011: 
+  name: standard
+  position: 
+  price: 200
+  created_at: 2009-12-16 20:19:08.469409 Z
+  product_id: 3
+  quantity: 10
+  updated_at: 2009-12-16 20:19:08.469409 Z
+  id: 15
+  sku: "0006"
+  restock_quantity: 1
+  state: active
+product_options_023: 
+  name: red on black
+  position: 
+  price: 2000
+  created_at: 2009-12-23 16:39:53.207588 Z
+  product_id: 7
+  quantity: 1000
+  updated_at: 2009-12-23 16:39:53.207588 Z
+  id: 22
+  sku: 1111-2
+  restock_quantity: 100
+  state: active
+product_options_012: 
+  name: cream
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:25:54.970624 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-08-26 21:25:54.970624 Z
+  id: 8
+  sku: wave-cream
+  restock_quantity: 1
+  state: 
+product_options_001: 
+  name: tan
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:21:03.576231 Z
+  product_id: 3
+  quantity: 10
+  updated_at: 2009-08-26 21:21:03.576231 Z
+  id: 4
+  sku: xmast2
+  restock_quantity: 1
+  state: 
+product_options_024: 
+  name: one
+  position: 
+  price: 10
+  created_at: 2010-04-06 18:22:00.959310 Z
+  product_id: 9
+  quantity: 0
+  updated_at: 2010-04-06 18:22:00.959310 Z
+  id: 24
+  sku: one
+  restock_quantity: 1
+  state: active
+product_options_013: 
+  name: deluxe
+  position: 
+  price: 250
+  created_at: 2009-12-16 20:19:17.286171 Z
+  product_id: 3
+  quantity: 10
+  updated_at: 2009-12-16 20:19:17.286171 Z
+  id: 16
+  sku: "0007"
+  restock_quantity: 1
+  state: active
+product_options_002: 
+  name: black on white
+  position: 
+  price: 1000
+  created_at: 2009-12-23 16:39:26.926911 Z
+  product_id: 7
+  quantity: 1000
+  updated_at: 2009-12-23 16:40:06.753814 Z
+  id: 21
+  sku: 1111-1
+  restock_quantity: 100
+  state: active
+product_options_014: 
+  name: cement
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:26:03.538124 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-08-26 21:26:03.538124 Z
+  id: 9
+  sku: wave-cement
+  restock_quantity: 1
+  state: 
+product_options_003: 
+  name: chocolate
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:25:22.974518 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-08-26 21:25:22.974518 Z
+  id: 5
+  sku: wave-choc
+  restock_quantity: 1
+  state: 
+product_options_015: 
+  name: basic
+  position: 
+  price: 50
+  created_at: 2009-12-16 20:19:43.531408 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-12-16 20:19:43.531408 Z
+  id: 17
+  sku: 0008
+  restock_quantity: 1
+  state: active
+product_options_004: 
+  name: basic
+  position: 
+  price: 100
+  created_at: 2009-12-16 20:17:14.258579 Z
+  product_id: 1
+  quantity: 10
+  updated_at: 2009-12-16 20:17:14.258579 Z
+  id: 12
+  sku: "001"
+  restock_quantity: 1
+  state: active
+product_options_016: 
+  name: gravel
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:26:13.040303 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-08-26 21:26:13.040303 Z
+  id: 10
+  sku: wave-gravel
+  restock_quantity: 1
+  state: 
+product_options_005: 
+  name: map
+  position: 
+  price: 850
+  created_at: 2009-12-23 16:53:05.000681 Z
+  product_id: 8
+  quantity: 25
+  updated_at: 2009-12-23 16:53:05.000681 Z
+  id: 23
+  sku: "2222"
+  restock_quantity: 5
+  state: active
+product_options_017: 
+  name: deluxe
+  position: 
+  price: 75
+  created_at: 2009-12-16 20:19:53.484421 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-12-16 20:19:53.484421 Z
+  id: 18
+  sku: 0009
+  restock_quantity: 1
+  state: active
+product_options_006: 
+  name: tan
+  position: 
+  price: 400
+  created_at: 2009-08-26 21:25:31.679416 Z
+  product_id: 4
+  quantity: 10
+  updated_at: 2009-08-26 21:25:31.679416 Z
+  id: 6
+  sku: wave-tan
+  restock_quantity: 1
+  state: 
+product_options_018: 
+  name: print
+  position: 
+  price: 4000
+  created_at: 2009-08-26 21:31:06.245608 Z
+  product_id: 5
+  quantity: 10
+  updated_at: 2009-08-26 21:31:06.245608 Z
+  id: 11
+  sku: pig-print
+  restock_quantity: 1
+  state: 
+product_options_007: 
+  name: white
+  position: 
+  price: 100
+  created_at: 2009-12-16 20:18:07.350015 Z
+  product_id: 2
+  quantity: 10
+  updated_at: 2009-12-16 20:18:07.350015 Z
+  id: 13
+  sku: "0004"
+  restock_quantity: 1
+  state: active
 product_options_020: 
   name: regular
-  restock_quantity: 10
-  updated_at: 2009-12-23 16:27:27.872839 Z
+  position: 
   price: 2500
+  created_at: 2009-12-23 16:27:27.872839 Z
   product_id: 6
   quantity: 100
+  updated_at: 2009-12-23 16:27:27.872839 Z
   id: 20
   sku: "1001"
-  position: 
-  created_at: 2009-12-23 16:27:27.872839 Z
+  restock_quantity: 10
   state: active
 product_options_019: 
   name: standard
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:20:16.041535 Z
+  position: 
   price: 100
+  created_at: 2009-12-16 20:20:16.041535 Z
   product_id: 5
   quantity: 10
+  updated_at: 2009-12-16 20:20:16.041535 Z
   id: 19
   sku: "0010"
-  position: 
-  created_at: 2009-12-16 20:20:16.041535 Z
+  restock_quantity: 1
   state: active
 product_options_008: 
-  name: print
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:31:06.245608 Z
-  price: 4000
-  product_id: 5
-  quantity: 10
-  id: 11
-  sku: pig-print
-  position: 
-  created_at: 2009-08-26 21:31:06.245608 Z
-  state: 
-product_options_021: 
-  name: red on black
-  restock_quantity: 100
-  updated_at: 2009-12-23 16:39:53.207588 Z
-  price: 2000
-  product_id: 7
-  quantity: 1000
-  id: 22
-  sku: 1111-2
-  position: 
-  created_at: 2009-12-23 16:39:53.207588 Z
-  state: active
-product_options_010: 
-  name: brown
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:20:53.097124 Z
-  price: 400
-  product_id: 3
-  quantity: 10
-  id: 3
-  sku: xmast1
-  position: 
-  created_at: 2009-08-26 21:20:53.097124 Z
-  state: 
-product_options_009: 
-  name: card
-  restock_quantity: 1
-  updated_at: 2009-08-24 17:25:22.271317 Z
-  price: 1000
-  product_id: 1
-  quantity: 10
-  id: 1
-  sku: ""
-  position: 
-  created_at: 2009-08-24 17:25:22.271317 Z
-  state: 
-product_options_022: 
-  name: black on white
-  restock_quantity: 100
-  updated_at: 2009-12-23 16:40:06.753814 Z
-  price: 1000
-  product_id: 7
-  quantity: 1000
-  id: 21
-  sku: 1111-1
-  position: 
-  created_at: 2009-12-23 16:39:26.926911 Z
-  state: active
-product_options_011: 
-  name: tan
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:21:03.576231 Z
-  price: 400
-  product_id: 3
-  quantity: 10
-  id: 4
-  sku: xmast2
-  position: 
-  created_at: 2009-08-26 21:21:03.576231 Z
-  state: 
-product_options_023: 
-  name: map
-  restock_quantity: 5
-  updated_at: 2009-12-23 16:53:05.000681 Z
-  price: 850
-  product_id: 8
-  quantity: 25
-  id: 23
-  sku: "2222"
-  position: 
-  created_at: 2009-12-23 16:53:05.000681 Z
-  state: active
-product_options_012: 
-  name: basic
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:17:14.258579 Z
-  price: 100
-  product_id: 1
-  quantity: 10
-  id: 12
-  sku: "001"
-  position: 
-  created_at: 2009-12-16 20:17:14.258579 Z
-  state: active
-product_options_001: 
-  name: chocolate
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:25:22.974518 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 5
-  sku: wave-choc
-  position: 
-  created_at: 2009-08-26 21:25:22.974518 Z
-  state: 
-product_options_013: 
-  name: white
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:18:07.350015 Z
-  price: 100
-  product_id: 2
-  quantity: 10
-  id: 13
-  sku: "0004"
-  position: 
-  created_at: 2009-12-16 20:18:07.350015 Z
-  state: active
-product_options_002: 
-  name: tan
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:25:31.679416 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 6
-  sku: wave-tan
-  position: 
-  created_at: 2009-08-26 21:25:31.679416 Z
-  state: 
-product_options_014: 
-  name: red
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:18:16.064899 Z
-  price: 125
-  product_id: 2
-  quantity: 10
-  id: 14
-  sku: "0005"
-  position: 
-  created_at: 2009-12-16 20:18:16.064899 Z
-  state: active
-product_options_003: 
   name: sage
-  restock_quantity: 1
-  updated_at: 2009-08-27 18:50:32.837749 Z
+  position: 
   price: 400
+  created_at: 2009-08-26 21:25:40.157401 Z
   product_id: 4
   quantity: 6
+  updated_at: 2009-08-27 18:50:32.837749 Z
   id: 7
   sku: wave-sage
-  position: 
-  created_at: 2009-08-26 21:25:40.157401 Z
+  restock_quantity: 1
   state: 
-product_options_015: 
-  name: standard
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:19:08.469409 Z
-  price: 200
-  product_id: 3
-  quantity: 10
-  id: 15
-  sku: "0006"
-  position: 
-  created_at: 2009-12-16 20:19:08.469409 Z
-  state: active
-product_options_004: 
+product_options_021: 
   name: card
+  position: 
+  price: 1000
+  created_at: 2009-08-24 17:25:22.271317 Z
+  product_id: 1
+  quantity: 10
+  updated_at: 2009-08-24 17:25:22.271317 Z
+  id: 1
+  sku: ""
   restock_quantity: 1
-  updated_at: 2009-08-27 18:50:32.841756 Z
+  state: 
+product_options_010: 
+  name: card
+  position: 
   price: 400
+  created_at: 2009-08-26 21:18:42.597626 Z
   product_id: 2
   quantity: 7
+  updated_at: 2009-08-27 18:50:32.841756 Z
   id: 2
   sku: ""
-  position: 
-  created_at: 2009-08-26 21:18:42.597626 Z
-  state: 
-product_options_016: 
-  name: deluxe
   restock_quantity: 1
-  updated_at: 2009-12-16 20:19:17.286171 Z
-  price: 250
-  product_id: 3
-  quantity: 10
-  id: 16
-  sku: "0007"
+  state: 
+product_options_009: 
+  name: red
   position: 
-  created_at: 2009-12-16 20:19:17.286171 Z
+  price: 125
+  created_at: 2009-12-16 20:18:16.064899 Z
+  product_id: 2
+  quantity: 10
+  updated_at: 2009-12-16 20:18:16.064899 Z
+  id: 14
+  sku: "0005"
+  restock_quantity: 1
   state: active
-product_options_005: 
-  name: cream
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:25:54.970624 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 8
-  sku: wave-cream
-  position: 
-  created_at: 2009-08-26 21:25:54.970624 Z
-  state: 
-product_options_017: 
-  name: basic
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:19:43.531408 Z
-  price: 50
-  product_id: 4
-  quantity: 10
-  id: 17
-  sku: 0008
-  position: 
-  created_at: 2009-12-16 20:19:43.531408 Z
-  state: active
-product_options_006: 
-  name: cement
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:26:03.538124 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 9
-  sku: wave-cement
-  position: 
-  created_at: 2009-08-26 21:26:03.538124 Z
-  state: 
-product_options_018: 
-  name: deluxe
-  restock_quantity: 1
-  updated_at: 2009-12-16 20:19:53.484421 Z
-  price: 75
-  product_id: 4
-  quantity: 10
-  id: 18
-  sku: 0009
-  position: 
-  created_at: 2009-12-16 20:19:53.484421 Z
-  state: active
-product_options_007: 
-  name: gravel
-  restock_quantity: 1
-  updated_at: 2009-08-26 21:26:13.040303 Z
-  price: 400
-  product_id: 4
-  quantity: 10
-  id: 10
-  sku: wave-gravel
-  position: 
-  created_at: 2009-08-26 21:26:13.040303 Z
-  state: 

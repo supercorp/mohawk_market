@@ -1,42 +1,45 @@
 market_content_widget_items_001: 
-  content_type: Product
-  content_id: 2
-  title: 
-  widget_id: 3
-  id: 1
-  image_record_id: 2
-  description: This cut-paper card is made out of acid-free card stock and is fully lined with an envelope in a complementary color.
-  image_record_type: ProductImage
   position: 
   image_record_name: image
-market_content_widget_items_002: 
-  content_type: BlogPost
-  content_id: 5
+  content_type: Product
   title: 
   widget_id: 3
-  id: 2
-  image_record_id: 0
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
-  image_record_type: 
-  position: 
-  image_record_name: 
-market_content_widget_items_003: 
-  content_type: BlogPost
-  content_id: 5
-  title: 
-  widget_id: 5
-  id: 3
-  image_record_id: 0
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
-  image_record_type: 
-  position: 
-  image_record_name: 
-market_content_widget_items_004: 
-  content_type: Product
   content_id: 2
+  id: 1
+  image_record_type: ProductImage
+  image_record_id: 2
+  description: This cut-paper card is made out of acid-free card stock and is fully lined with an envelope in a complementary color.
+market_content_widget_items_002: 
+  position: 
+  image_record_name: 
+  content_type: BlogPost
+  title: 
+  widget_id: 3
+  content_id: 5
+  id: 2
+  image_record_type: 
+  image_record_id: 0
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
+market_content_widget_items_003: 
+  position: 
+  image_record_name: 
+  content_type: BlogPost
   title: 
   widget_id: 5
+  content_id: 5
+  id: 3
+  image_record_type: 
+  image_record_id: 0
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet suscipit mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis, justo sit amet fringilla laoreet, eros orci gravida velit, non lobortis dolor erat quis orci. Suspendisse imperdiet laoreet tortor, at luctus nunc consequat ut. Fusce eu mi eros. Suspendisse sed arcu velit, ac commodo sem. Donec sit amet eros hendrerit lacus feugiat facilisis.
+market_content_widget_items_004: 
+  position: 
+  image_record_name: image
+  content_type: Product
+  title: 
+  widget_id: 5
+  content_id: 2
   id: 4
+  image_record_type: ProductImage
   image_record_id: 2
   description: "Color: tan\n\
     Liner Color: white\n\
@@ -49,6 +52,3 @@ market_content_widget_items_004:
     Cards comes packaged in a clear plastic pack\n\
     Blank Inside\n\
     Shipped in a sturdy mailer"
-  image_record_type: ProductImage
-  position: 
-  image_record_name: image
