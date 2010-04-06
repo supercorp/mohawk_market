@@ -1,0 +1,51 @@
+<!-- only show the out_of_stock_panel div if there are 1 or more out of stock options -->
+<% if @product.product_options.active.out_of_stock.any? %>
+<div class="cc_unit_1 last out_of_stock_panel">
+	<div class="out_of_stock_panel_liner">
+		<% if @product.product_options.active.length > 1 %>
+			<span class="out_of_stock_panel_subhead">Out of stock options:</span>
+		<% end %>
+		<div>
+			<% display_option_name = (@product.product_options.active.length > 1) %>
+			<% form_tag "/product_option_stock_notifications", :ajax_binding => 'ajax_form', :ajax_method => 'POST', :ajax_success_element => 'out_of_stock_wrapper' do %>
+				<% if @product.product_options.active.out_of_stock.length > 1 %>
+					<%= hidden_field_tag 'quantity', 'multiple' %>
+					<% for option in @product.product_options.active.out_of_stock %>
+						<div class="out_of_stock_item">
+							<% if logged_in? %>
+								<span id="notify_me_<%= option.id %>" <% unless option.product_option_stock_notifications.for_user(@this_user.id).any? %> <% end %>>
+									<% if option.product_option_stock_notifications.for_user(@this_user.id).any? %>
+									  <%= image_tag 'checkmark.png' %>
+									<% else %>
+									  <%= check_box_tag "product_option[#{option.id}]" %>
+									<% end %>
+								</span>
+							<% end %><% if display_option_name %><%= option.name %><% end %>
+						</div>
+					<% end %>
+				<% else %>
+					<div class="out_of_stock_item">
+						<% if display_option_name %><%= @product.product_options.active.out_of_stock.first.name %><% end %>
+					</div>
+					<%= hidden_field_tag 'quantity', 'single' %>
+					<%= hidden_field_tag 'product_option_id', @product.product_options.active.out_of_stock.first.id %>
+				<% end %>
+				<% if logged_in? %>
+				  	<% if (@product.product_options.active.out_of_stock.map{|po| po.id} - @this_user.product_option_stock_notifications.for_product(@product.id).map{|psn| psn.product_option_id}).any?%>
+						<%= submit_tag 'email me' %> when available
+					<% else %>
+						<% if @product.product_options.active.out_of_stock.length > 1 %>
+							We'll email you when these options are back in stock.
+						<% else %>
+							We'll email you when this product is back in stock.
+						<% end %>
+					<% end %>
+				<% else %>
+					<a href="<%= shopper_area_product_url(@product) %>">Login for notification options</a></h3>
+				<% end %>
+			<% end %>
+		</div>
+
+	</div><!-- end .out_of_stock_panel_liner -->
+</div><!-- end .out_of_stock_panel -->
+<% end %>
