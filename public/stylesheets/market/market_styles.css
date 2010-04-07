@@ -345,6 +345,10 @@ h1.product_name {
 .out_of_stock_header_all .header_all_list_label {
 	color:#666;
 }
+.out_of_stock_panel_subhead {
+	font-size:14px;
+	font-weight:bold;
+}
 .favorite_panel, .share_panel {
 	margin-bottom:9px;
 }
