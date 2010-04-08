@@ -29,6 +29,7 @@ namespace :deploy do
   desc "Restart Application"
   task :restart, :roles => :app do
     run "touch #{current_path}/tmp/restart.txt"
+    restart_workling
   end
   task :start, :roles => :app do
     # start task unnecessary for Passenger deployment
@@ -38,6 +39,19 @@ namespace :deploy do
   end
 end
 
+desc "Restart Workling background server"
+task :restart_workling, :roles => :app do
+  stop_workling
+  sleep 5
+  start_workling
+end
+
+task :stop_workling, :roles => :app do
+  run "cd #{release_path} && ./script/workling_client stop"
+end
+task :start_workling, :roles => :app do
+  run "cd #{release_path} && ./script/workling_client start"
+end
 
 # Tasks for config files
 namespace :config_files do
