@@ -716,6 +716,7 @@ h1.product_name {
 .footer {
 	border-top:1px solid #ccc;
 	padding-top:18px;
+	margin-top:18px;
 	margin-bottom:12px;
 }
 
@@ -778,7 +779,7 @@ h1.product_name {
 }
 
 .public_form_items a {
-	font-size:11px;
+	font-size:13px;
 }
 
 .public_form_explanation a:hover, .public_form_items a:hover {
@@ -1087,17 +1088,17 @@ div.dashboard_page_tabs a, div.dashboard_product_tabs a {
 .faq_market .faq_answer a {
 	color:#52cbba;
 }
-.faq_market .faq_header {
+.faq_market .faq_header, .page_header {
 	padding-bottom:18px;
 	padding-top:18px;
 	float:left;
 }
-.faq_market .faq_header_liner {
+.faq_market .faq_header_liner, .page_header_liner {
 	width:974px;
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
 }
-.faq_market .faq_header h1 {
+.faq_market .faq_header h1, .page h1 {
 	color:#52cbba;
 	font-weight:normal;
 	font-size:24px;
