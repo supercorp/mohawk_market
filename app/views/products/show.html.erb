@@ -45,9 +45,18 @@
 						<% end %>
 						<div style="height:69px;position:relative;width:432px;margin-right:0px;float:left;margin-left:2px;">
 							<div id="thumbnail_mask" style="width:432px;height:69px;overflow:hidden;position:absolute;">
-							<div id="thumbnail_container" style="width:<%= @product.product_visuals.length * 72 %>px;height: 69px;position:absolute;left:0px;top:0px">
+							<div id="thumbnail_container" style="width:<%= @product.product_visuals.length * 72 %>px;height: 69px;position:absolute;left:0px;top:0px" data-binding="image_swap_trigger">
 							<% for product_visual in (@product.product_visuals) %>
-								<%= image_tag(product_visual.image.url(:thumb_65), :'data-binding' => "image_swap_trigger", :'data-image_swap_target' => "product_visual_#{product_visual.id}") %>
+							<div id="thumbnail_container_<%= product_visual.id %>" style="position:relative;float:left;width:72px;height:69px;" data-binding="image_swap_trigger" data-image_swap_target="product_visual_<%= product_visual.id %>">
+								<% if product_visual.is_a? ProductVideo %>
+									<div style="position:absolute;left:0;top:0;z-index:100;">
+										<%= image_tag('video-overlay.png') %>
+									</div>
+								<% end %>
+								<div style="position:absolute;left:0;top:0;z-index:1">
+									<%= image_tag(product_visual.image.url(:thumb_65), :'data-binding' => "image_swap_trigger", :'data-image_swap_target' => "product_visual_#{product_visual.id}") %>
+								</div>
+							</div>
 							<% end %>
 							</div>
 							</div>
