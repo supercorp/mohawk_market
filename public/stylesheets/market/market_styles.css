@@ -799,6 +799,19 @@ h1.product_name {
 
 /* @end */
 
+/* @group signup */
+.form_alertbox {
+	padding: 5px;
+	padding-right: 7px;
+	background-color: #ffffcc;
+	margin-bottom:18px;
+}
+.form_optin {
+	padding: 5px;
+	margin-bottom:10px;
+}
+/* @end */
+
 /* @group dashboard */
 body.dashboard .header_bar {
 	background-color:#fff;
