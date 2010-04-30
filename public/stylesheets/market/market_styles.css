@@ -1623,6 +1623,11 @@ h1.cart_header_headline {
 	color:#666;
 	font-family:verdana;
 }
+.carterror {
+	background:#FBE3E4 !important;
+	color:#8a1f11;
+	border-color:#eee
+}
 /* @end */
 
 /* @group search */
