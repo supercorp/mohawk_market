@@ -1302,7 +1302,17 @@ a:hover img.thumb {border-color:#52cbba;}
 .blog_categories a.selected {
 	color:#52cbba;
 }
-
+.blog_rss {
+	height: 14px;
+	font-size: 12px;
+	font-weight: bold;
+	border: 0;
+	margin-top: 8px;
+}
+.blog_rss a {
+	color:#666;
+	text-decoration:none;
+}
 .comment, .list_item_comment {
 	border-top:1px solid #aaa;
 	padding-top:8px;
