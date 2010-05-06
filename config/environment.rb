@@ -84,7 +84,7 @@ Rails::Initializer.run do |config|
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
   config.active_record.observers = :user_observer
 end
-
+require 'csv'
 require 'money'
 require 'oembed'
 require 'shellwords'
