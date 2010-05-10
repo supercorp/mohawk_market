@@ -75,5 +75,8 @@
 <% end %>
 
 <%= render :partial => 'layouts/google_analytics' %>
+<% unless action_name == 'index' %>
+	<%= render :partial => 'layouts/store_google_analytics' %>
+<% end %>
 </body>
 </html>
