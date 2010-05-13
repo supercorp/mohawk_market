@@ -1227,6 +1227,32 @@ a img.thumb {border:2px solid #fff;}
 a:hover img.thumb {border-color:#52cbba;}
 
 /* @end */
+
+
+/* @group sitemap */
+
+.sitemap #category-wrapper {
+	float: left;
+	width: 120px;
+	margin-left: 30px;
+}
+
+.sitemap ul {
+	list-style-type:none !important;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+}
+.sitemap ul a {
+	text-decoration:none;
+	color:#666;
+}
+.sitemap ul a:hover {
+	color:#52cbba;
+}
+
+/* end */
+
 /* @group blog */
 
 .blog_primary_wrapper {
