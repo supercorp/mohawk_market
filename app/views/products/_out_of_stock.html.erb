@@ -15,7 +15,7 @@
 							<% if logged_in? %>
 								<span id="notify_me_<%= option.id %>" <% unless option.product_option_stock_notifications.for_user(@this_user.id).any? %> <% end %>>
 									<% if option.product_option_stock_notifications.for_user(@this_user.id).any? %>
-									  <%= image_tag 'checkmark.png' %>
+									  <%= image_tag 'checkmark-2.png' %>
 									<% else %>
 									  <%= check_box_tag "product_option[#{option.id}]" %>
 									<% end %>
