@@ -3,7 +3,7 @@
 
 	<div class="span-18 panel">
 		<div class="panel_header">
-			<h3><%= BlogPost::CLASS_DISPLAY_NAME %> <%= link_to "see all #{BlogPost::CLASS_DISPLAY_NAME} posts", seller_url(:id => @seller.id, :profile_section => :blog) %></h3>
+			<h3><%= BlogPost::CLASS_DISPLAY_NAME %> <%= link_to "see all #{BlogPost::CLASS_DISPLAY_NAME} posts", seller_url(:subdomain => @seller.subdomain, :profile_section => :blog) %></h3>
 		</div>
 		<!-- post [begin]-->
 		<% for blog_post in @seller.blog_posts.seller.published.most_recent_3 %>
