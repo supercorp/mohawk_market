@@ -340,7 +340,7 @@
 	<% if @product.tags.public.any? %>
 	<div class="span-6 last panel tags_panel">
 		<h3>Tags</h3>
-		<%= @product.tags.public.map{|tag| link_to tag.name, tag_url(:tag_name => tag.name)}.join(' ') %>
+		<%= @product.tags.public.map{|tag| link_to tag.name, tag_url(:tag_name => tag.to_param)}.join(' ') %>
 	</div><!-- end .tags_panel -->
 	<% end %>
 	
