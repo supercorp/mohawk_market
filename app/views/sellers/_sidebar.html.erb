@@ -12,24 +12,24 @@
 		</div>
 		<ul class="store_nav">
 			<li><%= link_to "home", seller_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'home' ? 'selected' : nil) %></li>
-		  <li><%= link_to "products (#{@seller.products.active.count})", seller_url(:subdomain => @seller.subdomain, :profile_section => :products), :class => (@profile_section == 'products' ? 'selected' : nil) %></li>
+		  <li><%= link_to "products (#{@seller.products.active.count})", store_products_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'products' ? 'selected' : nil) %></li>
 			<% if @profile_section == 'products' %>
 				<ul class="store_sub_nav">
-					<li><%= link_to 'all', seller_url(:subdomain => @seller.subdomain, :profile_section => :products), :class => (@collection_id ? nil : 'selected') %></li>
+					<li><%= link_to 'all', store_products_url(:subdomain => @seller.subdomain), :class => (@collection_id ? nil : 'selected') %></li>
 					<% for collection in @seller.collections.active %>
-						<li><%= link_to collection.name, seller_url(:subdomain => @seller.subdomain, :profile_section => :products, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %></li>
+						<li><%= link_to collection.name, store_products_url(:subdomain => @seller.subdomain, :collection_id => collection.id), :class => (@collection_id.to_i == collection.id ? 'selected' : nil) %></li>
 					<% end %>
 				</ul>
 			<% end %>
-		  <li><%= link_to BlogPost::CLASS_DISPLAY_NAME, seller_url(:subdomain => @seller.subdomain, :profile_section => :blog), :class => (@profile_section == 'blog' ? 'selected' : nil) %></li>
-		  <li><%= link_to "notes", seller_url(:subdomain => @seller.subdomain, :profile_section => :notes), :class => (@profile_section == 'notes' ? 'selected' : nil) %></li>
-		  <li><%= link_to "about", seller_url(:subdomain => @seller.subdomain, :profile_section => :about), :class => (@profile_section == 'about' ? 'selected' : nil) %></li>
+		  <li><%= link_to BlogPost::CLASS_DISPLAY_NAME, store_blog_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'blog' ? 'selected' : nil) %></li>
+		  <li><%= link_to "notes", store_notes_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'notes' ? 'selected' : nil) %></li>
+		  <li><%= link_to "about", store_about_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'about' ? 'selected' : nil) %></li>
 		</ul>
 		<div class="sidebar_panel">
 			<%= link_to @seller.store_domain_name, seller_url(:subdomain => @seller.subdomain) %>
 		</div>
 		<div class="sidebar_panel store_description">
-			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", seller_url(:subdomain => @seller.subdomain, :profile_section => :about)))).to_html unless @seller.store_description.blank? %>
+			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", store_notes_url(:subdomain => @seller.subdomain)))).to_html unless @seller.store_description.blank? %>
 		</div>
 		<% if @seller.faq %>
 		<div class="sidebar_panel">			
