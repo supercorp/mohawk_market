@@ -1,9 +1,9 @@
 <!-- public layout footer -->
 <div class="container footer">
 	<% if logged_in? %>
-		<h4><%= link_to @apply_to_sell_link_text, new_manage_message_url(:message => {:recipient_id => User.find_by_login('applications').id}) %></h4>
+		<h4><%= link_to @apply_to_sell_link_text, new_manage_message_url(:message => {:recipient_id => User.find_by_login('applications').id}), :rel => 'nofollow' %></h4>
 	<% else %>
-		<h4><%= @want_to_sell_not_logged_in_text %> <%= link_to "Login", new_manage_message_url(:message => {:recipient_id => User.find_by_login('applications').id}) %> or <a href="/signup?application_requested=true">sign up</a> to apply.</h4>
+		<h4><%= @want_to_sell_not_logged_in_text %> <%= link_to "Login", new_manage_message_url(:message => {:recipient_id => User.find_by_login('applications').id}), :rel => 'nofollow' %> or <a href="/signup?application_requested=true">sign up</a> to apply.</h4>
 	<% end %>
 </div>
 
