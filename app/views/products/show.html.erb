@@ -179,7 +179,7 @@
                <div ui_binding="expander" ui_state="expanded" ui_id="share_this" style="display:none">
                    <% for sharing_link in [:facebook,:twitter,:delicious,:stumbleupon,:kaboodle] do %>
                        <div class="share_link_wrapper"><%= link_to SharingLinks::ICONS[sharing_link].blank? ? sharing_link : image_tag(SharingLinks::ICONS[sharing_link]), SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
-                       <%= link_to SharingLinks::TEXT[sharing_link], SharingLinks::URLS[sharing_link] + url_encode(request.url) %>
+                       <%= link_to SharingLinks::TEXT[sharing_link], SharingLinks::URLS[sharing_link] + url_encode(request.url), :rel => 'nofollow' %>
                        </div><!--end .share_link_wrapper -->
                    <% end %>
                </div>
