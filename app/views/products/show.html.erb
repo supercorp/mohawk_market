@@ -151,7 +151,7 @@
 							This product's on your favorites.<br/>
 							<a href="#favorites" onclick="$('#favorites_tab').click();" >See who else likes it.</a>
 						<% else %>
-							<%= link_to 'Add to your favorites.', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
+							<%= link_to 'Add to your favorites.', product_favorites_url + "?product_id=#{@product.to_param}", :method => :post %>
 						<% end %>
 					<% else %>
 						<% session[:favorites] ||= [] %>
@@ -159,7 +159,7 @@
 							<a href="#">You appreciate it.</a>
 							<a href="#favorites" onclick="$('#favorites_tab').click();">see who else likes is</a>
 						<% else %>
-							<%= link_to 'Appreciate it.', product_favorites_url + "?product_id=#{@product.id}", :method => :post %>
+							<%= link_to 'Appreciate it.', product_favorites_url + "?product_id=#{@product.to_param}", :method => :post %>
 							or<br/>
 							<%= link_to 'Log in to add to your favorites.', product_url(@product) + '?log_me_in=true' %>
 						<% end %>
