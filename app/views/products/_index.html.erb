@@ -4,7 +4,7 @@
 			
 			<% if product.product_visuals.any? %>
 			<% 	product_visual = product.product_visuals.first %>
-				<%= link_to image_tag(product_visual.image.url(:thumb_product_panel)), product_url(product), :class => 'product' %>
+				<%= link_to image_tag(product_visual.image.url(:thumb_product_panel), :alt => "#{product.name} from #{product.seller.store_name}"), product_url(product), :class => 'product' %>
 				<h4 class="product_panel_product_name"><%= link_to truncate(product.name,24), product_url(product) %></h4>
 				<h6 class="product_panel_seller_name"><%= link_to truncate(product.seller.store_name,24), seller_url(:subdomain => product.seller.subdomain) %></h6>
 			<% else %>

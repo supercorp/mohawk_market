@@ -19,7 +19,7 @@
 								<td>
 							<% 	case product_visual.class.name
 								 	when 'ProductImage' %>
-								<%= link_to image_tag(product_visual.image.url(:large)), product_visual.image.url, :target => 'blank' %>
+								<%= link_to image_tag(product_visual.image.url(:large), :alt => "#{@product.name} from #{@product.seller.store_name}"), product_visual.image.url, :target => 'blank' %>
 							<% 	when 'ProductVideo' %>
 								<%= product_visual.embed_html(463) %>
 							<% 	end %>
@@ -55,7 +55,7 @@
 									</div>
 								<% end %>
 								<div style="position:absolute;left:0;top:0;z-index:1">
-									<%= image_tag(product_visual.image.url(:thumb_65), :'data-binding' => "image_swap_trigger", :'data-image_swap_target' => "product_visual_#{product_visual.id}") %>
+									<%= image_tag(product_visual.image.url(:thumb_65), :'data-binding' => "image_swap_trigger", :'data-image_swap_target' => "product_visual_#{product_visual.id}", :alt => "#{@product.name} from #{@product.seller.store_name}") %>
 								</div>
 							</div>
 							<% end %>
