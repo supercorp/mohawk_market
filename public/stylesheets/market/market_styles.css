@@ -500,6 +500,45 @@ h1.product_name {
 	border-bottom:2px solid #52cbba;
 }
 
+.product_panel .product_price {
+	display: none;
+	position: absolute;
+	top: 35px;
+	right: 98px;
+	width: 130px;
+	height: 40px;
+	background-image:url(../../images/market/price.png);
+}
+
+.product_panel_wrapper .product_price {
+	display: none;
+	position: absolute;
+	top: 25px;
+	right: 105px;
+	width: 130px;
+	height: 40px;
+	background-image:url(../../images/market/price.png);
+}
+
+.product_panel .product_price p {
+	display: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #fff;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+.product_panel_wrapper .product_price p {
+	display: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #fff;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+
 .product_panel h3 {
 	font-size:30px;
 	width:192px;
