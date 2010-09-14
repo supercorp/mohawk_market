@@ -19,3 +19,5 @@ MARKET_USE_SELLER_BANNER = true
 
 #temporary market content
 MARKET_WELCOME_TEXT = ""
+
+PRICE_ON_HOVER = false
