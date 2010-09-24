@@ -1004,15 +1004,20 @@ div.dashboard_list_tabs a {
 }
 /* @end */
 /* @group dashboard page tabs */
-div.dashboard_page_tabs a, div.dashboard_product_tabs a {
+div.dashboard_page_tabs a, div.dashboard_product_tabs a, div.dashboard_product_tabs span {
 	font-family:verdana;
 	font-size:11px;
-	color:#52cbba;
 	text-decoration:none;
 	font-weight:bold;
 	border-top:1px solid #f0f2e5;
 	border-left:1px solid #f0f2e5;
 	border-right:1px solid #f0f2e5;
+}
+div.dashboard_page_tabs a, div.dashboard_product_tabs a {
+	color:#52cbba;
+}
+div.dashboard_product_tabs span {
+	color:#aaa;
 }
 .dashboard_page_tabs a:hover, .dashboard_product_tabs a:hover {
 	background-color:#f0f2e5;
