@@ -74,7 +74,15 @@
 			</div>
 			
 			<div class="span-6 last">
-				<% if @product.product_options.active.in_stock.any? %>
+				<% if EXTERNAL_PRODUCTS and @product.seller.external_products? and @product.external? %>
+					<% if @product.external_price_from? %>
+						From
+					<% end %>
+					<%= @product.external_price.format %><br/>
+					
+					<%= link_to 'visit external product', @product.external_url %>
+					
+				<% elsif @product.product_options.active.in_stock.any? %>
 				<div class="span-6 product_commerce">
 							<%= select_tag 'product_option_id', options_for_select(@product.product_options.active.in_stock.map{|po| [po.name,po.id]},@product.product_options.active.in_stock.first.id), :class => 'product_option_select' %><br/>
 							<div class="span-6">
@@ -108,40 +116,7 @@
 				<% end %>
 				<div id="out_of_stock_wrapper">
 					<%= render :partial => 'out_of_stock' %>
-				</div>
-				<!-- only show the out_of_stock_panel div if there are 1 or more out of stock options -->
-				<% if @product.product_options.active.out_of_stock.any? and false %>
-				<div class="span-6 last out_of_stock_panel">
-					<div class="out_of_stock_panel_liner">
-						
-						<!-- if at least 1 option is in stock, show these toggles -->
-						<% if @product.product_options.active.in_stock.any? %>
-						<div ui_binding="expander" ui_state="contracted" ui_id="out_of_stock" class="out_of_stock_header">
-							Some options are out of stock. <a ui_binding="expander" ui_action="expand" ui_id="out_of_stock">(info)</a>
-						</div>
-						<div ui_binding="expander" ui_state="expanded" ui_id="out_of_stock" class="out_of_stock_header">
-							Out of stock options:	<a ui_binding="expander" ui_action="contract" ui_id="out_of_stock">(hide)</a>
-						</div>						
-						<!-- else, there are no in stock options and all options are out of stock, show this larger lable/header -->
-						<% else %>
-						<div class="out_of_stock_header_all">
-							<div class="header_all_text">out of stock</div>
-							<div class="header_all_list_label">options:</div>
-						</div>
-						<% end %>
-						<!-- end if -->
-					
-						<div ui_binding="expander" ui_state="expanded" ui_id="out_of_stock">
-							<% display_option_name = (@product.product_options.active.length > 1) %>
-							<% for option in @product.product_options.active.out_of_stock %>
-								<div class="out_of_stock_item"><% if display_option_name %><%= option.name %> &ndash; <% end %><%= option.price.format %></div>
-							<% end %>
-						</div>
-		
-					</div><!-- end .out_of_stock_panel_liner -->
-				</div><!-- end .out_of_stock_panel -->
-				<% end %>
-				
+				</div>				
 	
 				<div class="span-6 last favorite_panel">
 					<div class="favorite_panel_liner">
