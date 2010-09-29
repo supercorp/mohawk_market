@@ -79,9 +79,9 @@
 						<div class="base_price">From</div>
 					<% end %>
 					<span class="external_price"><%= @product.external_price.format %></span><br/>
-					
-					<div class="external_link"><%= link_to 'click here to buy', @product.external_url, :target => 'blank' %></div>
-
+					<div class="product_external_buy">					
+					<%= link_to image_tag("market/buy_now.png"), @product.external_url, :target => 'blank' %>
+					</div>
 				<% elsif @product.product_options.active.in_stock.any? %>
 				<div class="span-6 product_commerce">
 							<%= select_tag 'product_option_id', options_for_select(@product.product_options.active.in_stock.map{|po| [po.name,po.id]},@product.product_options.active.in_stock.first.id), :class => 'product_option_select' %><br/>

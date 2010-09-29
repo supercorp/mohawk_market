@@ -336,6 +336,19 @@ h1.product_name {
 	border-bottom:1px solid #ccc;
 }
 
+.product_external_buy {
+	width:218px;
+	background-color:#fff;
+	padding-top:6px;
+	padding-bottom:6px;
+	display:block;
+	float:left;
+	margin-bottom:9px;
+	margin-left:9px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
 .product_shipping_destinations h6, .product_shipping_note h6, .product_tags h6 {
 	font-size:16px;
 	display:inline;
