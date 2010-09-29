@@ -293,6 +293,36 @@ h1.product_name {
 	color:#666;
 }
 
+.external_price {
+	font-size:28px;
+	width:177px;
+	float:left;
+	margin-left:14px;
+	color:#666;
+}
+
+.base_price {
+	float: left;
+	color:#666;
+	padding-top: 17px;
+	padding-left: 14px;
+	margin-right: -7px;
+}
+
+.external_link {
+	font-size:24px;
+	width:218px;
+	background-color:#fff;
+	padding-top:6px;
+	padding-bottom:6px;
+	display:block;
+	float:left;
+	margin-bottom:9px;
+	margin-left:14px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
 .product_commerce .product_commerce_add {
 	width:218px;
 	background-color:#fff;
