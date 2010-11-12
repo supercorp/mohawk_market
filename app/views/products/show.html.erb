@@ -102,7 +102,7 @@
 							<% end %>
 						<% if @product.product_options.active.in_stock.any? %>
 						<div class="product_commerce_add">
-							<% form_tag update_cart_url, :method => :put do -%>
+							<% form_tag update_cart_url, :method => :put, :id => "add_to_cart_form" do -%>
 								<%= hidden_field_tag 'product_option_id', @product.product_options.first.id, :id => 'product_option_id_field' %>
 								<%= image_submit_tag("market/add_to_cart.png", :'data-binding' => "image_state_normal", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_hover.png", :'data-binding' => "image_state_hover", :'data-group' => "add_to_cart") + image_submit_tag("market/add_to_cart_active.png", :'data-binding' => "image_state_active", :'data-group' => "add_to_cart") %>					
 							<% end %>
@@ -359,5 +359,6 @@ $(document).ready(function(){
 	bindImageSwaps();
 	bindTabs();
 	bindExpanders();
+	$('#add_to_cart_form').preventDoubleSubmit();
 	});
 <% end %>
