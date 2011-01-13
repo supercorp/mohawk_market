@@ -2361,3 +2361,87 @@ iframe {
 
 
 /* @end */
+
+/* @group seller rating */
+
+#rating_container {
+	background-color: #FFFFE0;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#rating_container, #feedback_container {
+	// margin-top: 15px;
+}
+
+div.feedback {
+	margin-bottom: 10px;
+}
+
+#rating_container p, #feedback_container p {
+	padding-left: 10px;
+	font-size: 11px;
+	font-family: verdana;
+	color: #666;
+}
+
+#order_rating_note {
+	width:377px;
+	height:16px;
+	padding:6px;
+	resize: none;
+}
+
+#rating_neutral, #rating_negative {
+	margin-left: 15px;
+}
+
+/* @end */
+
+/* @group seller rating tabs */
+.seller_rating_tabs {
+	font-size: 14px;
+	float:left;
+}
+.seller_rating_tabs a {
+	display:block;
+	float:left;
+	width:102px;
+	padding:6px;
+	margin-right:2px;
+	background-color:#f0f2e5;
+	text-decoration:none;
+	color:#666158;
+}
+.seller_rating_tabs a:hover {
+	color:#fff;
+	background-color: #52CBBA;
+	text-decoration: underline;
+	cursor:pointer;
+}
+.seller_rating_tabs a.selected {
+	background-color:#ccc;
+	color:#666158;
+}
+.seller_rating_contents {
+	margin-bottom:18px;
+}
+.seller_rating_contents p {
+	color:#666158;
+	font-size:14px;
+	width:475px;
+}
+.rating_tabbed_contents {
+	border-top:1px solid #ccc;
+	padding:9px;
+	float:left;
+}
+
+.order_rating {
+	padding-bottom: 8px;
+	border-bottom:1px dotted #ccc;
+}
+
+
+/* @end */
