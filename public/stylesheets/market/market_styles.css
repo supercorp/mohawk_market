@@ -2443,5 +2443,9 @@ div.feedback {
 	border-bottom:1px dotted #ccc;
 }
 
+.seller_order_rating {
+	padding: 10px;
+	background-color: #fff;
+}
 
 /* @end */
