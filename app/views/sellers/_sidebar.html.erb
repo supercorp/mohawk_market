@@ -25,7 +25,7 @@
 		  <li><%= link_to "notes", store_notes_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'notes' ? 'selected' : nil) %></li>
 		  <li><%= link_to "about", store_about_url(:subdomain => @seller.subdomain), :class => (@profile_section == 'about' ? 'selected' : nil) %></li>
 		<% if @seller.orders.paid.positive.count > 0 %>
-		  <li><%= link_to "Customer rating (#{@seller.orders.paid.positive.count} Positive)", seller_url(@seller) + '?profile_section=ratings', :class => (@profile_section == 'ratings' ? 'selected' : nil) %></li>
+		  <li><%= link_to "Feedback (#{@seller.orders.paid.positive.count} Positive)", seller_url(@seller) + '?profile_section=ratings', :class => (@profile_section == 'ratings' ? 'selected' : nil) %></li>
 		<% end %>
 		</ul>
 		<div class="sidebar_panel">
