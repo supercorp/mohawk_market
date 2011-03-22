@@ -33,6 +33,8 @@ Rails::Initializer.run do |config|
   config.gem 'json'
   config.gem 'mislav-will_paginate', :version => '~> 2.3.11', :lib => 'will_paginate', :source => 'http://gemcutter.org'
   config.gem 'gnumarcelo-campaigning', :lib => 'campaigning'
+  config.gem 'httparty'
+  config.gem 'nokogiri'
   
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
