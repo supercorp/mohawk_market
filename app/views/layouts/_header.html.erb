@@ -46,9 +46,16 @@
 		<% end %>
 		</div><!-- end .sub_category_bar -->
 		
-		<div class="span-24">
-			<%= link_to (image_tag 'market/masthead.png'), '/' unless (controller_name == 'sellers' and action_name != 'index')%>
-		</div><!--end .span-24 -->
+		<div class="span-18">
+			<%= link_to (image_tag 'market/masthead-small.png'), '/' unless (controller_name == 'sellers' and action_name != 'index')%>
+		</div>
+		
+		<div class="span-6 masthead last">
+		<h2><%= link_to 'See All Designers', '/sellers' %></h2>
+		<h2><%= link_to 'Browse The Blog', blog_posts_url(:blog_category_name => 'all') %></h2>
+		<h2 class="last"><%= link_to 'Get Our Newsletter', blog_posts_url(:blog_category_name => 'all') %></h2>
+  		
+		</div>  
 		
 	</div><!-- end .header -->
 	
