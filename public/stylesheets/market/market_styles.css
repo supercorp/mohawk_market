@@ -70,6 +70,15 @@ h3 {
   margin: 0;
 }
 
+input.subscribe_input_header {
+	width: 105px;
+	color:#46b9ae;
+	font-family:verdana;
+	font-size:11px;
+	border:1px solid #ccc;
+	padding:4px;
+}
+
 div.masthead {
   background-color: #f7f7f7;
   padding: .6em 0;
@@ -889,6 +898,7 @@ h1.product_name {
 .footer h2 a:hover {
 	color:#52cbba;
 }
+
 .footer input.subscribe_input {
 	color:#46b9ae;
 	font-family:verdana;
