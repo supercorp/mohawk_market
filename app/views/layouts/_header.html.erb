@@ -53,9 +53,14 @@
 		<div class="span-6 masthead last">
 		<h2><%= link_to 'See All Designers', '/sellers' %></h2>
 		<h2><%= link_to 'Browse The Blog', blog_posts_url(:blog_category_name => 'all') %></h2>
-		<h2 class="last"><%= link_to 'Get Our Newsletter', blog_posts_url(:blog_category_name => 'all') %></h2>
-  		
-		</div>  
+		<h2 class="last" id="reveal"><a onclick="$('#subscribe').toggle(); return false;" href="">Get Our Newsletter</a></h2>
+		<form id="subscribe" action="http://mohawkpaper.createsend.com/t/r/s/juldty/" method="post">
+			<p><input type="text" name="cm-juldty-juldty" id="juldty-juldty" class="subscribe_input" value="EMAIL ADDRESS"/> <input type="submit" value="subscribe" />
+			</p>
+		</form>
+		
+  	</div>
+  	  
 		
 	</div><!-- end .header -->
 	
