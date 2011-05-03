@@ -64,4 +64,12 @@
 		
 	</div><!-- end .header -->
 	
+	<% javascript_tag do %>
+	$(function() {
+      $('input[type=text]').focus(function() {
+        $(this).val('')
+        });
+  });
+	<% end %>
+	
 </div><!-- end .container -->
