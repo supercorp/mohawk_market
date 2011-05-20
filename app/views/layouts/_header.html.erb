@@ -50,6 +50,8 @@
 			<%= link_to (image_tag 'market/masthead-small.png'), '/' unless (controller_name == 'sellers' and action_name != 'index')%>
 		</div>
 		
+		
+		<% unless (controller_name == 'sellers' and action_name != 'index') %>
 		<div class="span-6 masthead last">
 		<h2><%= link_to 'See All Designers', '/sellers' %></h2>
 		<h2><%= link_to 'Browse The Blog', blog_posts_url(:blog_category_name => 'all') %></h2>
@@ -60,7 +62,7 @@
 		</form>
 		
   	</div>
-  	  
+  	 <% end %> 
 		
 	</div><!-- end .header -->
 	
