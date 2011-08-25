@@ -20,6 +20,7 @@ Rails::Initializer.run do |config|
   # you must remove the Active Record framework.
   # config.frameworks -= [ :active_record, :active_resource, :action_mailer ]
 
+config.middleware.use "Rack::Honeypot", :input_name => "account_id", :class_name => "clarity", :input_value => 'Enter your account id'
   # Specify gems that this application depends on. 
   # They can then be installed with "rake gems:install" on new installations.
   # You have to specify the :lib option for libraries, where the Gem name (sqlite3-ruby) differs from the file itself (sqlite3)
@@ -35,7 +36,7 @@ Rails::Initializer.run do |config|
   config.gem 'gnumarcelo-campaigning', :lib => 'campaigning'
   config.gem 'httparty'
   config.gem 'nokogiri'
-  
+  config.gem 'unindentable'
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named
