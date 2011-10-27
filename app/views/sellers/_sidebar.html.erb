@@ -32,7 +32,7 @@
 			<%= link_to @seller.store_domain_name, seller_url(:subdomain => @seller.subdomain) %>
 		</div>
 		<div class="sidebar_panel store_description">
-			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", store_notes_url(:subdomain => @seller.subdomain)))).to_html unless @seller.store_description.blank? %>
+			<%= RedCloth.new(truncate(@seller.store_description,250,link_to("<div class='sidebar_more'>more &raquo;</div>", store_about_url(:subdomain => @seller.subdomain)))).to_html unless @seller.store_description.blank? %>
 		</div>
 		<% if @seller.faq %>
 		<div class="sidebar_panel">			
