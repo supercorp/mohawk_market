@@ -37,6 +37,7 @@ config.middleware.use "Rack::Honeypot", :input_name => "account_id", :class_name
   config.gem 'httparty'
   config.gem 'nokogiri'
   config.gem 'unindentable'
+  config.gem 'ruby-pardot'
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named
