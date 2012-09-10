@@ -33,7 +33,7 @@ products_002:
   permalink: 
   created_at: 2009-08-26 21:20:28.637522 Z
   reviewer_id: 
-  downloadable: 
+  downloadable: false
   specs: 
   suppressed: false
   shippable: true
@@ -69,7 +69,7 @@ products_003:
   permalink: 
   created_at: 2009-08-26 21:18:19.691180 Z
   reviewer_id: 
-  downloadable: 
+  downloadable: false
   specs: 
   suppressed: false
   shippable: true
@@ -105,7 +105,7 @@ products_004:
   permalink: 
   created_at: 2009-08-26 21:22:40.288201 Z
   reviewer_id: 
-  downloadable: 
+  downloadable: false
   specs: 
   suppressed: false
   shippable: true
@@ -141,7 +141,7 @@ products_005:
   permalink: 
   created_at: 2009-08-24 17:19:00.598121 Z
   reviewer_id: 
-  downloadable: 
+  downloadable: false
   specs: 
   suppressed: false
   shippable: true
