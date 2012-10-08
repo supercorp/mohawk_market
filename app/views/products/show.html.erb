@@ -207,7 +207,6 @@
 			<% if @product.faq and @product.faq.active %>
 				<a ui_binding="tab" ui_set="product_info" ui_tab="faq" href="#faq">FAQ</a>
 			<% end %>
-			<a ui_binding="tab"  ui_set="product_info" ui_tab="comments" href="#comments">Comments (<%= @product.comments.published.enabled.count %>)</a>
 			<% if @product.product_favorites.any? %>
 				<a ui_binding="tab" ui_set="product_info" ui_tab="favorites" id="favorites_tab" href="#favorites">Favorites (<%= @product.product_favorites.count %>)</a>
 			<% end %>
@@ -253,38 +252,6 @@
 			</div><!-- end .product_tabbed_contents -->
 			<!-- end faq -->
 		<% end %>
-		
-		<!-- start comments -->
-		<div class="span-18 last product_tabbed_contents" id="comments" ui_binding="tab_content" ui_set="product_info" style="display:none;">
-			<div class="product_tabbed_contents_wrapper product_comments">
-				<div id="featured_comment_list" class="span-15 last">
-					<% if @product.comments.published.enabled.featured.any? %>
-						<h3 class="featured_comments_header">Featured Comments</h3>
-					<% end %>
-					<% for comment in @product.comments.published.enabled.featured %>
-						<%= render :partial => 'manage/comments/element_container', :object => comment, :locals => {:feature_section => true} %>
-					<% end %>
-				</div>
-					<div id="comment_list" class="span-15 last">
-						<% if @product.comments.published.enabled.featured.any? %>
-							<h3 class="all_comments_header">All Comments</h3>
-						<% end %>
-						<% for comment in @product.comments.published.enabled %>
-							<%= render :partial => 'manage/comments/element_container', :object => comment %>
-						<% end %>
-					</div><!-- end #comment_list -->
-					<% if logged_in? %>
-						<div id="comment_new" class="span-15 last comments_wrapper">
-							<%= render :partial => "manage/comments/new", :object => Comment.new(:commentable_id => @product.id, :commentable_type => 'Product') %>
-						</div><!-- end .comments_wrapper -->
-					<% else %>
-						<div class="span-15 last">
-							<%= render :partial => 'comments/new', :locals => {:commentable => @product} %>
-						</div><!-- end .span-15 -->
-					<% end %>
-			</div><!-- end .product_tabbed_contents_wrapper -->
-		</div><!-- end .product_tabbed_contents -->
-		<!-- end comments -->
 		
 		<% if @product.product_favorites.any? %>
 			<!-- start favorites -->
