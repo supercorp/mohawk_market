@@ -2,6 +2,10 @@ body {
 	font-family:Georgia, "Times New Roman", Times, serif;
 }
 
+a[href="http://feltandwireshop.com/manage/messages/new?message%5Brecipient_id%5D=11"] {
+	display: none;
+}
+
 p, ul {
 	color:#333;
 }
